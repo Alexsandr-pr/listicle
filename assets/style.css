@@ -84,29 +84,46 @@ main {
         padding: 0 16px;
     }
 }
+
+
+
 .label {
-    color: #FFF;
     max-width: fit-content;
-    padding: 6px 14px;
+    padding: 6px 14px 4px 14px;
     border-radius: 200px;
-    background: var(--Main-Blue-900);
     font-size: 18px;
     display: inline-flex;
     font-weight: 500;
     line-height: 1.1;
 }
+
+.label.blue-300 {
+    color: var(--Main-Blue-900);
+    background: var(--Main-Blue-300);
+}
+.label.blue-800 {
+    color: #FFF;
+    background: var(--Main-Blue-800);
+}
+.label.blue-900 {
+    color: #FFF;
+    background: var(--Main-Blue-900);
+}
+
 .button-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 52px;
 }
+
 @media (max-width: 767.98px) {
     .button-wrapper {
         width: 100%;
         height: 40px;
     }
 }
+
 .button {
     transition: all .3s ease 0s;
     padding: 10px 8px;
@@ -554,19 +571,7 @@ main {
     }
 }
 .how-it-works__label {
-    color: var(--Main-Blue-900);
-    font-size: 18px;
-    font-weight: 500;
-    display: flex;
-    padding: 6px 14px 4px 14px;
-    justify-content: center;
     margin-bottom: 14px;
-    align-items: center;
-    gap: 10px;
-    display: inline-flex;
-    border-radius: 200px;
-    background: var(--Main-Blue-300);
-    line-height: 1.1;
 }
 .how-it-works__title {
     color: var(--White);
@@ -594,25 +599,34 @@ main {
 .how-it-works__title::after {
     position: absolute;
     z-index: -1;
-    content: url("./images/cards-left.png");
+    background-image: url("./images/cards-left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
 }
 @media (min-width: 1280.98px) {
     .how-it-works__title::after {
-        bottom: -50px;
+        bottom: -25px;
         left: 549px;
+        width: 204px;
+        height: 205px;
     }
 }
 @media (max-width: 1280.98px) and (min-width: 767.98px) {
     .how-it-works__title::after {
         left: 372px;
-        top: -113px;
+        bottom: 2.6px;
+        width: 166px;
+        height: 167px;
     }
 }
 @media (max-width: 767.98px) {
     .how-it-works__title::after {
-        bottom: -67px;
-        right: -19px;
-        content: url("./images/cards-left-mobile.png");
+        bottom: -47px;
+        right: -25.43px;
+        width: 103px;
+        height: 104px;
     }
 }
 .how-it-works-cards {
@@ -638,25 +652,32 @@ main {
 }
 .how-it-works-cards::after {
     position: absolute;
-    content: url("./images/cards-right-decor.png");
+    background-image: url("./images/cards-right-decor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+    width: 204px;
+    height: 200px;
 }
 @media (min-width: 1280.98px) {
     .how-it-works-cards::after {
         right: -130px;
-        bottom: -60px;
+        bottom: -58px;
     }
 }
 @media (max-width: 1280.98px) and (min-width: 767.98px) {
     .how-it-works-cards::after {
-        right: -80px;
-        bottom: -80px;
+        right: -78.5px;
+        bottom: -73px;
     }
 }
 @media (max-width: 767.98px) {
     .how-it-works-cards::after {
-        right: -20px;
-        bottom: -92px;
-        content: url("./images/cards-right-decor-mobile.png");
+        width: 149px;
+        height: 151px;
+        right: -25.43px;
+        bottom: -86.07px;
     }
 }
 .cards__label {
@@ -780,21 +801,7 @@ main {
         padding: 70px 0px 144px 0px;
     }
 }
-.benefits__label {
-    display: inline-flex;
-    padding: 6px 14px 4px 14px;
-    justify-content: center;
-    color: #FFF;
-    font-family: "League Spartan";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    align-items: center;
-    gap: 10px;
-    border-radius: 200px;
-    background: var(--Main-Blue-900, #031D3D);
-}
+
 .benefits__title {
     color: var(--Gray-900);
     margin: 14px 0px 60px 0px;
@@ -922,21 +929,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
-.pricing__label {
-    display: flex;
-    padding: 6px 14px 4px 14px;
-    color: #FFF;
-    font-family: "League Spartan";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 200px;
-    background: var(--Main-Blue-900, #031D3D);
-}
+
 .pricing__title {
     color: var(--Gray-900, #181F35);
     text-align: center;
@@ -1126,17 +1119,6 @@ main {
 .pricing-card-bottom__best-value {
     position: absolute;
     right: 32px;
-    color: #FFF;
-    display: flex;
-    padding: 6px 14px 4px 14px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 200px;
-    background: var(--Main-Blue-800);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.1;
     top: 18px;
 }
 @media (max-width: 767.98px) {
