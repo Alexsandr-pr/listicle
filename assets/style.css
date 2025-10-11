@@ -3,6 +3,7 @@
 :root {
     --White: #FFF;
     --Gray-900: #181F35;
+    --Gray-300: #DCDFEA;
     --Gray-400: #B9C0D4;
     --Gray-700: #4A5578;
     --Main-Blue-200: #E5F1FF;
@@ -85,7 +86,21 @@ main {
     }
 }
 
+.paragraph-body-regular {
+    color: var(--Gray-700);
+    font-family: "League Spartan";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6; 
+}
 
+@media (max-width: 767.98px) {
+    .paragraph-body-regular {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+}
 
 .label {
     max-width: fit-content;
@@ -146,6 +161,7 @@ main {
 .button__text {
     padding: 7px 10px 3px 10px;
     font-size: 22px;
+    transition: color .3s ease 0s;
     font-weight: 600;
     line-height: 1;
     white-space: nowrap;
@@ -216,6 +232,9 @@ main {
     .button.main-white-button:hover {
         border-color: var(--Main-Blue-800);
         background: var(--Main-Blue-800);
+    }
+    .button.main-white-button:hover .button__text {
+        color: var(--White);
     }
 }
 .button.main-gray-button {
@@ -302,9 +321,7 @@ main {
     }
 }
 .hero-left__text {
-    color: var(--Gray-700);
     font-size: 22px;
-    font-weight: 400;
     line-height: 1.4;
     flex: 0 1 100%;
     margin-bottom: 120px;
@@ -706,9 +723,7 @@ main {
     margin-bottom: 14px;
 }
 .cards__text {
-    color: var(--Gray-700);
     font-size: 22px;
-    font-weight: 400;
     line-height: 1.4;
 }
 .cards-1 {
@@ -869,14 +884,6 @@ main {
     font-style: normal;
     font-weight: 700;
     line-height: 118%;
-}
-.benefits-column__text {
-    color: var(--Gray-700, #4A5578);
-    font-family: "League Spartan";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
 }
 .benefits-column__left {
     width: 70px;
@@ -1042,20 +1049,6 @@ main {
 .pricing__card.active .pricing-card__bottom {
     background: var(--Main-Blue-600);
 }
-.pricing__card.active .pricing-card__link {
-    border: 2px solid var(--White);
-    background: var(--White);
-    color: var(--Main-Blue-600);
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1;
-}
-@media (hover: hover) {
-    .pricing__card.active .pricing-card__link:hover {
-        border-color: var(--Main-Blue-800);
-        background: var(--Main-Blue-800);
-    }
-}
 .pricing__card.active .pricing-card-price__period {
     color: var(--Main-Blue-300);
 }
@@ -1126,42 +1119,8 @@ main {
         right: 14px;
     }
 }
-.pricing-card__link {
-    border-radius: var(--Extra-large, 200px);
-    border: 2px solid var(--Main-Blue-600, #077DFD);
-    background: var(--Main-Blue-600, #077DFD);
-    display: flex;
-    height: 52px;
-    transition: all .3s ease 0s;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    color: #FFF;
-    font-family: "League Spartan";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 100%;
-    flex-shrink: 0;
-    align-self: stretch;
-}
-.pricing-card__link span {
-    padding: 4px 10px 0px 10px;
-}
-@media (max-width: 767.98px) {
-    .pricing-card__link {
-        height: 40px;
-        padding: 4px;
-        color: #FFF;
-        font-size: 18px;
-    }
-}
-@media (hover: hover) {
-    .pricing-card__link:hover {
-        border-color: var(--Main-Blue-500);
-        background: var(--Main-Blue-500);
-    }
+.pricing-card__button {
+    width: 100%;
 }
 .pricing-card-bottom__list {
     display: flex;
@@ -1175,16 +1134,13 @@ main {
 .pricing-card-bottom__li {
     display: flex;
     gap: 14px;
-    max-height: fit-content;
     color: var(--Gray-400);
-    font-size: 24px;
-    line-height: 1.6;
+    max-height: fit-content;
 }
 @media (max-width: 767.98px) {
     .pricing-card-bottom__li {
-        font-size: 22px;
+        font-size: 22px !important;
         gap: 8px;
-        line-height: 1.4;
     }
 }
 .pricing-card-bottom__li-img {
@@ -1490,16 +1446,11 @@ main {
     }
 }
 .faq-item__right {
-    color: var(--Gray-70);
-    font-size: 24px;
-    line-height: 1.59;
     flex: 0 1 40%;
 }
 @media (max-width: 767.98px) {
     .faq-item__right {
-        font-size: 19px;
-        color: var(--White, #FFF);
-        line-height: 1.4;
+        color: var(--Gray-300);
     }
 }
 .bottom-cta {
