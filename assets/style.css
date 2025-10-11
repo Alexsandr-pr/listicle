@@ -65,6 +65,7 @@ body {
     font-family: 'League Spartan';
     color: var(--Gray-900);
     font-size: 16px;
+    line-height: normal;
 }
 
 button,
@@ -73,7 +74,6 @@ input {
     font-weight: inherit;
     color: inherit;
     font-family: inherit;
-    line-height: normal;
     transition: all .3s ease 0s;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -113,7 +113,6 @@ main {
     color: var(--Gray-700);
     font-family: "League Spartan";
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.6;
 }
@@ -128,7 +127,7 @@ main {
 .label {
     max-width: fit-content;
     padding: 6px 14px 4px 14px;
-    border-radius: 200px;
+    border-radius: var(--Extra-large);
     font-size: 18px;
     display: inline-flex;
     font-weight: 500;
@@ -141,12 +140,12 @@ main {
 }
 
 .label.blue-800 {
-    color: #FFF;
+    color: var(--White);
     background: var(--Main-Blue-800);
 }
 
 .label.blue-900 {
-    color: #FFF;
+    color: var(--White);
     background: var(--Main-Blue-900);
 }
 
@@ -354,7 +353,7 @@ main {
     display: flex;
     border-radius: var(--Large-BG);
     background: var(--Main-Blue-200);
-    padding: 0 0 40px 140px;
+    padding: 0 0 40px calc(40px + 100 * (100vw - 1280.98px) / (1920 - 1280.98));
     justify-content: space-between;
     gap: 30px;
     overflow: hidden;
@@ -362,7 +361,7 @@ main {
 
 @media (max-width: 1280.98px) {
     .hero-section__content {
-        padding: 100px 60px;
+        padding:60px 60px 100px 60px;
         gap: 50px;
         flex-direction: column-reverse;
     }
@@ -377,9 +376,10 @@ main {
 
 .hero-left {
     padding: 27.5px 0px;
-    max-width: 674px;
+    flex: 0 1 45%;
     display: flex;
     flex-direction: column;
+
 }
 
 @media (max-width: 1526.98px) {
@@ -401,7 +401,7 @@ main {
     font-weight: 700;
     line-height: 1.16;
     margin-bottom: 20px;
-    padding-top: 100px;
+    padding-top: calc(30px + 70 * (100vw - 1280.98px) / (1920 - 1280.98));
 }
 
 @media (max-width: 1280.98px) {
@@ -445,22 +445,29 @@ main {
 
 @media (max-width: 767.98px) {
     .hero-left__buttons {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
+@media (max-width: 487.98px) {
+    .hero-left__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 .hero-video {
-    min-width: 651px;
-    width: 651px;
     aspect-ratio: 651 / 571;
     height: auto;
     overflow: hidden;
+    flex: 0 1 44%;
 }
 
 .hero-video video {
-    width: 651px;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+    aspect-ratio: 651 / 571;
 }
 
 @media (max-width: 1280.98px) {
@@ -484,8 +491,11 @@ main {
     }
 }
 
-.second__wrapper {
-    padding: 0px 140px;
+
+@media (min-width: 1280.98px) {
+    .second__wrapper {
+        padding: 0px calc(40px + 100 * (100vw - 1280.98px) / (1920 - 1280.98));
+    }
 }
 
 @media (max-width: 1280.98px) {
@@ -909,7 +919,17 @@ main {
         font-size: 30px;
         line-height: 1.28;
     }
+    .how-it-works-bottom__button {
+        width: 311px;
+    }
 }
+
+@media (max-width: 487.98px) {
+    .how-it-works-bottom__button {
+        width: 100%;
+    }
+}
+
 
 .benefits {
     margin-top: -153px;
@@ -918,7 +938,7 @@ main {
     background-image: url("./images/benefits-bg.png");
     background-repeat: no-repeat;
     background-position: right top;
-    background-color: var(--Main-Blue-300, #C6E1FF);
+    background-color: var(--Main-Blue-300);
 }
 
 @media (max-width: 1280.98px) {
@@ -982,8 +1002,8 @@ main {
     padding: 32px;
     align-items: start;
     gap: 24px;
-    border-radius: var(--Middle, 24px);
-    background: var(--White, #FFF);
+    border-radius: var(--Middle);
+    background: var(--White);
 }
 
 @media (max-width: 767.98px) {
@@ -1011,12 +1031,10 @@ main {
 }
 
 .benefits-column__title {
-    color: var(--Gray-900, #181F35);
-    font-family: "League Spartan";
+    color: var(--Gray-900);
     font-size: 34px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 118%;
+    line-height: 1.18;
 }
 
 .benefits-column__left {
@@ -1029,23 +1047,23 @@ main {
 }
 
 .benefits-column__left-1 {
-    border-radius: var(--Extra-large, 200px);
-    background: var(--Secondary-Yellow-400, #FFF6B4);
+    border-radius: var(--Extra-large);
+    background: var(--Secondary-Yellow-400);
 }
 
 .benefits-column__left-2 {
-    border-radius: var(--Extra-large, 200px);
-    background: var(--Secondary-Turquoise-400, #AAE9FF);
+    border-radius: var(--Extra-large);
+    background: var(--Secondary-Turquoise-400);
 }
 
 .benefits-column__left-3 {
-    border-radius: var(--Extra-large, 200px);
-    background: var(--Other-Green-1-400, #CBE389);
+    border-radius: var(--Extra-large);
+    background: var(--Other-Green-1-400);
 }
 
 .benefits-column__left-4 {
-    border-radius: var(--Extra-large, 200px);
-    background: var(--Secondary-Terracotta-500, #FB936F);
+    border-radius: var(--Extra-large);
+    background: var(--Secondary-Terracotta-500);
 }
 
 .pricing {
@@ -1080,15 +1098,13 @@ main {
 }
 
 .pricing__title {
-    color: var(--Gray-900, #181F35);
+    color: var(--Gray-900);
     text-align: center;
-    font-family: "League Spartan";
     font-size: 82px;
     margin-top: 14px;
     margin-bottom: 70px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 108%;
+    line-height: 1.08;
 }
 
 @media (max-width: 1280.98px) {
@@ -1106,7 +1122,7 @@ main {
 
 .pricing__buttons {
     border-radius: 34px;
-    background: var(--Main-Blue-200, #E5F1FF);
+    background: var(--Main-Blue-200);
     display: flex;
     width: 279px;
     position: relative;
@@ -1124,7 +1140,7 @@ main {
 }
 
 .pricing__button {
-    color: var(--Gray-900, #181F35);
+    color: var(--Gray-900);
     background-color: transparent;
     font-size: 22px;
     font-weight: 600;
@@ -1149,7 +1165,7 @@ main {
 
     border-radius: 20px;
     transition: left .3s ease 0s;
-    background: var(--Main-Blue-700, #0E44B0);
+    background: var(--Main-Blue-700);
 }
 
 .pricing__button-active-badge.left {
@@ -1157,12 +1173,11 @@ main {
 }
 
 .pricing__button-active-badge.right {
-    left: 141px;
+    left: 143px;
 }
 
 .pricing__button.active {
     color: var(--White);
-    /* background: var(--Main-Blue-700, #0E44B0); */
 }
 
 @media (min-width: 487.98px) {
@@ -1249,17 +1264,15 @@ main {
     align-items: center;
     gap: 10px;
     align-self: stretch;
-    border-radius: var(--Middle, 24px) var(--Middle, 24px) 0 0;
-    background: var(--Main-Blue-600, #077DFD);
+    border-radius: var(--Middle) var(--Middle) 0 0;
+    background: var(--Main-Blue-600);
 }
 
 .pricing-card__title {
-    color: var(--White, #FFF);
-    font-family: "League Spartan";
+    color: var(--White);
     font-size: 26px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 140%;
+    line-height: 1.4;
 }
 
 @media (max-width: 767.98px) {
@@ -1278,8 +1291,8 @@ main {
     align-items: flex-start;
     flex-shrink: 0;
     align-self: stretch;
-    border-radius: var(--Middle, 24px);
-    background: var(--Main-Blue-800, #10335F);
+    border-radius: var(--Middle);
+    background: var(--Main-Blue-800);
 }
 
 @media (max-width: 767.98px) {
@@ -1368,13 +1381,11 @@ main {
 }
 
 .pricing-card-price__text {
-    color: var(--White, #FFF);
-    font-family: "League Spartan";
+    color: var(--White);
     font-size: 22px;
-    font-style: normal;
     font-weight: 400;
     margin-top: 4px;
-    line-height: 140%;
+    line-height: 1.4;
 }
 
 .pricing-card-price__content {
@@ -1384,12 +1395,10 @@ main {
 }
 
 .pricing-card-price__value {
-    color: var(--White, #FFF);
-    font-family: "League Spartan";
+    color: var(--White);
     font-size: 60px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 116%;
+    line-height: 1.16;
 }
 
 @media (max-width: 767.98px) {
@@ -1400,13 +1409,11 @@ main {
 }
 
 .pricing-card-price__period {
-    color: var(--White, #FFF);
+    color: var(--White);
     margin-top: 20px;
-    font-family: "League Spartan";
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 110%;
+    line-height: 1.1;
 }
 
 .pricing-card-bottom__text {
@@ -1457,8 +1464,8 @@ main {
     align-items: center;
     gap: 10px;
     aspect-ratio: 1/1;
-    border-radius: 200px;
-    background: var(--White, #FFF);
+    border-radius: var(--Extra-large);
+    background: var(--White);
 }
 
 .pricing-card-counter__button svg path {
@@ -1467,7 +1474,7 @@ main {
 
 @media (hover: hover) {
     .pricing-card-counter__button:hover {
-        border-radius: 200px;
+        border-radius: var(--Extra-large);
         background: var(--Main-Blue-900);
     }
 
@@ -1488,14 +1495,20 @@ main {
     align-items: center;
     gap: 10px;
     flex: 1 0 0;
-    border-radius: var(--Large-BG, 60px);
-    background: var(--White, #FFF);
-    color: var(--Gray-700, #4A5578);
+    border-radius: var(--Large-BG);
+    background: var(--White);
+    color: var(--Gray-700);
     font-size: 22px;
     line-height: 1.4;
     text-align: center;
     -moz-appearance: textfield;
     appearance: textfield;
+    outline: none;
+    border: 2px solid var(--White);
+}
+
+.pricing-card-counter__value:focus {
+    border: 2px solid var(--Secondary-Terracotta-500);
 }
 
 .pricing-card-counter__value::-webkit-outer-spin-button,
@@ -1671,7 +1684,6 @@ main {
 .faq-item__left {
     color: var(--Gray-900);
     font-size: 34px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.18;
     flex: 0 1 60%;
@@ -1681,7 +1693,7 @@ main {
     .faq-item__left {
         font-size: 26px;
         line-height: 1.4;
-        color: var(--White, #FFF);
+        color: var(--White);
     }
 }
 
@@ -1709,16 +1721,18 @@ main {
     .bottom-cta__container {
         padding: 0;
     }
+
     .bottom-cta__button {
         max-width: 311px;
-        margin: 0 auto;
     }
 }
+
 @media (max-width: 487.98px) {
     .bottom-cta__button {
         max-width: 100%;
     }
 }
+
 .bottom-cta__content {
     display: flex;
     justify-content: space-between;
@@ -1758,7 +1772,7 @@ main {
 }
 
 .bottom-cta__title {
-    color: #FFF;
+    color: var(--White);
     font-size: 82px;
     position: relative;
     z-index: 10;
@@ -1776,14 +1790,14 @@ main {
 }
 
 @media (max-width: 1480.98px) {
-    .bottom-cta__left  {
+    .bottom-cta__left {
         flex: 0 1 55%;
         padding: 80px 0px 90px 0px;
     }
 }
 
 @media (max-width: 1280.98px) {
-    .bottom-cta__left  {
+    .bottom-cta__left {
         padding: 0px;
         margin-bottom: 365px;
         flex: 0 1 100%;
@@ -1828,11 +1842,13 @@ main {
     max-width: 100%;
     height: auto;
 }
-.bottom-cta__right-img img{
+
+.bottom-cta__right-img img {
     margin-top: auto;
     max-width: 100%;
     height: auto;
 }
+
 @media (min-width: 1280.98px) {
     .bottom-cta__right {
         padding-top: 15px;
