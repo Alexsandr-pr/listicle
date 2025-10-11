@@ -1142,9 +1142,27 @@ main {
     border-radius: 20px;
 }
 
+.pricing__button-active-badge {
+    width: 132px;
+    height: 38px;
+    position: absolute;
+
+    border-radius: 20px;
+    transition: left .3s ease 0s;
+    background: var(--Main-Blue-700, #0E44B0);
+}
+
+.pricing__button-active-badge.left {
+    left: 4px;
+}
+
+.pricing__button-active-badge.right {
+    left: 141px;
+}
+
 .pricing__button.active {
     color: var(--White);
-    background: var(--Main-Blue-700, #0E44B0);
+    /* background: var(--Main-Blue-700, #0E44B0); */
 }
 
 @media (min-width: 487.98px) {

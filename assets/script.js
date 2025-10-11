@@ -3,6 +3,12 @@ window.addEventListener("DOMContentLoaded", () => {
     function tabsInit() {
         const pricingButtons = document.querySelectorAll("[data-pricing-button]");
         const pricingCards = document.querySelectorAll("[data-tab]");
+        const pricingButtonActiveBadge = document.querySelector(".pricing__button-active-badge");
+
+        const indexClass = {
+            0: "left",
+            1: "right"
+        }
 
         const deleteActiveClass = () => {
             pricingButtons.forEach(button => {
@@ -18,9 +24,12 @@ window.addEventListener("DOMContentLoaded", () => {
             button.addEventListener("click", () => {
                 deleteActiveClass();
                 addActiveClass(index);
+
                 pricingCards.forEach(card => {
                     card.classList.remove("active");
                 });
+                pricingButtonActiveBadge.classList.add(indexClass[index]);
+                pricingButtonActiveBadge.classList.remove(indexClass[index === 0 ? 1 : 0]);
                 pricingCards[index].classList.add("active");
             });
         });
