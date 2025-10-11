@@ -10,6 +10,7 @@
     --Main-Blue-300: #C6E1FF;
     --Main-Blue-500: #63AEFF;
     --Main-Blue-600: #077DFD;
+    --Main-Blue-700: #0E44B0;
     --Main-Blue-800: #10335F;
     --Main-Blue-900: #031D3D;
     --Other-Green-1-300: #ECFBC3;
@@ -530,13 +531,11 @@ main {
 }
 
 .second__title {
-    color: var(--Gray-900, #181F35);
+    color: var(--Gray-900);
     max-width: 450px;
-    font-family: "League Spartan";
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 118%;
+    line-height: 1.18;
     flex: 0 1 33%;
 }
 
@@ -580,12 +579,10 @@ main {
 }
 
 .second__text {
-    color: var(--Gray-900, #181F35);
-    font-family: "League Spartan";
+    color: var(--Gray-900);
     font-size: 19px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 1.4;
     flex: 0 1 41%;
 }
 
@@ -869,7 +866,7 @@ main {
     border-radius: 400px;
     margin-top: 70px;
     gap: 36px;
-    background: #077DFD;
+    background: var(--Main-Blue-600);
 }
 
 @media (max-width: 1280.98px) {
