@@ -368,11 +368,18 @@ main {
 .hero-section__content {
     display: flex;
     border-radius: var(--Large-BG);
-    background: var(--Main-Blue-200);
+    background-color: var(--Main-Blue-200);
     padding: 0 0 40px calc(40px + 100 * (100vw - 1280.98px) / (1920 - 1280.98));
     justify-content: space-between;
     gap: 30px;
     overflow: hidden;
+}
+@media (min-width: 1280.98px) {
+    .hero-section__content {
+        background-image: url("./images/hero-bg.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
 }
 
 @media (max-width: 1280.98px) {
@@ -477,7 +484,7 @@ main {
     aspect-ratio: 651 / 571;
     height: auto;
     overflow: hidden;
-    flex: 0 1 44%;
+    flex: 0 1 43.2%;
 }
 
 .hero-video video {
@@ -1086,7 +1093,10 @@ main {
     z-index: 10;
     margin-top: -120px;
     border-radius: 60px;
-    background: var(--White);
+    background-image: url("./images/pricing-bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--White);
 }
 
 @media (max-width: 1280.98px) {
@@ -1094,6 +1104,7 @@ main {
         border-radius: var(--Large);
         padding: 120px 0px 104px 0px;
         margin-top: -20px;
+        background-image: url("./images/pricing-bg-tablet.png");
     }
 }
 
@@ -1102,6 +1113,7 @@ main {
         padding: 60px 0px;
         margin-top: 80px;
         border-radius: var(--Middle);
+        background-image: url("./images/pricing-bg-mobile.png");
     }
 }
 
