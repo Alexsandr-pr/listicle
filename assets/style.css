@@ -75,7 +75,7 @@ input {
     font-weight: inherit;
     color: inherit;
     font-family: inherit;
-    transition: all .3s ease 0s;
+    transition: all .3s ease-in;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
@@ -165,7 +165,7 @@ main {
 }
 
 .button {
-    transition: all .3s ease 0s;
+    transition: all .3s ease-in;
     padding: 10px 8px;
     display: inline-flex;
     height: 52px;
@@ -189,7 +189,7 @@ main {
 .button__text {
     padding: 7px 10px 3px 10px;
     font-size: 22px;
-    transition: color .3s ease 0s;
+    transition: color .3s ease-in;
     font-weight: 600;
     line-height: 1;
     white-space: nowrap;
@@ -230,8 +230,8 @@ main {
 
 @media (max-width: 767.98px) {
     .button:active {
-        padding: 2px;
-        height: 40px;
+        padding: 2px !important;
+        height: 40px !important;
     }
 }
 
@@ -312,7 +312,6 @@ main {
     border-radius: var(--Extra-large);
     border: 2px solid var(--Main-Blue-900);
     color: var(--Main-Blue-900);
-    transition: all .3s ease 0s;
     background-color: transparent;
 }
 
@@ -665,6 +664,7 @@ main {
         padding: 40px 0px;
         border-radius: 24px 24px 0 0;
         background-image: none;
+        margin-top: 82px;
     }
 }
 
