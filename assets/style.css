@@ -518,7 +518,10 @@ main {
 
 @media (min-width: 1280.98px) {
     .second__wrapper {
-        padding: 0px calc(40px + 100 * (100vw - 1280.98px) / (1920 - 1280.98));
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: calc(40px + 75 * (100vw - 1280.98px) / (1920 - 1280.98));
+        padding-right: calc(40px + 125 * (100vw - 1280.98px) / (1920 - 1280.98));
     }
 }
 
@@ -548,7 +551,11 @@ main {
         gap: 32px;
     }
 }
-
+@media (max-width: 767.98px) {
+    .second__content {
+        gap: 24px;
+    }
+}
 .second__label {
     margin-bottom: 24px;
 }
