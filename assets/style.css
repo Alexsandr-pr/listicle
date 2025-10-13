@@ -364,6 +364,7 @@ main {
         padding:60px 60px 100px 60px;
         gap: 50px;
         flex-direction: column-reverse;
+        border-radius: var(--Large);
     }
 }
 
