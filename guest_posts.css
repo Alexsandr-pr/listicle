@@ -386,7 +386,7 @@ main {
 
 @media (min-width: 1280.98px) {
     .hero-section__content {
-        background-image: url("./assets/images/guest_posts/hero-bg.png");
+        background-image: url("../assets/images/guest_posts/hero-bg.png");
         background-repeat: no-repeat;
         background-position: right top;
     }
@@ -692,7 +692,7 @@ main {
 }
 
 .how-it-works {
-    background-image: url("./assets/images/guest_posts/how-it-works-bg.png");
+    background-image: url("../assets/images/guest_posts/how-it-works-bg.png");
     background-repeat: no-repeat;   
     background-position: right top;
     margin-top: 128px;
@@ -707,7 +707,7 @@ main {
         padding: 97px 0px 288px 0px;
         border-radius: 32px 32px 0 0;
         background-position: right 0 top 146px;
-        background-image: url("./assets/images/guest_posts/how-it-works-bg-tablet.png");
+        background-image: url("../assets/images/guest_posts/how-it-works-bg-tablet.png");
     }
 }
 
@@ -771,7 +771,7 @@ main {
 .how-it-works__title::after {
     position: absolute;
     z-index: -1;
-    background-image: url("./assets/images/guest_posts/cards-left.png");
+    background-image: url("../assets/images/guest_posts/cards-left.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -831,7 +831,7 @@ main {
 
 .how-it-works-cards::after {
     position: absolute;
-    background-image: url("./assets/images/guest_posts/cards-right-decor.png");
+    background-image: url("../assets/images/guest_posts/cards-right-decor.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1007,7 +1007,7 @@ main {
     margin-top: -153px;
     padding: 167px 0px 264px 0px;
     border-radius: 60px;
-    background-image: url("./assets/images/guest_posts/benefits-bg.png");
+    background-image: url("../assets/images/guest_posts/benefits-bg.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--Main-Blue-300);
@@ -1019,7 +1019,7 @@ main {
         padding: 104px 0px 150px 0px;
         margin-top: -181px;
         background-position: right top;
-        background-image: url("./assets/images/guest_posts/benefits-bg-tablet.png");
+        background-image: url("../assets/images/guest_posts/benefits-bg-tablet.png");
     }
 }
 
@@ -1144,7 +1144,7 @@ main {
     z-index: 10;
     margin-top: -120px;
     border-radius: 60px;
-    background-image: url("./assets/images/guest_posts/pricing-bg.png");
+    background-image: url("../assets/images/guest_posts/pricing-bg.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--White);
@@ -1155,7 +1155,7 @@ main {
         border-radius: var(--Large);
         padding: 120px 0px 104px 0px;
         margin-top: -20px;
-        background-image: url("./assets/images/guest_posts/pricing-bg-tablet.png");
+        background-image: url("../assets/images/guest_posts/pricing-bg-tablet.png");
     }
 }
 
@@ -1164,7 +1164,7 @@ main {
         padding: 60px 0px;
         margin-top: 80px;
         border-radius: var(--Middle);
-        background-image: url("./assets/images/guest_posts/pricing-bg-mobile.png");
+        background-image: url("../assets/images/guest_posts/pricing-bg-mobile.png");
     }
 }
 
@@ -1706,7 +1706,7 @@ main {
     content: "";
     position: absolute;
     z-index: 10;
-    background-image: url("./assets/icons/guest_posts/question-top.png");
+    background-image: url("../assets/icons/guest_posts/question-top.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 94.58px;
@@ -1738,7 +1738,7 @@ main {
     content: "";
     position: absolute;
     z-index: 10;
-    background-image: url("./assets/icons/guest_posts/bottom-question.png");
+    background-image: url("../assets/icons/guest_posts/bottom-question.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 94.58px;
@@ -1855,7 +1855,7 @@ main {
     gap: 10px;
     border-radius: 60px 60px 0 0;
     background-color: var(--Main-Blue-600);
-    background-image: url("./assets/images/guest_posts/bottom-cta-bg.png");
+    background-image: url("../assets/images/guest_posts/bottom-cta-bg.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
@@ -1866,7 +1866,7 @@ main {
 @media (max-width: 1280.98px) {
     .bottom-cta__content {
         padding: 60px 70px 0px 70px;
-        background-image: url("./assets/images/guest_posts/bottom-cta-bg-tablet.png");
+        background-image: url("../assets/images/guest_posts/bottom-cta-bg-tablet.png");
     }
 }
 
@@ -1875,7 +1875,7 @@ main {
         border-radius: 24px 24px 0px 0px;
         flex-direction: column;
         gap: 0px;
-        background-image: url("./assets/images/guest_posts/bottom-cta-bg-mobile.png");
+        background-image: url("../assets/images/guest_posts/bottom-cta-bg-mobile.png");
         padding: 40px 32px 0px 32px;
     }
 }

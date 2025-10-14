@@ -1,838 +1,833 @@
-<!doctype html>
-<html lang="en">
+<?php
+/**
+ * Template Name: Guest Posts
+ */
+?>
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>listicle</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" crossorigin href="./style.css">
-</head>
+<?php get_header(); ?>
 
-<body>
-    <div class="wrapper">
-        <main>
-            <section class="hero-section">
-                <div class="hero-section__container">
-                    <div class="hero-section__content">
-                        <div class="hero-section__left hero-left">
-                            <h1 class="hero-left__title">
-                                Show up #1 in targeted listicles
-                            </h1>
-                            <p class="hero-left__text paragraph-body-regular">
-                                Put your brand as a top tool/service in listicles and let AI recommendations follow. Our
-                                goal is simple: get your brand seen, trusted, and recommended.
-                            </p>
-                            <div class="hero-left__buttons">
-                                <div class="button-wrapper">
-                                    <a href="#" class="hero-left__button button main-blue-button">
-                                        <span class="button__text">Explore pricing</span>
-                                        <span class="button__arrow">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/arrow-right.svg"
-                                                alt="Arrow Right">
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="button-wrapper">
-                                    <a href="#" class="hero-left__button secondary button main-gray-button">
-                                        <span class="button__text">Book a call</span>
-                                    </a>
-                                </div>
+<div class="wrapper">
+    <main>
+        <section class="hero-section">
+            <div class="hero-section__container">
+                <div class="hero-section__content">
+                    <div class="hero-section__left hero-left">
+                        <h1 class="hero-left__title">
+                            Show up #1 in targeted listicles
+                        </h1>
+                        <p class="hero-left__text paragraph-body-regular">
+                            Put your brand as a top tool/service in listicles and let AI recommendations follow. Our
+                            goal is simple: get your brand seen, trusted, and recommended.
+                        </p>
+                        <div class="hero-left__buttons">
+                            <div class="button-wrapper">
+                                <a href="#" class="hero-left__button button main-blue-button">
+                                    <span class="button__text">Explore pricing</span>
+                                    <span class="button__arrow">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/arrow-right.svg"
+                                            alt="Arrow Right">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="#" class="hero-left__button secondary button main-gray-button">
+                                    <span class="button__text">Book a call</span>
+                                </a>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="hero-section__video hero-video">
+                        <video class="hero-video__video" width="651" height="571" muted autoplay playsinline loop webkit-playsinline preload="auto"
+                        poster="<?= get_stylesheet_directory_uri(); ?>/assets/images/guest_posts/hero_preview.png">
+                        <source src="<?= get_stylesheet_directory_uri(); ?>/assets/videos/guest_posts/hero.mp4"type="video/mp4">
+                    </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second">
+            <div class="second__container">
+                <div class="second__wrapper">
+                    <div class="second__label label blue-900">How we help</div>
+                    <div class="second__content">
+                        <div class="second__content-left">
+                            <div class="second__left">
+                                <h2 class="second__title">
+                                    Your brand at the top of listicles
+                                </h2>
+                            </div>
+                            <div class="second__image second-image-mobile">
+                                <img width="103" height="103" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/arrow-up.png" alt="Arrow Up">
                             </div>
                         </div>
-                        <div class="hero-section__video hero-video">
-                            <video width="651" height="571" class="hero-video__video" src="./assets/guest_posts/videos/hero.mp4"
-                                autoplay muted loop></video>
+                        <div class="second__image second-image-desktop">
+                            <img width="103" height="103" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/arrow-up.png" alt="Arrow Up">
+                        </div>
+                        <div class="second__text">
+                            Ever wondered how ChatGPT and its alternatives choose which brands to recommend? Well, a
+                            huge part of it comes from being featured in relevant listicles. We are here to help you
+                            with that.
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="second">
-                <div class="second__container">
-                    <div class="second__wrapper">
-                        <div class="second__label label blue-900">How we help</div>
-                        <div class="second__content">
-                            <div class="second__content-left">
-                                <div class="second__left">
-                                    <h2 class="second__title">
-                                        Your brand at the top of listicles
-                                    </h2>
-                                </div>
-                                <div class="second__image second-image-mobile">
-                                    <img width="103" height="103" src="./assets/guest_posts/icons/arrow-up.png" alt="Arrow Up">
-                                </div>
-                            </div>
-                            <div class="second__image second-image-desktop">
-                                <img width="103" height="103" src="./assets/guest_posts/icons/arrow-up.png" alt="Arrow Up">
-                            </div>
-                            <div class="second__text">
-                                Ever wondered how ChatGPT and its alternatives choose which brands to recommend? Well, a
-                                huge part of it comes from being featured in relevant listicles. We are here to help you
-                                with that.
-                            </div>
+        <section class="how-it-works">
+            <div class="how-it-works__container">
+                <div class="how-it-works__label label blue-300">
+                    Steps
+                </div>
+                <h2 class="how-it-works__title">
+                    How it works
+                </h2>
+                <div class="how-it-works__cards how-it-works-cards">
+                    <div class="how-it-works-card__card cards cards-1">
+                        <div class="cards__label">
+                            1
                         </div>
+                        <h3 class="cards__title">
+                            Select your package
+                        </h3>
+                        <p class="cards__text paragraph-body-regular">
+                            Choose your preferred pricing model, fill the form, and we’ll get back to you in no
+                            time.
+                        </p>
+                    </div>
+                    <div class="how-it-works-card__card cards cards-2">
+                        <div class="cards__label">
+                            2
+                        </div>
+                        <h3 class="cards__title">
+                            Choose your approach
+                        </h3>
+                        <p class="cards__text paragraph-body-regular">
+                            You can either review the listicle titles and content we write, or provide your options
+                            - whatever works best for you.
+                        </p>
+                    </div>
+                    <div class="how-it-works-card__card cards cards-3">
+                        <div class="cards__label">
+                            3
+                        </div>
+                        <h3 class="cards__title">
+                            Relax and watch your brand grow
+                        </h3>
+                        <p class="cards__text paragraph-body-regular">
+                            Once approved, your guest posts go live, helping you show up as a top tool/service and
+                            increasing the chances of you showing up in AI recommendations.
+                        </p>
                     </div>
                 </div>
-            </section>
-
-            <section class="how-it-works">
-                <div class="how-it-works__container">
-                    <div class="how-it-works__label label blue-300">
-                        Steps
+                <div class="how-it-works__bottom how-it-works-bottom">
+                    <div class="how-it-works-bottom__left">
+                        <img width="52" height="52" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/guest_posts/how-it-works-bottom.svg" alt="Bottom">
+                        <p>Still not sure if this is what you need?</p>
                     </div>
-                    <h2 class="how-it-works__title">
-                        How it works
-                    </h2>
-                    <div class="how-it-works__cards how-it-works-cards">
-                        <div class="how-it-works-card__card cards cards-1">
-                            <div class="cards__label">
-                                1
-                            </div>
-                            <h3 class="cards__title">
-                                Select your package
-                            </h3>
-                            <p class="cards__text paragraph-body-regular">
-                                Choose your preferred pricing model, fill the form, and we’ll get back to you in no
-                                time.
-                            </p>
-                        </div>
-                        <div class="how-it-works-card__card cards cards-2">
-                            <div class="cards__label">
-                                2
-                            </div>
-                            <h3 class="cards__title">
-                                Choose your approach
-                            </h3>
-                            <p class="cards__text paragraph-body-regular">
-                                You can either review the listicle titles and content we write, or provide your options
-                                - whatever works best for you.
-                            </p>
-                        </div>
-                        <div class="how-it-works-card__card cards cards-3">
-                            <div class="cards__label">
-                                3
-                            </div>
-                            <h3 class="cards__title">
-                                Relax and watch your brand grow
-                            </h3>
-                            <p class="cards__text paragraph-body-regular">
-                                Once approved, your guest posts go live, helping you show up as a top tool/service and
-                                increasing the chances of you showing up in AI recommendations.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="how-it-works__bottom how-it-works-bottom">
-                        <div class="how-it-works-bottom__left">
-                            <img width="52" height="52" src="./assets/guest_posts/images/how-it-works-bottom.svg" alt="Bottom">
-                            <p>Still not sure if this is what you need?</p>
-                        </div>
-                        <div class="how-it-works-bottom__button-wrapper">
-                            <a href="#"
-                                class="how-it-works-bottom__button button main-white-button button-active-fixed">
-                                <span class="button__text">Get samples</span>
-                                <span class="button__arrow">
-                                    <img width="24" height="24" src="./assets/guest_posts/icons/arrow-right.svg" alt="Arrow Right">
-                                </span>
-                            </a>
-                        </div>
+                    <div class="how-it-works-bottom__button-wrapper">
+                        <a href="#"
+                            class="how-it-works-bottom__button button main-white-button button-active-fixed">
+                            <span class="button__text">Get samples</span>
+                            <span class="button__arrow">
+                                <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/arrow-right.svg" alt="Arrow Right">
+                            </span>
+                        </a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="benefits">
-                <div class="benefits__container">
-                    <div class="benefits__label label blue-900">
-                        Benefits
-                    </div>
-                    <h2 class="benefits__title">
-                        Why invest in listicles
-                    </h2>
-                    <div class="benefits__columns benefits-columns">
-                        <div class="benefits-columns__column benefits-column">
-                            <div class="benefits-column__content">
-                                <div class="benefits-column__left benefits-column__left-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
-                                        fill="none">
-                                        <path
-                                            d="M4.23521 22.2481C3.99689 21.8707 3.87772 21.682 3.81102 21.391C3.76091 21.1724 3.76091 20.8276 3.81102 20.609C3.87772 20.318 3.99689 20.1293 4.23521 19.7519C6.20468 16.6335 12.0669 8.75 21.0007 8.75C29.9345 8.75 35.7967 16.6335 37.7662 19.7519C38.0045 20.1293 38.1237 20.318 38.1904 20.609C38.2405 20.8276 38.2405 21.1724 38.1904 21.391C38.1237 21.682 38.0045 21.8707 37.7662 22.2481C35.7967 25.3665 29.9345 33.25 21.0007 33.25C12.067 33.25 6.20468 25.3665 4.23521 22.2481Z"
-                                            stroke="#031D3D" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M21.0007 26.25C23.9002 26.25 26.2507 23.8995 26.2507 21C26.2507 18.1005 23.9002 15.75 21.0007 15.75C18.1012 15.75 15.7507 18.1005 15.7507 21C15.7507 23.8995 18.1012 26.25 21.0007 26.25Z"
-                                            stroke="#031D3D" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                                <div class="benefits-column__texts">
-                                    <h3 class="benefits-column__title">
-                                        Brand visibility
-                                    </h3>
-                                    <p class="benefits-column__text paragraph-body-regular">
-                                        No matter your niche, we’ll find the right opportunities and help your brand
-                                        stand out in your specific industry. 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="benefits-column__image">
-                                <img src="./assets/guest_posts/images/benefits-decor.png" alt="decor">
-                            </div>
-                        </div>
-                        <div class="benefits-columns__column benefits-column">
-                            <div class="benefits-column__content">
-                                <div class="benefits-column__left benefits-column__left-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="34" viewBox="0 0 38 34"
-                                        fill="none">
-                                        <path
-                                            d="M1 7.85714L25 7.85715M25 7.85715C25 11.6442 27.6863 14.7143 31 14.7143C34.3137 14.7143 37 11.6442 37 7.85714C37 4.07005 34.3137 1 31 1C27.6863 1 25 4.07005 25 7.85715ZM13 26.1429L37 26.1429M13 26.1429C13 29.93 10.3137 33 7 33C3.68629 33 1 29.93 1 26.1429C1 22.3558 3.68629 19.2857 7 19.2857C10.3137 19.2857 13 22.3558 13 26.1429Z"
-                                            stroke="#031D3D" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                                <div class="benefits-column__texts">
-                                    <h3 class="benefits-column__title">
-                                        Full control
-                                    </h3>
-                                    <p class="benefits-column__text paragraph-body-regular">
-                                        You decide how your brand appears. Provide your own guest post or let us create
-                                        it for you - either way, you approve before it goes live.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="benefits-column__image">
-                                <img src="./assets/guest_posts/images/benefits-decor.png" alt="decor">
-                            </div>
-                        </div>
-                        <div class="benefits-columns__column benefits-column">
-                            <div class="benefits-column__content">
-                                <div class="benefits-column__left benefits-column__left-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
-                                        fill="none">
-                                        <path
-                                            d="M14 36.75H28M21 29.75V36.75M11.9 29.75H30.1C33.0403 29.75 34.5104 29.75 35.6334 29.1778C36.6213 28.6744 37.4244 27.8713 37.9278 26.8835C38.5 25.7604 38.5 24.2903 38.5 21.35V13.65C38.5 10.7097 38.5 9.23959 37.9278 8.11655C37.4244 7.1287 36.6213 6.32555 35.6334 5.82222C34.5104 5.25 33.0403 5.25 30.1 5.25H11.9C8.95972 5.25 7.48959 5.25 6.36655 5.82222C5.3787 6.32555 4.57555 7.1287 4.07222 8.11655C3.5 9.23959 3.5 10.7097 3.5 13.65V21.35C3.5 24.2903 3.5 25.7604 4.07222 26.8835C4.57555 27.8713 5.3787 28.6744 6.36655 29.1778C7.48959 29.75 8.95972 29.75 11.9 29.75Z"
-                                            stroke="#031D3D" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                                <div class="benefits-column__texts">
-                                    <h3 class="benefits-column__title">
-                                        AI visibility
-                                    </h3>
-                                    <p class="benefits-column__text paragraph-body-regular">
-                                        Increase the chances of AI tools noticing your brand and recommending it by
-                                        being featured on different sources.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="benefits-column__image">
-                                <img src="./assets/guest_posts/images/benefits-decor.png" alt="decor">
-                            </div>
-                        </div>
-                        <div class="benefits-columns__column benefits-column">
-                            <div class="benefits-column__content">
-                                <div class="benefits-column__left benefits-column__left-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
-                                        fill="none">
-                                        <path
-                                            d="M25.375 33.25L28.875 36.75L36.75 28.875M38.474 21.9623C38.4913 21.6437 38.5 21.3229 38.5 21C38.5 11.335 30.665 3.5 21 3.5C11.335 3.5 3.5 11.335 3.5 21C3.5 30.512 11.0889 38.2515 20.5424 38.4941M21 10.5V21L27.5422 24.2711"
-                                            stroke="#031D3D" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                                <div class="benefits-column__texts">
-                                    <h3 class="benefits-column__title">
-                                        Time saving
-                                    </h3>
-                                    <p class="benefits-column__text paragraph-body-regular">
-                                        We handle everything from researching relevant websites in your niche to writing
-                                        quality content for your brand.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="benefits-column__image">
-                                <img src="./assets/guest_posts/images/benefits-decor.png" alt="decor">
-                            </div>
-                        </div>
-                    </div>
+        <section class="benefits">
+            <div class="benefits__container">
+                <div class="benefits__label label blue-900">
+                    Benefits
                 </div>
-            </section>
-
-            <section class="pricing">
-                <div class="pricing__container">
-                    <div class="pricing__label label blue-900">
-                        Pricing
-                    </div>
-                    <h2 class="pricing__title">
-                        Listicle packages and pricing
-                    </h2>
-                    <div class="pricing__buttons">
-                        <button data-pricing-button class="pricing__button">
-                            Monthly
-                        </button>
-                        <button data-pricing-button class="pricing__button active">
-                            Yearly
-                        </button>
-                        <div class="pricing__button-active-badge right"></div>
-                    </div>
-                </div>
-                <div class="pricing__cards__wrapper">
-                    <div data-tab="monthly" class="pricing__cards">
-                        <div class="pricing__card pricing-card">
-                            <div class="pricing-card__top">
-                                <h3 class="pricing-card__title">3 listicles per month </h3>
-                            </div>
-                            <div class="pricing-card__bottom pricing-card-bottom">
-                                <div class="pricing-card-bottom__price pricing-card-price">
-                                    <div class="pricing-card-price__content">
-                                        <p class="pricing-card-price__value">$1290</p>
-                                        <p class="pricing-card-price__period">/mo</p>
-                                    </div>
-                                    <p class="pricing-card-price__text">$430 per post</p>
-                                </div>
-                                <ul class="pricing-card-bottom__list">
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        DR 30+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Traffic 1,000+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Do-follow link
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Permanent
-                                    </li>
-                                </ul>
-                                <div class="button-wrapper">
-                                    <a href="#" class="pricing-card__button button main-blue-button">
-                                        <span class="button__text">Get started</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pricing__card pricing-card">
-                            <div class="pricing-card__top">
-                                <h3 class="pricing-card__title">10 listicles per month </h3>
-                            </div>
-                            <div class="pricing-card__bottom pricing-card-bottom">
-                                <div class="pricing-card-bottom__price pricing-card-price">
-                                    <div class="pricing-card-price__content">
-                                        <p class="pricing-card-price__value">$4200</p>
-                                        <p class="pricing-card-price__period">/mo</p>
-                                    </div>
-                                    <p class="pricing-card-price__text">$420 per post</p>
-                                </div>
-                                <ul class="pricing-card-bottom__list">
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        DR 30+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Traffic 1,000+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Do-follow link
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Permanent
-                                    </li>
-                                </ul>
-                                <div class="button-wrapper">
-                                    <a href="#" class="pricing-card__button button main-blue-button">
-                                        <span class="button__text">Get started</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pricing__card pricing-card active">
-                            <div class="pricing-card__top">
-                                <h3 class="pricing-card__title">20 listicles per month </h3>
-                            </div>
-                            <div class="pricing-card__bottom pricing-card-bottom">
-                                <div class="pricing-card-bottom__best-value label blue-800">
-                                    Best value
-                                </div>
-                                <div class="pricing-card-bottom__price pricing-card-price">
-                                    <div class="pricing-card-price__content">
-                                        <p class="pricing-card-price__value">$8000</p>
-                                        <p class="pricing-card-price__period">/mo</p>
-                                    </div>
-                                    <p class="pricing-card-price__text">$400 per post</p>
-                                </div>
-                                <ul class="pricing-card-bottom__list">
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        DR 30+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Traffic 1,000+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Do-follow link
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Permanent
-                                    </li>
-                                </ul>
-                                <div class="button-wrapper">
-                                    <a href="#" class="pricing-card__button button main-white-button">
-                                        <span class="button__text">Get started</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pricing__card pricing-card custom-plan">
-                            <div class="pricing-card__top">
-                                <h3 class="pricing-card__title">Custom plan</h3>
-                            </div>
-                            <div data-counter class="pricing-card__bottom pricing-card-bottom">
-                                <div class="pricing-card-bottom__price pricing-card-price">
-                                    <div class="pricing-card-price__content">
-                                        <p data-counter-price-value class="pricing-card-price__value">$4400</p>
-                                        <p class="pricing-card-price__period">/mo</p>
-                                    </div>
-                                </div>
-                                <p class="pricing-card-bottom__text">How many posts do you need?</p>
-                                <div class="pricing-card__counter pricing-card-counter">
-                                    <button data-counter-button-minus class="pricing-card-counter__button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path d="M5 12H19" stroke="#031D3D" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <input min="1" max="100" type="number" class="pricing-card-counter__value"
-                                        value="11" />
-                                    <button data-counter-button-plus class="pricing-card-counter__button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 5V19M5 12H19" stroke="#031D3D" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                </div>
-
-                                <div class="pricing-card-bottom__text-bottom">
-                                    <div class="pricing-card-bottom__text-bottom-img">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 20 20" fill="none">
-                                            <g clip-path="url(#clip0_2009_41)">
-                                                <path
-                                                    d="M10.0003 13.3337V10.0003M10.0003 6.66699H10.0087M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z"
-                                                    stroke="#B9C0D4" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_2009_41">
-                                                    <rect width="20" height="20" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <p>Termination requires two-month prior notice.</p>
-                                </div>
-                                <div class="button-wrapper">
-                                    <a href="#" class="pricing-card__button button main-blue-button">
-                                        <span class="button__text">Get started</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-tab="yearly" class="pricing__cards active">
-                        <div class="pricing__card pricing-card">
-                            <div class="pricing-card__top">
-                                <h3 class="pricing-card__title">3 listicles per month </h3>
-                            </div>
-                            <div class="pricing-card__bottom pricing-card-bottom">
-                                <div class="pricing-card-bottom__price pricing-card-price">
-                                    <div class="pricing-card-price__content">
-                                        <p class="pricing-card-price__value">$990</p>
-                                        <p class="pricing-card-price__period">/mo</p>
-                                    </div>
-                                    <p class="pricing-card-price__text">$330 per post</p>
-                                </div>
-                                <ul class="pricing-card-bottom__list">
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        DR 30+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Traffic 1,000+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Do-follow link
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Permanent
-                                    </li>
-                                </ul>
-                                <div class="button-wrapper">
-                                    <a href="#" class="pricing-card__button button main-blue-button">
-                                        <span class="button__text">Get started</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pricing__card pricing-card">
-                            <div class="pricing-card__top">
-                                <h3 class="pricing-card__title">10 listicles per month </h3>
-                            </div>
-                            <div class="pricing-card__bottom pricing-card-bottom">
-                                <div class="pricing-card-bottom__price pricing-card-price">
-                                    <div class="pricing-card-price__content">
-                                        <p class="pricing-card-price__value">$3200</p>
-                                        <p class="pricing-card-price__period">/mo</p>
-                                    </div>
-                                    <p class="pricing-card-price__text">$320 per post</p>
-                                </div>
-                                <ul class="pricing-card-bottom__list">
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        DR 30+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Traffic 1,000+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Do-follow link
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Permanent
-                                    </li>
-                                </ul>
-                                <div class="button-wrapper">
-                                    <a href="#" class="pricing-card__button button main-blue-button">
-                                        <span class="button__text">Get started</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pricing__card pricing-card active">
-                            <div class="pricing-card__top">
-                                <h3 class="pricing-card__title">20 listicles per month </h3>
-                            </div>
-                            <div class="pricing-card__bottom pricing-card-bottom">
-                                <div class="pricing-card-bottom__best-value label blue-800">
-                                    Best value
-                                </div>
-                                <div class="pricing-card-bottom__price pricing-card-price">
-                                    <div class="pricing-card-price__content">
-                                        <p class="pricing-card-price__value">$6000</p>
-                                        <p class="pricing-card-price__period">/mo</p>
-                                    </div>
-                                    <p class="pricing-card-price__text">$300 per post</p>
-                                </div>
-                                <ul class="pricing-card-bottom__list">
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        DR 30+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Traffic 1,000+
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Do-follow link
-                                    </li>
-                                    <li class="pricing-card-bottom__li paragraph-body-regular">
-                                        <div class="pricing-card-bottom__li-img">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/check-circle-broken.svg"
-                                                alt="check">
-                                        </div>
-                                        Permanent
-                                    </li>
-                                </ul>
-                                <div class="button-wrapper">
-                                    <a href="#" class="pricing-card__button button main-white-button">
-                                        <span class="button__text">Get started</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pricing__card pricing-card custom-plan">
-                            <div class="pricing-card__top">
-                                <h3 class="pricing-card__title">Custom plan</h3>
-                            </div>
-                            <div data-counter class="pricing-card__bottom pricing-card-bottom">
-                                <div class="pricing-card-bottom__price pricing-card-price">
-                                    <div class="pricing-card-price__content">
-                                        <p data-counter-price-value class="pricing-card-price__value">$3300</p>
-                                        <p class="pricing-card-price__period">/mo</p>
-                                    </div>
-                                </div>
-                                <p class="pricing-card-bottom__text">How many posts do you need?</p>
-                                <div class="pricing-card__counter pricing-card-counter">
-                                    <button data-counter-button-minus class="pricing-card-counter__button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path d="M5 12H19" stroke="#031D3D" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                    <input min="1" max="100" type="number" class="pricing-card-counter__value"
-                                        value="11" />
-                                    <button data-counter-button-plus class="pricing-card-counter__button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path d="M12 5V19M5 12H19" stroke="#031D3D" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                </div>
-
-                                <div class="pricing-card-bottom__text-bottom">
-                                    <div class="pricing-card-bottom__text-bottom-img">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 20 20" fill="none">
-                                            <g clip-path="url(#clip0_2009_42)">
-                                                <path
-                                                    d="M10.0003 13.3337V10.0003M10.0003 6.66699H10.0087M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z"
-                                                    stroke="#B9C0D4" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_2009_42">
-                                                    <rect width="20" height="20" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <p>Termination requires two-month prior notice.</p>
-                                </div>
-                                <div class="button-wrapper">
-                                    <a href="#" class="pricing-card__button button main-blue-button">
-                                        <span class="button__text">Get started</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="faq">
-                <script type="application/ld+json">
-                    {
-                      "@context": "https://schema.org",
-                      "@type": "ItemList",
-                      "itemListElement": [
-                        {
-                          "@type": "Question",
-                          "position": 1,
-                          "name": "How is publishing listicles different from link building?",
-                          "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Listicles don’t just give you a link — they show your brand as a top service/tool and increase the chances of being noticed by AI tools."
-                          }
-                        },
-                        {
-                          "@type": "Question",
-                          "position": 2,
-                          "name": "Can I review the articles before they go live?",
-                          "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes! We collaborate closely and make sure the content reflects your brand while fitting the website’s standards."
-                          }
-                        },
-                        {
-                          "@type": "Question",
-                          "position": 3,
-                          "name": "Will this work for any brand?",
-                          "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Absolutely! We specialize in listicles across industries. No niche is too specific or challenging for us."
-                          }
-                        }
-                      ]
-                    }
-                    </script>
-                <div class="faq__container">
-                    <h2 class="faq__title">
-                        Questions? Check out our FAQs
-                    </h2>
-                    <div class="faq__items">
-                        <div class="faq__item faq-item">
-                            <div class="faq-item__img">
+                <h2 class="benefits__title">
+                    Why invest in listicles
+                </h2>
+                <div class="benefits__columns benefits-columns">
+                    <div class="benefits-columns__column benefits-column">
+                        <div class="benefits-column__content">
+                            <div class="benefits-column__left benefits-column__left-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
                                     fill="none">
                                     <path
-                                        d="M22.75 3.5L7.16355 22.2037C6.55314 22.9362 6.24793 23.3025 6.24326 23.6118C6.23921 23.8807 6.35903 24.1365 6.5682 24.3056C6.80881 24.5 7.28556 24.5 8.23906 24.5H21L19.25 38.5L34.8365 19.7963C35.4469 19.0638 35.7521 18.6975 35.7567 18.3882C35.7608 18.1193 35.641 17.8635 35.4318 17.6944C35.1912 17.5 34.7144 17.5 33.7609 17.5H21L22.75 3.5Z"
-                                        stroke="#63AEFF" stroke-width="2" stroke-linecap="round"
+                                        d="M4.23521 22.2481C3.99689 21.8707 3.87772 21.682 3.81102 21.391C3.76091 21.1724 3.76091 20.8276 3.81102 20.609C3.87772 20.318 3.99689 20.1293 4.23521 19.7519C6.20468 16.6335 12.0669 8.75 21.0007 8.75C29.9345 8.75 35.7967 16.6335 37.7662 19.7519C38.0045 20.1293 38.1237 20.318 38.1904 20.609C38.2405 20.8276 38.2405 21.1724 38.1904 21.391C38.1237 21.682 38.0045 21.8707 37.7662 22.2481C35.7967 25.3665 29.9345 33.25 21.0007 33.25C12.067 33.25 6.20468 25.3665 4.23521 22.2481Z"
+                                        stroke="#031D3D" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M21.0007 26.25C23.9002 26.25 26.2507 23.8995 26.2507 21C26.2507 18.1005 23.9002 15.75 21.0007 15.75C18.1012 15.75 15.7507 18.1005 15.7507 21C15.7507 23.8995 18.1012 26.25 21.0007 26.25Z"
+                                        stroke="#031D3D" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <div class="faq-item__content">
-                                <h3 class="faq-item__left">How is publishing listicles different from link building?
+                            <div class="benefits-column__texts">
+                                <h3 class="benefits-column__title">
+                                    Brand visibility
                                 </h3>
-                                <p class="faq-item__right paragraph-body-regular">
-                                    Listicles don’t just give you a link - they show your brand as a top service/tool
-                                    and increase the chances of being noticed by AI tools.
+                                <p class="benefits-column__text paragraph-body-regular">
+                                    No matter your niche, we’ll find the right opportunities and help your brand
+                                    stand out in your specific industry. 
                                 </p>
                             </div>
                         </div>
-                        <div class="faq__item faq-item">
-                            <div class="faq-item__img">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
+                        <div class="benefits-column__image">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/guest_posts/benefits-decor.png" alt="decor">
+                        </div>
+                    </div>
+                    <div class="benefits-columns__column benefits-column">
+                        <div class="benefits-column__content">
+                            <div class="benefits-column__left benefits-column__left-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="34" viewBox="0 0 38 34"
                                     fill="none">
                                     <path
-                                        d="M22.75 3.5L7.16355 22.2037C6.55314 22.9362 6.24793 23.3025 6.24326 23.6118C6.23921 23.8807 6.35903 24.1365 6.5682 24.3056C6.80881 24.5 7.28556 24.5 8.23906 24.5H21L19.25 38.5L34.8365 19.7963C35.4469 19.0638 35.7521 18.6975 35.7567 18.3882C35.7608 18.1193 35.641 17.8635 35.4318 17.6944C35.1912 17.5 34.7144 17.5 33.7609 17.5H21L22.75 3.5Z"
-                                        stroke="#63AEFF" stroke-width="2" stroke-linecap="round"
+                                        d="M1 7.85714L25 7.85715M25 7.85715C25 11.6442 27.6863 14.7143 31 14.7143C34.3137 14.7143 37 11.6442 37 7.85714C37 4.07005 34.3137 1 31 1C27.6863 1 25 4.07005 25 7.85715ZM13 26.1429L37 26.1429M13 26.1429C13 29.93 10.3137 33 7 33C3.68629 33 1 29.93 1 26.1429C1 22.3558 3.68629 19.2857 7 19.2857C10.3137 19.2857 13 22.3558 13 26.1429Z"
+                                        stroke="#031D3D" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <div class="faq-item__content">
-                                <h3 class="faq-item__left">Can I review the articles before they go live?</h3>
-                                <p class="faq-item__right paragraph-body-regular">
-                                    Yes! We collaborate closely and make sure the content reflects your brand while
-                                    fitting the website’s standards.
+                            <div class="benefits-column__texts">
+                                <h3 class="benefits-column__title">
+                                    Full control
+                                </h3>
+                                <p class="benefits-column__text paragraph-body-regular">
+                                    You decide how your brand appears. Provide your own guest post or let us create
+                                    it for you - either way, you approve before it goes live.
                                 </p>
                             </div>
                         </div>
-                        <div class="faq__item faq-item">
-                            <div class="faq-item__img">
+                        <div class="benefits-column__image">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/guest_posts/benefits-decor.png" alt="decor">
+                        </div>
+                    </div>
+                    <div class="benefits-columns__column benefits-column">
+                        <div class="benefits-column__content">
+                            <div class="benefits-column__left benefits-column__left-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
                                     fill="none">
                                     <path
-                                        d="M22.75 3.5L7.16355 22.2037C6.55314 22.9362 6.24793 23.3025 6.24326 23.6118C6.23921 23.8807 6.35903 24.1365 6.5682 24.3056C6.80881 24.5 7.28556 24.5 8.23906 24.5H21L19.25 38.5L34.8365 19.7963C35.4469 19.0638 35.7521 18.6975 35.7567 18.3882C35.7608 18.1193 35.641 17.8635 35.4318 17.6944C35.1912 17.5 34.7144 17.5 33.7609 17.5H21L22.75 3.5Z"
-                                        stroke="#63AEFF" stroke-width="2" stroke-linecap="round"
+                                        d="M14 36.75H28M21 29.75V36.75M11.9 29.75H30.1C33.0403 29.75 34.5104 29.75 35.6334 29.1778C36.6213 28.6744 37.4244 27.8713 37.9278 26.8835C38.5 25.7604 38.5 24.2903 38.5 21.35V13.65C38.5 10.7097 38.5 9.23959 37.9278 8.11655C37.4244 7.1287 36.6213 6.32555 35.6334 5.82222C34.5104 5.25 33.0403 5.25 30.1 5.25H11.9C8.95972 5.25 7.48959 5.25 6.36655 5.82222C5.3787 6.32555 4.57555 7.1287 4.07222 8.11655C3.5 9.23959 3.5 10.7097 3.5 13.65V21.35C3.5 24.2903 3.5 25.7604 4.07222 26.8835C4.57555 27.8713 5.3787 28.6744 6.36655 29.1778C7.48959 29.75 8.95972 29.75 11.9 29.75Z"
+                                        stroke="#031D3D" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <div class="faq-item__content">
-                                <h3 class="faq-item__left">Will this work for any brand?</h3>
-                                <p class="faq-item__right paragraph-body-regular">
-                                    Absolutely! We specialize in listicles across industries. No niche is too specific
-                                    or challenging for us.
+                            <div class="benefits-column__texts">
+                                <h3 class="benefits-column__title">
+                                    AI visibility
+                                </h3>
+                                <p class="benefits-column__text paragraph-body-regular">
+                                    Increase the chances of AI tools noticing your brand and recommending it by
+                                    being featured on different sources.
                                 </p>
                             </div>
+                        </div>
+                        <div class="benefits-column__image">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/guest_posts/benefits-decor.png" alt="decor">
+                        </div>
+                    </div>
+                    <div class="benefits-columns__column benefits-column">
+                        <div class="benefits-column__content">
+                            <div class="benefits-column__left benefits-column__left-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
+                                    fill="none">
+                                    <path
+                                        d="M25.375 33.25L28.875 36.75L36.75 28.875M38.474 21.9623C38.4913 21.6437 38.5 21.3229 38.5 21C38.5 11.335 30.665 3.5 21 3.5C11.335 3.5 3.5 11.335 3.5 21C3.5 30.512 11.0889 38.2515 20.5424 38.4941M21 10.5V21L27.5422 24.2711"
+                                        stroke="#031D3D" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="benefits-column__texts">
+                                <h3 class="benefits-column__title">
+                                    Time saving
+                                </h3>
+                                <p class="benefits-column__text paragraph-body-regular">
+                                    We handle everything from researching relevant websites in your niche to writing
+                                    quality content for your brand.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefits-column__image">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/guest_posts/benefits-decor.png" alt="decor">
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="bottom-cta">
-                <div class="bottom-cta__container">
-                    <div class="bottom-cta__content">
-                        <div class="bottom-cta__left">
-                            <h2 class="bottom-cta__title">
-                                <span>Let’s get your brand at the top of listicles</span>
-                                <span>Ready to build your success story?</span>
-                            </h2>
-                            <div class="bottom-cta__left-buttons">
-                                <div class="button-wrapper button-wrapper-start">
-                                    <a href="#" class="bottom-cta__button button main-gray-button button-active-fixed">
-                                        <span class="button__text">Book a call</span>
-                                        <span class="button__arrow">
-                                            <img width="24" height="24" src="./assets/guest_posts/icons/arrow-right-dark.svg"
-                                                alt="Arrow Right">
-                                        </span>
-                                    </a>
+        <section class="pricing">
+            <div class="pricing__container">
+                <div class="pricing__label label blue-900">
+                    Pricing
+                </div>
+                <h2 class="pricing__title">
+                    Listicle packages and pricing
+                </h2>
+                <div class="pricing__buttons">
+                    <button data-pricing-button class="pricing__button">
+                        Monthly
+                    </button>
+                    <button data-pricing-button class="pricing__button active">
+                        Yearly
+                    </button>
+                    <div class="pricing__button-active-badge right"></div>
+                </div>
+            </div>
+            <div class="pricing__cards__wrapper">
+                <div data-tab="monthly" class="pricing__cards">
+                    <div class="pricing__card pricing-card">
+                        <div class="pricing-card__top">
+                            <h3 class="pricing-card__title">3 listicles per month </h3>
+                        </div>
+                        <div class="pricing-card__bottom pricing-card-bottom">
+                            <div class="pricing-card-bottom__price pricing-card-price">
+                                <div class="pricing-card-price__content">
+                                    <p class="pricing-card-price__value">$1290</p>
+                                    <p class="pricing-card-price__period">/mo</p>
+                                </div>
+                                <p class="pricing-card-price__text">$430 per post</p>
+                            </div>
+                            <ul class="pricing-card-bottom__list">
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    DR 30+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Traffic 1,000+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Do-follow link
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Permanent
+                                </li>
+                            </ul>
+                            <div class="button-wrapper">
+                                <a href="#" class="pricing-card__button button main-blue-button">
+                                    <span class="button__text">Get started</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing__card pricing-card">
+                        <div class="pricing-card__top">
+                            <h3 class="pricing-card__title">10 listicles per month </h3>
+                        </div>
+                        <div class="pricing-card__bottom pricing-card-bottom">
+                            <div class="pricing-card-bottom__price pricing-card-price">
+                                <div class="pricing-card-price__content">
+                                    <p class="pricing-card-price__value">$4200</p>
+                                    <p class="pricing-card-price__period">/mo</p>
+                                </div>
+                                <p class="pricing-card-price__text">$420 per post</p>
+                            </div>
+                            <ul class="pricing-card-bottom__list">
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    DR 30+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Traffic 1,000+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Do-follow link
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Permanent
+                                </li>
+                            </ul>
+                            <div class="button-wrapper">
+                                <a href="#" class="pricing-card__button button main-blue-button">
+                                    <span class="button__text">Get started</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing__card pricing-card active">
+                        <div class="pricing-card__top">
+                            <h3 class="pricing-card__title">20 listicles per month </h3>
+                        </div>
+                        <div class="pricing-card__bottom pricing-card-bottom">
+                            <div class="pricing-card-bottom__best-value label blue-800">
+                                Best value
+                            </div>
+                            <div class="pricing-card-bottom__price pricing-card-price">
+                                <div class="pricing-card-price__content">
+                                    <p class="pricing-card-price__value">$8000</p>
+                                    <p class="pricing-card-price__period">/mo</p>
+                                </div>
+                                <p class="pricing-card-price__text">$400 per post</p>
+                            </div>
+                            <ul class="pricing-card-bottom__list">
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    DR 30+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Traffic 1,000+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Do-follow link
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Permanent
+                                </li>
+                            </ul>
+                            <div class="button-wrapper">
+                                <a href="#" class="pricing-card__button button main-white-button">
+                                    <span class="button__text">Get started</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing__card pricing-card custom-plan">
+                        <div class="pricing-card__top">
+                            <h3 class="pricing-card__title">Custom plan</h3>
+                        </div>
+                        <div data-counter class="pricing-card__bottom pricing-card-bottom">
+                            <div class="pricing-card-bottom__price pricing-card-price">
+                                <div class="pricing-card-price__content">
+                                    <p data-counter-price-value class="pricing-card-price__value">$4400</p>
+                                    <p class="pricing-card-price__period">/mo</p>
                                 </div>
                             </div>
+                            <p class="pricing-card-bottom__text">How many posts do you need?</p>
+                            <div class="pricing-card__counter pricing-card-counter">
+                                <button data-counter-button-minus class="pricing-card-counter__button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 12H19" stroke="#031D3D" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <input min="1" max="100" type="number" class="pricing-card-counter__value"
+                                    value="11" />
+                                <button data-counter-button-plus class="pricing-card-counter__button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 5V19M5 12H19" stroke="#031D3D" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
 
-                        </div>
-                        <div class="bottom-cta__right">
-                            <picture class="bottom-cta__right-img">
-                                <source media="(max-width: 487.98px)" srcset="./assets/guest_posts/images/wert-mobile.png"
-                                    type="image/png">
-                                <img width="632" height="581" src="./assets/guest_posts/images/wert.png" alt="Wert">
-                            </picture>
+                            <div class="pricing-card-bottom__text-bottom">
+                                <div class="pricing-card-bottom__text-bottom-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none">
+                                        <g clip-path="url(#clip0_2009_41)">
+                                            <path
+                                                d="M10.0003 13.3337V10.0003M10.0003 6.66699H10.0087M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z"
+                                                stroke="#B9C0D4" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2009_41">
+                                                <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p>Termination requires two-month prior notice.</p>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="#" class="pricing-card__button button main-blue-button">
+                                    <span class="button__text">Get started</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
-    <script type="module" crossorigin src="./script.js"></script>
-</body>
+                <div data-tab="yearly" class="pricing__cards active">
+                    <div class="pricing__card pricing-card">
+                        <div class="pricing-card__top">
+                            <h3 class="pricing-card__title">3 listicles per month </h3>
+                        </div>
+                        <div class="pricing-card__bottom pricing-card-bottom">
+                            <div class="pricing-card-bottom__price pricing-card-price">
+                                <div class="pricing-card-price__content">
+                                    <p class="pricing-card-price__value">$990</p>
+                                    <p class="pricing-card-price__period">/mo</p>
+                                </div>
+                                <p class="pricing-card-price__text">$330 per post</p>
+                            </div>
+                            <ul class="pricing-card-bottom__list">
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    DR 30+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Traffic 1,000+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Do-follow link
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Permanent
+                                </li>
+                            </ul>
+                            <div class="button-wrapper">
+                                <a href="#" class="pricing-card__button button main-blue-button">
+                                    <span class="button__text">Get started</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing__card pricing-card">
+                        <div class="pricing-card__top">
+                            <h3 class="pricing-card__title">10 listicles per month </h3>
+                        </div>
+                        <div class="pricing-card__bottom pricing-card-bottom">
+                            <div class="pricing-card-bottom__price pricing-card-price">
+                                <div class="pricing-card-price__content">
+                                    <p class="pricing-card-price__value">$3200</p>
+                                    <p class="pricing-card-price__period">/mo</p>
+                                </div>
+                                <p class="pricing-card-price__text">$320 per post</p>
+                            </div>
+                            <ul class="pricing-card-bottom__list">
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    DR 30+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Traffic 1,000+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Do-follow link
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Permanent
+                                </li>
+                            </ul>
+                            <div class="button-wrapper">
+                                <a href="#" class="pricing-card__button button main-blue-button">
+                                    <span class="button__text">Get started</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing__card pricing-card active">
+                        <div class="pricing-card__top">
+                            <h3 class="pricing-card__title">20 listicles per month </h3>
+                        </div>
+                        <div class="pricing-card__bottom pricing-card-bottom">
+                            <div class="pricing-card-bottom__best-value label blue-800">
+                                Best value
+                            </div>
+                            <div class="pricing-card-bottom__price pricing-card-price">
+                                <div class="pricing-card-price__content">
+                                    <p class="pricing-card-price__value">$6000</p>
+                                    <p class="pricing-card-price__period">/mo</p>
+                                </div>
+                                <p class="pricing-card-price__text">$300 per post</p>
+                            </div>
+                            <ul class="pricing-card-bottom__list">
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    DR 30+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Traffic 1,000+
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Do-follow link
+                                </li>
+                                <li class="pricing-card-bottom__li paragraph-body-regular">
+                                    <div class="pricing-card-bottom__li-img">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/check-circle-broken.svg"
+                                            alt="check">
+                                    </div>
+                                    Permanent
+                                </li>
+                            </ul>
+                            <div class="button-wrapper">
+                                <a href="#" class="pricing-card__button button main-white-button">
+                                    <span class="button__text">Get started</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing__card pricing-card custom-plan">
+                        <div class="pricing-card__top">
+                            <h3 class="pricing-card__title">Custom plan</h3>
+                        </div>
+                        <div data-counter class="pricing-card__bottom pricing-card-bottom">
+                            <div class="pricing-card-bottom__price pricing-card-price">
+                                <div class="pricing-card-price__content">
+                                    <p data-counter-price-value class="pricing-card-price__value">$3300</p>
+                                    <p class="pricing-card-price__period">/mo</p>
+                                </div>
+                            </div>
+                            <p class="pricing-card-bottom__text">How many posts do you need?</p>
+                            <div class="pricing-card__counter pricing-card-counter">
+                                <button data-counter-button-minus class="pricing-card-counter__button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 12H19" stroke="#031D3D" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <input min="1" max="100" type="number" class="pricing-card-counter__value"
+                                    value="11" />
+                                <button data-counter-button-plus class="pricing-card-counter__button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 5V19M5 12H19" stroke="#031D3D" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
 
-</html>
+                            <div class="pricing-card-bottom__text-bottom">
+                                <div class="pricing-card-bottom__text-bottom-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none">
+                                        <g clip-path="url(#clip0_2009_42)">
+                                            <path
+                                                d="M10.0003 13.3337V10.0003M10.0003 6.66699H10.0087M18.3337 10.0003C18.3337 14.6027 14.6027 18.3337 10.0003 18.3337C5.39795 18.3337 1.66699 14.6027 1.66699 10.0003C1.66699 5.39795 5.39795 1.66699 10.0003 1.66699C14.6027 1.66699 18.3337 5.39795 18.3337 10.0003Z"
+                                                stroke="#B9C0D4" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2009_42">
+                                                <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p>Termination requires two-month prior notice.</p>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="#" class="pricing-card__button button main-blue-button">
+                                    <span class="button__text">Get started</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ItemList",
+                    "itemListElement": [
+                    {
+                        "@type": "Question",
+                        "position": 1,
+                        "name": "How is publishing listicles different from link building?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Listicles don’t just give you a link — they show your brand as a top service/tool and increase the chances of being noticed by AI tools."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "position": 2,
+                        "name": "Can I review the articles before they go live?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes! We collaborate closely and make sure the content reflects your brand while fitting the website’s standards."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "position": 3,
+                        "name": "Will this work for any brand?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely! We specialize in listicles across industries. No niche is too specific or challenging for us."
+                        }
+                    }
+                    ]
+                }
+                </script>
+            <div class="faq__container">
+                <h2 class="faq__title">
+                    Questions? Check out our FAQs
+                </h2>
+                <div class="faq__items">
+                    <div class="faq__item faq-item">
+                        <div class="faq-item__img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
+                                fill="none">
+                                <path
+                                    d="M22.75 3.5L7.16355 22.2037C6.55314 22.9362 6.24793 23.3025 6.24326 23.6118C6.23921 23.8807 6.35903 24.1365 6.5682 24.3056C6.80881 24.5 7.28556 24.5 8.23906 24.5H21L19.25 38.5L34.8365 19.7963C35.4469 19.0638 35.7521 18.6975 35.7567 18.3882C35.7608 18.1193 35.641 17.8635 35.4318 17.6944C35.1912 17.5 34.7144 17.5 33.7609 17.5H21L22.75 3.5Z"
+                                    stroke="#63AEFF" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="faq-item__content">
+                            <h3 class="faq-item__left">How is publishing listicles different from link building?
+                            </h3>
+                            <p class="faq-item__right paragraph-body-regular">
+                                Listicles don’t just give you a link - they show your brand as a top service/tool
+                                and increase the chances of being noticed by AI tools.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item faq-item">
+                        <div class="faq-item__img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
+                                fill="none">
+                                <path
+                                    d="M22.75 3.5L7.16355 22.2037C6.55314 22.9362 6.24793 23.3025 6.24326 23.6118C6.23921 23.8807 6.35903 24.1365 6.5682 24.3056C6.80881 24.5 7.28556 24.5 8.23906 24.5H21L19.25 38.5L34.8365 19.7963C35.4469 19.0638 35.7521 18.6975 35.7567 18.3882C35.7608 18.1193 35.641 17.8635 35.4318 17.6944C35.1912 17.5 34.7144 17.5 33.7609 17.5H21L22.75 3.5Z"
+                                    stroke="#63AEFF" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="faq-item__content">
+                            <h3 class="faq-item__left">Can I review the articles before they go live?</h3>
+                            <p class="faq-item__right paragraph-body-regular">
+                                Yes! We collaborate closely and make sure the content reflects your brand while
+                                fitting the website’s standards.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item faq-item">
+                        <div class="faq-item__img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"
+                                fill="none">
+                                <path
+                                    d="M22.75 3.5L7.16355 22.2037C6.55314 22.9362 6.24793 23.3025 6.24326 23.6118C6.23921 23.8807 6.35903 24.1365 6.5682 24.3056C6.80881 24.5 7.28556 24.5 8.23906 24.5H21L19.25 38.5L34.8365 19.7963C35.4469 19.0638 35.7521 18.6975 35.7567 18.3882C35.7608 18.1193 35.641 17.8635 35.4318 17.6944C35.1912 17.5 34.7144 17.5 33.7609 17.5H21L22.75 3.5Z"
+                                    stroke="#63AEFF" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="faq-item__content">
+                            <h3 class="faq-item__left">Will this work for any brand?</h3>
+                            <p class="faq-item__right paragraph-body-regular">
+                                Absolutely! We specialize in listicles across industries. No niche is too specific
+                                or challenging for us.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-cta">
+            <div class="bottom-cta__container">
+                <div class="bottom-cta__content">
+                    <div class="bottom-cta__left">
+                        <h2 class="bottom-cta__title">
+                            <span>Let’s get your brand at the top of listicles</span>
+                            <span>Ready to build your success story?</span>
+                        </h2>
+                        <div class="bottom-cta__left-buttons">
+                            <div class="button-wrapper button-wrapper-start">
+                                <a href="#" class="bottom-cta__button button main-gray-button button-active-fixed">
+                                    <span class="button__text">Book a call</span>
+                                    <span class="button__arrow">
+                                        <img width="24" height="24" src="<?= get_stylesheet_directory_uri(); ?>/assets/icons/guest_posts/arrow-right-dark.svg"
+                                            alt="Arrow Right">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bottom-cta__right">
+                        <picture class="bottom-cta__right-img">
+                            <source media="(max-width: 487.98px)" srcset="<?= get_stylesheet_directory_uri(); ?>/assets/images/guest_posts/wert-mobile.png"
+                                type="image/png">
+                            <img width="632" height="581" src="<?= get_stylesheet_directory_uri(); ?>/assets/images/guest_posts/wert.png" alt="Wert">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<?php get_footer(); ?>
