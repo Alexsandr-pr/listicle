@@ -1,0 +1,106 @@
+.faq__container {
+    max-width: 1226px !important;
+}
+
+.faq__title {
+    color: var(--White);
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 108%;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+    .faq__title {
+        font-size: 34px;
+        line-height: 118%;
+    }
+}
+
+.faq__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.faq-item {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--Gray-400);
+    font-size: 22px;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    line-height: 140%;
+}
+
+@media (max-width: 767.98px) {
+    .faq-item {
+        font-size: 19px;
+    }
+}
+
+.faq-item summary {
+    padding: 24px 32px;
+    border-radius: var(--Middle);
+    background: var(--Main-Blue-800);
+    gap: 10px;
+    width: 100%;
+    color: var(--White);
+    font-family: "League Spartan";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+@media (max-width: 767.98px) {
+    .faq-item summary {
+        font-size: 15px;
+        line-height: 140%;
+        border-radius: var(--Small);
+        padding: 12px 10px;
+    }
+}
+
+.faq-item svg {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+}
+
+.faq-item[open] summary {
+    padding: 24px 0px 36px 0px;
+}
+
+@media (max-width: 767.98px) {
+    .faq-item[open] summary {
+        padding: 12px 0px 20px 0px;
+    }
+}
+
+.faq-item[open] {
+    border-radius: var(--Middle);
+    background: var(--Main-Blue-800);
+    padding: 0px 32px 24px 32px;
+}
+
+@media (max-width: 767.98px) {
+    .faq-item[open] {
+        padding: 0px 10px 12px 10px;
+    }
+}
+
+.faq-item[open] svg {
+    rotate: 180deg;
+}

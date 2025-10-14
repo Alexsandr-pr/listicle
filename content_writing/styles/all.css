@@ -1,0 +1,303 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Main-Blue-900);
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+[class*=__container] {
+    max-width: 1780px;
+    margin: 0 auto;
+    padding: 0 70px;
+}
+
+@media (max-width: 991.98px) {
+    [class*=__container] {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    [class*=__container] {
+        padding: 0 16px;
+    }
+}
+
+.paragraph-body-regular {
+    color: var(--Gray-700);
+    font-family: "League Spartan";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+@media (max-width: 767.98px) {
+    .paragraph-body-regular {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+}
+
+.label {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 6px 14px 4px 14px;
+    border-radius: var(--Extra-large);
+    font-size: 18px;
+    display: inline-flex;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.label.blue-300 {
+    color: var(--Main-Blue-900);
+    background: var(--Main-Blue-300);
+}
+
+.label.blue-800 {
+    color: var(--White);
+    background: var(--Main-Blue-800);
+}
+
+.label.blue-900 {
+    color: var(--White);
+    background: var(--Main-Blue-900);
+}
+
+.button-wrapper {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+}
+
+.button-wrapper-start {
+    justify-content: start;
+}
+
+@media (max-width: 767.98px) {
+    .button-wrapper {
+        height: 40px;
+        min-height: 40px;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 487.98px) {
+    .button-wrapper {
+        width: 100%;
+    }
+
+    .button-wrapper-start {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.button {
+    transition: all 0.3s ease-in;
+    padding: 10px 8px;
+    display: inline-flex;
+    height: 52px;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+    border: 2px solid transparent;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.button:active {
+    padding: 8px 6px;
+    height: 48px;
+}
+
+@media (max-width: 767.98px) {
+    .button {
+        height: 40px;
+        padding: 4px;
+        width: 100%;
+    }
+
+    .button:active {
+        padding: 4px 2px;
+        height: 36px;
+        width: calc(100% - 4px);
+    }
+
+    .button-active-fixed:active {
+        width: 307px;
+    }
+}
+
+@media (max-width: 487.98px) {
+    .button-active-fixed:active {
+        width: calc(100% - 4px);
+    }
+}
+
+.button__text {
+    padding: 7px 10px 3px 10px;
+    font-size: 22px;
+    transition: color 0.3s ease-in;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+    .button__text {
+        font-size: 18px;
+    }
+}
+
+.button__arrow {
+    width: 32px;
+    display: flex;
+    padding: 4px !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: var(--Extra-large);
+    height: 32px;
+}
+
+@media (max-width: 767.98px) {
+    .button__arrow {
+        display: none;
+    }
+}
+
+/**********Primary**********/
+.button.main-blue-button {
+    border-radius: var(--Extra-large);
+    border: 2px solid var(--Main-Blue-600);
+    background: var(--Main-Blue-600);
+}
+
+.button.main-blue-button .button__text {
+    color: var(--White);
+}
+
+.button.main-blue-button .button__arrow {
+    background: var(--Main-Blue-900);
+}
+
+@media (hover: hover) {
+    .button.main-blue-button:hover {
+        border-color: var(--Main-Blue-500);
+        background: var(--Main-Blue-500);
+    }
+}
+
+.button.main-white-button {
+    border-radius: var(--Extra-large, 200px);
+    border: 2px solid var(--White);
+    background: var(--White);
+}
+
+.button.main-white-button .button__text {
+    color: var(--Main-Blue-600);
+}
+
+.button.main-white-button .button__arrow {
+    background: var(--Main-Blue-600);
+}
+
+@media (hover: hover) {
+    .button.main-white-button:hover {
+        border-color: var(--Main-Blue-800);
+        background: var(--Main-Blue-800);
+    }
+
+    .button.main-white-button:hover .button__text {
+        color: var(--White);
+    }
+}
+
+/* Gray CTA Button Primary */
+.button.main-gray-button {
+    border-radius: var(--Extra-large, 200px);
+    border: 2px solid var(--Main-Blue-900);
+    background: var(--Main-Blue-900);
+    transition: all 0.3s ease-in;
+}
+
+.button.main-gray-button .button__text {
+    color: var(--White);
+}
+
+.button.main-gray-button .button__arrow {
+    background: var(--White);
+}
+
+@media (hover: hover) {
+    .button.main-gray-button:hover {
+        border-color: var(--Main-Blue-800);
+        background: var(--Main-Blue-800);
+    }
+}
+
+/**********Gray CTA Button Secondary**********/
+.button.main-gray-button.secondary {
+    border-radius: var(--Extra-large);
+    border: 2px solid var(--Main-Blue-900);
+    color: var(--Main-Blue-900);
+    background-color: transparent;
+}
+
+.button.main-gray-button.secondary .button__text {
+    color: var(--Main-Blue-900);
+}
+
+.button.main-gray-button.secondary .button__arrow {
+    background: var(--Main-Blue-900);
+}
+
+@media (hover: hover) {
+    .button.main-gray-button.secondary:hover {
+        border-color: var(--Main-Blue-900);
+        background: var(--Main-Blue-900);
+    }
+
+    .button.main-gray-button.secondary:hover .button__text {
+        color: var(--White);
+    }
+}
+
+.button.main-gray-button.secondary-reverse {
+    border-radius: var(--Extra-large);
+    border: 2px solid var(--White);
+    color: var(--Main-Blue-900);
+    background-color: transparent;
+}
+
+.button.main-gray-button.secondary-reverse .button__text {
+    color: var(--White);
+}
+
+.button.main-gray-button.secondary-reverse .button__arrow {
+    background: var(--White);
+}
+
+@media (hover: hover) {
+    .button.main-gray-button.secondary-reverse:hover {
+        border-color: var(--White);
+        background: var(--White);
+    }
+
+    .button.main-gray-button.secondary-reverse:hover .button__text {
+        color: var(--Main-Blue-900);
+    }
+}
