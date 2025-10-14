@@ -155,14 +155,17 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 52px;
 }
 
 .button-wrapper-start {
     justify-content: start;
 }
+
 @media (max-width: 767.98px) {
     .button-wrapper {
         height: 40px;
+        min-height: 40px;
     }
 }
 
@@ -170,6 +173,7 @@ main {
     .button-wrapper {
         width: 100%;
     }
+
     .button-wrapper-start {
         width: 100%;
         justify-content: center;
@@ -189,6 +193,7 @@ main {
     line-height: 1;
     border: 2px solid transparent;
 }
+
 .button:disabled {
     opacity: 0.5;
 }
@@ -204,20 +209,24 @@ main {
         padding: 4px;
         width: 100%;
     }
+
     .button:active {
         padding: 4px 2px;
         height: 36px;
         width: calc(100% - 4px);
     }
+
     .button-active-fixed:active {
         width: calc(311px - 4px);
     }
 }
+
 @media (max-width: 487.98px) {
     .button-active-fixed:active {
         width: calc(100% - 4px);
     }
 }
+
 .button__text {
     padding: 7px 10px 3px 10px;
     font-size: 22px;
@@ -374,6 +383,7 @@ main {
     gap: 30px;
     overflow: hidden;
 }
+
 @media (min-width: 1280.98px) {
     .hero-section__content {
         background-image: url("./images/hero-bg.png");
@@ -470,11 +480,13 @@ main {
 .hero-left__buttons .button-wrapper:nth-child(1) {
     width: 221px;
 }
+
 @media (max-width: 767.98px) {
     .hero-left__buttons {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     .hero-left__buttons .button-wrapper:nth-child(1) {
         width: 100%;
     }
@@ -486,6 +498,7 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
 .hero-video {
     aspect-ratio: 651 / 571;
     height: auto;
@@ -557,11 +570,13 @@ main {
         gap: 32px;
     }
 }
+
 @media (max-width: 767.98px) {
     .second__content {
         gap: 24px;
     }
 }
+
 .second__label {
     margin-bottom: 24px;
 }
@@ -906,6 +921,20 @@ main {
     background: var(--Main-Blue-600);
 }
 
+.how-it-works-bottom__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 767.98px) {
+    .how-it-works-bottom__button-wrapper {
+        width: 197px;
+        min-width: 197px;
+        height: 52px;
+    }
+}
+
 @media (max-width: 1280.98px) {
     .how-it-works-bottom {
         margin-top: 80px;
@@ -918,6 +947,10 @@ main {
         flex-direction: column;
         border-radius: var(--Middle);
         padding: 24px 16px;
+    }
+
+    .how-it-works-bottom__button-wrapper {
+        height: 40px;
     }
 }
 
@@ -953,8 +986,13 @@ main {
         font-size: 30px;
         line-height: 1.28;
     }
+
     .how-it-works-bottom__button {
         width: 311px;
+    }
+
+    .how-it-works-bottom__button:active {
+        width: calc(311px - 4px) !important;
     }
 }
 
@@ -1219,19 +1257,44 @@ main {
     color: var(--White);
 }
 
+@media (max-width: 1780.98px) and (min-width: 487.98px) {
+    .pricing__cards__wrapper:hover {
+        cursor: grabbing;
+    }
+    .pricing__cards__wrapper:active {
+        cursor: grabbing;
+    }
+}
+
 @media (min-width: 487.98px) {
     .pricing__cards__wrapper {
         overflow-x: auto;
         width: 100%;
+        max-width: 1780px;
+        user-select: none;
+        margin: 0 auto;
+        padding: 0 70px;
         scroll-snap-stop: always;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
     }
+
     .pricing__cards__wrapper::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
+        display: none;
     }
-      
+}
+
+@media (max-width: 991.98px) {
+    .pricing__cards__wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pricing__cards__wrapper {
+        padding: 0 16px;
+    }
 }
 
 .pricing__cards {
@@ -1261,9 +1324,11 @@ main {
     border-radius: var(--Middle);
     overflow: hidden;
 }
+
 .pricing__card .button-wrapper {
     width: 100%;
 }
+
 @media (min-width: 487.98px) {
     .pricing__card {
         flex: 0 1 392px;
@@ -1755,9 +1820,11 @@ main {
 .bottom-cta {
     background: var(--Main-Blue-900);
 }
+
 .bottom-cta__left-buttons {
     width: fit-content;
 }
+
 @media (max-width: 1280.98px) {
     .bottom-cta {
         padding-bottom: 0;
@@ -1768,6 +1835,7 @@ main {
     .bottom-cta__container {
         padding: 0;
     }
+
     .bottom-cta__left-buttons {
         width: 311px;
     }
@@ -1816,6 +1884,7 @@ main {
     flex: 0 1 47.4%;
     padding: 100px 0px 111px 0px;
 }
+
 .bottom-cta__title {
     color: var(--White);
     font-size: 82px;
