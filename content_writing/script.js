@@ -5,9 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
     function initButtonsWrapper(selector, parentSelector) {
         const buttons = document.querySelectorAll(selector);
 
-        if(buttons.length > 0) {
+        if (buttons.length > 0) {
             function init() {
-    
+
                 for (let index = 0; index < buttons.length; index++) {
                     const button = buttons[index];
                     const buttonWidth = button.offsetWidth;
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     initButtonsWrapper("button", ".button-wrapper");
 
 
-    
+
     // // --- Case Studies slider
     // function initCaseStudies() {
     //     if (!window.Swiper) return;
@@ -68,4 +68,5 @@ window.addEventListener("DOMContentLoaded", () => {
     //         });
     //     } catch { }
     // }
+
 })
