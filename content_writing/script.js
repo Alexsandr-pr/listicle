@@ -28,45 +28,60 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-    // // --- Case Studies slider
-    // function initCaseStudies() {
-    //     if (!window.Swiper) return;
-    //     try {
-    //         new Swiper('#work_slider', {
-    //             slidesPerView: 1,
-    //             direction: 'horizontal',
-    //             allowTouchMove: true,
-    //             simulateTouch: true,
-    //             grabCursor: true,
-    //             touchAngle: 20,
-    //             speed: 450,
-    //             mousewheel: {
-    //                 forceToAxis: true,
-    //                 releaseOnEdges: true,
-    //                 thresholdDelta: 60,
-    //                 thresholdTime: 200,
-    //                 sensitivity: 0.5,
-    //             },
-    //             spaceBetween: 24,
-    //             noSwiping: true,
-    //             noSwipingClass: 'swiper-no-swiping',
-    //             updateOnWindowResize: true,
-    //             pagination: {
-    //                 el: '.work_slider_pagination',
-    //                 clickable: true,
-    //                 enabled: true
-    //             },
-    //             breakpoints: {
-    //                 601: { slidesPerView: 1.4},
-    //                 901: { slidesPerView: 1.7},
-    //                 1025: { slidesPerView: 2},
-    //                 1201: { slidesPerView: 2.2},
-    //                 1441: { slidesPerView: 1.6},
-    //                 1501: { slidesPerView: 1.8},
-    //                 1601: { slidesPerView: 2.1},
-    //             },
-    //         });
-    //     } catch { }
-    // }
+    new Swiper('.our-work-slider__swiper', {
+  
+        grabCursor: true,
+        allowTouchMove: true,
+        simulateTouch: true,
+        
+        touchAngle: 20,
+        speed: 450,
+        mousewheel: {
+            forceToAxis: true,
+            releaseOnEdges: true,
+            thresholdDelta: 60,
+            thresholdTime: 200,
+            sensitivity: 0.5,
+        },
+        breakpoints: {
+            240: {
+                slidesPerView: 1,
+                spaceBetween: 16
+            },
+            563: {
+                slidesPerView: "auto",
+                spaceBetween: 24,
+            }
+        },
+        pagination: {
+            el: '.our-work-pagination', 
+            type: 'bullets', 
+            clickable: true, 
+        },
+    })
 
+    function positionSliderLabels(containerSelector, thumbWidth = 18) {
+        document.querySelectorAll(containerSelector).forEach(container => {
+            const labels = container.querySelectorAll('.pricing-left-item__slider-value');
+            if (!labels.length) return;
+
+            const steps = labels.length - 1; // автоматом: 9 для 10 меток, 10 для 11
+            const containerWidth = container.offsetWidth;
+            const halfThumb = thumbWidth / 2;
+
+            labels.forEach((el, i) => {
+                const leftPx = (i / steps) * (containerWidth - thumbWidth) + halfThumb;
+                el.style.left = `${leftPx}px`;
+            });
+        });
+    }
+
+    // ✅ Вызов для обоих блоков
+    positionSliderLabels('.pricing-left-item__slider-values');
+    positionSliderLabels('.pricing-left-item__slider-values-big');
+
+    window.addEventListener('resize', () => {
+        positionSliderLabels('.pricing-left-item__slider-values');  
+        positionSliderLabels('.pricing-left-item__slider-values-big');
+    }   );
 })

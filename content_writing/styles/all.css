@@ -301,3 +301,48 @@ main {
         color: var(--Main-Blue-900);
     }
 }
+
+
+
+
+/********************/
+
+.link-button {
+    display: inline-flex;
+    height: 40px;
+    border-radius: var(--Extra-large);
+    background: transparent;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease-in;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.link-button span {
+    padding: 4px 10px 0px 10px;
+}
+.link-button:active {
+    padding: 4px 8px !important;
+}
+.link-dark-button {
+    color: var(--Main-Blue-900);
+}
+
+.link-dark-button .button__arrow {
+    border-radius: 200px;
+    background: var(--Main-Blue-900);
+    display: flex !important;
+}
+
+.link-button-wrapper {
+    min-height: 40px !important;
+    height: 40px !important;
+    width: fit-content !important;
+}
