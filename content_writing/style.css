@@ -648,37 +648,23 @@ input {
 }
 
 .logos__item-your {
-  color: #031D3D;
-  font-family: "League Spartan";
+  color: var(--Main-Blue-900);
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
   display: flex;
   border-radius: 200px;
-  background: var(--Main-Blue-200, #E5F1FF);
+  background: var(--Main-Blue-200);
   padding: 16px 24px 14px 24px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 @media (max-width: 767.98px) {
   .logos__item-your {
-    display: flex;
     padding: 11.863px 17.795px 10.38px 17.795px !important;
-    justify-content: center;
-    align-items: center;
     border-radius: 148.293px;
-    background: var(--Main-Blue-200, #E5F1FF);
-    gap: 7.415px;
-    color: #031D3D;
-    font-family: "League Spartan";
     font-size: 14.829px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
   }
 }
 
