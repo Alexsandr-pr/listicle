@@ -1320,7 +1320,8 @@ input {
         position: absolute;
         bottom: -41px;
         display: flex;
-        left: 10%;
+        transform: translateX(-50%);
+        left: 0;
         border-radius: 173.854px;
         background: var(--Main-Blue-600);
         padding: 6px 10.431px 4px 10.431px;
@@ -1622,10 +1623,10 @@ input {
     // .our-work-slider__swiper-wrapper
 
     &__swiper-wrapper {
-       
+
         @media (max-width: 537.98px) {
-             padding-bottom: 32px;
-        margin-bottom: 2px;
+            padding-bottom: 32px;
+            margin-bottom: 2px;
         }
     }
 
@@ -1648,7 +1649,7 @@ input {
 
         @media (max-width: 767.98px) {
             padding: 18px 14px;
-            border-radius: var(--Small);
+            border-radius: var(--Small) !important;
         }
 
         &:nth-child(2) {
@@ -1662,7 +1663,7 @@ input {
         }
 
         &:nth-child(4) {
-            border-radius: 32px;
+
             background: var(--Secondary-Terracotta-300, #FFD4C5);
         }
 
@@ -1850,7 +1851,7 @@ input {
     }
 }
 
-
+.reviews-pagination,
 .our-work-pagination {
     visibility: hidden;
     height: 0;
@@ -1866,6 +1867,7 @@ input {
     }
 }
 
+.reviews__swiper,
 .our-work-slider__swiper {
     .swiper-pagination-bullet {
         width: 12px;
@@ -1875,8 +1877,413 @@ input {
         margin: 0px 2px !important;
         border-radius: 50px;
         background: var(--Main-Blue-800);
+
         &-active {
             background: var(--Main-Blue-600);
         }
     }
+}
+
+
+
+
+/**********reviews******************/
+
+
+.reviews {
+    border-radius: 0px 0px 60px 60px;
+    background-color: var(--Main-Blue-300);
+    padding-top: 439px;
+    padding-bottom: 120px;
+    margin-top: -321px;
+    position: relative;
+    // .reviews__container
+    background-image: url("./assets/images/content_writing/reviews-bg.png");
+    background-position: left top 60px;
+    background-repeat: no-repeat;
+
+    &::after {
+        content: "";
+        background-image: url("./assets/images/content_writing/reviews-decor-top.png");
+        width: 401.26px;
+        height: 436.856px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        left: 65px;
+
+        @media (min-width: 1280.98px) {
+            top: 89px;
+        }
+
+        @media (max-width: 1280.98px) and (min-width:767.98px) {
+            left: 51px;
+            bottom: 19px;
+        }
+
+        @media (max-width: 767.98px) {
+            width: 191px;
+            height: 208px;
+            left: -6px;
+            top: 225px;
+        }
+    }
+
+    &::before {
+
+
+        @media (min-width: 1280.98px) {
+            top: 535px;
+             content: "";
+        background-image: url("./assets/images/content_writing/reviews-decor-bottom.png");
+        width: 229px;
+        height: 249px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        right: 115px;
+        }
+
+        
+    }
+
+    @media (max-width: 1280.98px) {
+        background-image: url("./assets/images/content_writing/reviews-bg-tablet.png");
+        padding-bottom: 96px;
+        margin-top: -77.5px;
+        border-radius: 0 0 32px 32px;
+        padding-top: 183px;
+    }
+
+    @media (max-width: 767.98px) {
+        padding-top: 135px;
+        padding-bottom: 60px;
+        margin-top: -46.5px;
+        border-radius: var(--Middle);
+        background-image: url("./assets/images/content_writing/reviews-bg-mobile.png");
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .reviews__label
+
+    &__label {
+        position: relative;
+        z-index: 10;
+        margin-bottom: 14px;
+    }
+
+    // .reviews__title
+
+    &__title {
+        position: relative;
+        z-index: 10;
+        max-width: 1044px;
+        color: var(--Gray-900);
+        text-align: center;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 108%;
+        margin-bottom: 60px;
+
+        @media (max-width: 767.98px) {
+            color: var(--Gray-900, #181F35);
+            text-align: center;
+
+            /* Headings/H6 */
+            font-family: "League Spartan";
+            font-size: 34px;
+            font-style: normal;
+            margin-bottom: 30px;
+            font-weight: 700;
+            line-height: 118%;
+            /* 40.12px */
+        }
+    }
+}
+
+.reviews {
+
+    // .reviews__swiper
+
+    &__swiper {
+        @media(max-width: 537.98px) {
+            padding: 0px 16px !important;
+        }
+    }
+
+    // .reviews__sweiper-wrapper
+
+    &__swiper-wrapper {
+        display: flex;
+        align-items: stretch !important;
+
+        @media (max-width: 537.98px) {
+            padding-bottom: 32px !important;
+        }
+    }
+
+    // .reviews__slide
+
+    &__slide {
+        max-width: 531px;
+        display: flex;
+        width: 531px;
+        padding: 32px;
+        border-radius: 24px;
+        height: auto !important;
+        background: #FFF;
+        flex-direction: column;
+
+        @media(min-width: 537.98px) {
+            &:first-child {
+                margin-left: 16px !important;
+            }
+
+            &:last-child {
+                margin-right: 16px !important;
+            }
+        }
+
+        @media(min-width: 767.98px) {
+            &:first-child {
+                margin-left: 40px !important;
+            }
+
+            &:last-child {
+                margin-right: 40px !important;
+            }
+        }
+
+        @media (min-width: 1280.98px) {
+            &:first-child {
+                margin-left: 70px !important;
+            }
+
+            &:last-child {
+                margin-right: 70px !important;
+            }
+        }
+
+        @media (min-width: 1536.98px) {
+            &:first-child {
+                margin-left: 140px !important;
+            }
+
+            &:last-child {
+                margin-right: 140px !important;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            padding: 24px 16px;
+            border-radius: var(--Small);
+        }
+    }
+
+    &__buttons {
+        padding-top: 60px;
+        display: flex;
+        margin: 0px auto;
+        align-items: center;
+        gap: 27px;
+        max-width: fit-content;
+        justify-content: center;
+
+        @media(max-width: 537.98px) {
+            display: none;
+        }
+    }
+
+}
+
+.reviews-slide {
+
+    // .reviews-slide__user
+
+    &__user {
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--Main-Blue-200);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    // .reviews-slide__text
+
+    &__text {
+        color: var(--Gray-700, #4A5578);
+
+        /* Paragraph/Body/Regular */
+        font-family: "League Spartan";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 14px;
+        margin-top: 16px;
+
+        /* 38.4px */
+        @media (max-width: 767.98px) {
+            color: var(--Gray-700, #4A5578);
+
+            /* Paragraph/Body/Regular */
+            font-family: "League Spartan";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            /* 30.8px */
+        }
+    }
+
+    // .reviews-slide__rating
+
+    &__rating {}
+}
+
+.reviews-user {
+
+    // .reviews-user__image
+
+    &__image {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    // .reviews-user__content
+
+    &__content {}
+
+    // .reviews-user__name
+
+    &__name {
+        color: var(--Gray-900, #181F35);
+
+        /* Headings/H9 */
+        font-family: "League Spartan";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 8px;
+        line-height: 140%;
+
+        /* 30.8px */
+        @media (max-width: 767.98px) {
+            color: var(--Gray-900, #181F35);
+
+            /* Headings/H9 */
+            font-family: "League Spartan";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+            /* 30.8px */
+        }
+    }
+
+    // .reviews-user__position
+
+    &__position {
+        color: var(--Gray-700, #4A5578);
+
+        /* Paragraph/Body/Regular */
+        font-family: "League Spartan";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+
+        /* 30.8px */
+        @media (max-width: 767.98px) {
+            color: var(--Gray-700, #4A5578);
+
+            /* Label */
+            font-family: "League Spartan";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+            /* 19.8px */
+        }
+    }
+}
+
+.slider-button {
+    display: flex;
+    height: 52px;
+    padding: 10px;
+    width: 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: all .3s ease-in;
+
+    svg {
+        path {
+            transition: all .3s ease-in;
+        }
+    }
+
+    @media(hover: hover) {
+        &:hover {
+            border-radius: var(--Extra-large, 200px);
+            border: 2px solid var(--White, #FFF);
+            background: var(--White, #FFF);
+
+            svg {
+                path {
+                    stroke: #077DFD;
+                }
+            }
+        }
+    }
+
+    &:disabled {
+        border-radius: var(--Extra-large, 200px);
+        border: 2px solid var(--Gray-300, #DCDFEA);
+        background: var(--Gray-300, #DCDFEA);
+    }
+
+    outline: none !important;
+
+    &:focus {
+        border-radius: var(--Extra-large, 200px);
+        border: 2px solid var(--Main-Blue-600, #077DFD);
+        background: var(--White, #FFF);
+
+        svg {
+            path {
+                stroke: #077DFD;
+            }
+        }
+    }
+}
+
+.slider-button-left {
+    border-radius: var(--Extra-large, 200px);
+    border: 2px solid var(--Main-Blue-900, #031D3D);
+    background: var(--Main-Blue-900, #031D3D);
+}
+
+.slider-button-right {
+    border-radius: var(--Extra-large, 200px);
+    border: 2px solid var(--Main-Blue-600, #077DFD);
+    background: var(--Main-Blue-600, #077DFD);
 }
