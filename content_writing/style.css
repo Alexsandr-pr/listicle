@@ -1655,6 +1655,7 @@ input {
     content: "";
     background-image: url("./assets/images/content_writing/reviews-decor-bottom.png");
     width: 229px;
+    z-index: 20;
     height: 249px;
     background-position: center;
     background-repeat: no-repeat;
