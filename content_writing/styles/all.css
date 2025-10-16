@@ -67,6 +67,10 @@ main {
     color: var(--White);
     background: var(--Main-Blue-900);
 }
+.label.gray-900 {
+    color: var(--White);
+    background: var(--Gray-900);
+}
 
 .button-wrapper {
     height: 52px;
