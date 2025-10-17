@@ -114,6 +114,14 @@ input {
 }
 
 /*******hero Section*********/
+main.is-ios .hero__content {
+  background: #0e3a6a !important;
+}
+
+main .hero__content {
+  background-color: var(--Main-Blue-800);
+}
+
 .hero {
   margin: 40px 0px 92px 0px;
   background: var(--Main-Blue-900);
@@ -221,6 +229,9 @@ input {
     flex-direction: column;
     width: 100%;
   }
+}
+.hero-right {
+  position: relative;
 }
 .hero-right__video {
   display: block;

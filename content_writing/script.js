@@ -2,6 +2,22 @@
 
 window.addEventListener("DOMContentLoaded", () => {
 
+    function isIOS() {
+        const IS_IOS =
+        /iP(hone|od|ad)/.test(navigator.userAgent) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+
+        const main = document.querySelector("main");
+
+        if(IS_IOS) {
+            main.classList.add("is-ios");
+        }
+    }
+
+    isIOS()
+
+
     function initButtonsWrapper(selector, parentSelector) {
         const buttons = document.querySelectorAll(selector);
 
@@ -216,4 +232,5 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     initRangeSlider();
+
 })

@@ -124,6 +124,16 @@ input {
 
 /*******hero Section*********/
 
+main.is-ios {
+    .hero__content {
+        background: #0e3a6a !important;
+    }
+}
+main {
+    .hero__content {
+        background-color: var(--Main-Blue-800);
+    }
+}
 .hero {
     margin: 40px 0px 92px 0px;
     background: var(--Main-Blue-900);
@@ -150,7 +160,6 @@ input {
         justify-content: space-between;
         border-radius: 60px;
         background-color: var(--Main-Blue-800);
-
         @media (max-width: 1280.98px) {
             gap: 24px;
             flex-direction: column-reverse;
@@ -188,6 +197,7 @@ input {
         @media (min-width: 1280.98px) {
             padding-right: 0.363px;
         }
+        
     }
 }
 
@@ -252,7 +262,7 @@ input {
 }
 
 .hero-right {
-
+    position: relative;
     // .hero-right__video
 
     &__video {
@@ -264,6 +274,7 @@ input {
             height: auto;
             aspect-ratio: 764/570;
         }
+        
     }
 }
 
