@@ -2,46 +2,6 @@
 
 window.addEventListener("DOMContentLoaded", () => {
 
-    function isIOS() {
-        const IS_IOS =
-        /iP(hone|od|ad)/.test(navigator.userAgent) ||
-        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-
-        const main = document.querySelector("main");
-
-        if(IS_IOS) {
-            main.classList.add("is-ios");
-        }
-    }
-
-    isIOS()
-
-
-    function initButtonsWrapper(selector, parentSelector) {
-        const buttons = document.querySelectorAll(selector);
-
-        if (buttons.length > 0) {
-            function init() {
-
-                for (let index = 0; index < buttons.length; index++) {
-                    const button = buttons[index];
-                    
-                    const buttonWidth = button.offsetWidth;
-                    const parentWrapper = button.closest(parentSelector);
-
-                    parentWrapper.setAttribute("data-width", buttonWidth)
-                    parentWrapper.style.width = `${buttonWidth}px`;
-                }
-            }
-
-            init();
-            window.addEventListener("resize", init);
-        }
-    }
-
-    initButtonsWrapper("a", ".button-wrapper");
-
     function initSliders() {
         const swiperConfig = {
 
@@ -232,5 +192,4 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     initRangeSlider();
-
 })

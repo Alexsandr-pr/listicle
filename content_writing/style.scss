@@ -1,97 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
-
-:root {
-    --White: #FFF;
-    --Gray-200: #EFF1F5;
-    --Gray-300: #DCDFEA;
-    --Gray-500: #7F88A2;
-    --Gray-400: #B9C0D4;
-    --Gray-700: #4A5578;
-    --Gray-900: #181F35;
-
-
-    --Main-Blue-100: #F6FAFF;
-    --Main-Blue-200: #E5F1FF;
-    --Main-Blue-300: #C6E1FF;
-    --Main-Blue-500: #63AEFF;
-    --Main-Blue-600: #077DFD;
-    --Main-Blue-700: #0E44B0;
-    --Main-Blue-800: #10335F;
-    --Main-Blue-900: #031D3D;
-
-    --Other-Green-2-700: #16B364;
-    --Other-Green-1-300: #ECFBC3;
-    --Secondary-Yellow-400: #FFF6B4;
-    --Secondary-Turquoise-300: #DCF6FF;
-    --Secondary-Turquoise-400: #AAE9FF;
-    --Other-Green-1-400: #CBE389;
-    --Secondary-Terracotta-500: #FB936F;
-
-    --Small: 12px;
-    --Large: 32px;
-    --Large-BG: 60px;
-    --Middle: 24px;
-    --Extra-large: 200px;
-}
-
-*,
-*::before,
-*::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-a {
-    transition: color 0.3s ease;
-    text-decoration: none;
-    color: inherit;
-}
-
-ul,
-ol,
-li {
-    list-style: none;
-}
-
-img {
-    vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-
-html,
-body {
-    font-family: 'League Spartan', sans-serif;
-    color: var(--White);
-    font-size: 16px;
-    line-height: normal;
-}
-
-button,
-input {
-    cursor: pointer;
-    font-weight: inherit;
-    color: inherit;
-    font-family: inherit;
-    transition: all .3s ease-in;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-
-
 .content-writing {
 
     // .content-writing__faq
@@ -120,7 +26,108 @@ input {
     }
 }
 
+.content-writing__decor {
+    margin-top: 110px;
+    max-width: 100dvw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 
+    img {
+        padding-left: 2px;
+    }
+
+    @media (max-width: 1280.98px) {
+        margin-top: 120px;
+    }
+
+    @media (max-width: 767.98px) {
+        margin-top: 80px;
+    }
+}
+
+/***********reviews************/
+.content-writing__reviews {
+    border-radius: 0px 0px 60px 60px;
+    background-color: var(--Main-Blue-300);
+    padding-top: 439px;
+    padding-bottom: 120px;
+    margin-top: -321px;
+    position: relative;
+    background-image: url("./assets/images/content_writing/reviews-bg.png");
+    background-position: left top 60px;
+    background-repeat: no-repeat;
+}
+
+.content-writing__reviews::after {
+    content: "";
+    background-image: url("../assets/images/reviews/reviews-decor-top.png");
+    width: 401.26px;
+    height: 436.856px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 65px;
+}
+
+@media (min-width: 1280.98px) {
+    .content-writing__reviews::before {
+        top: 535px;
+        content: "";
+        background-image: url("../assets/images/reviews/reviews-decor-bottom.png");
+        width: 229px;
+        z-index: 20;
+        height: 249px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        right: 115px;
+    }
+}
+
+@media (min-width: 1280.98px) {
+    .content-writing__reviews::after {
+        top: 89px;
+    }
+}
+
+@media (max-width: 1280.98px) and (min-width: 767.98px) {
+    .content-writing__reviews::after {
+        left: 51px;
+        bottom: 19px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .content-writing__reviews::after {
+        width: 191px;
+        height: 208px;
+        left: -6px;
+        top: 225px;
+    }
+}
+
+@media (max-width: 1280.98px) {
+    .content-writing__reviews {
+       background-image: url("./assets/images/content_writing/reviews-bg-tablet.png");
+        padding-bottom: 96px;
+        margin-top: -77.5px;
+        border-radius: 0 0 32px 32px;
+        padding-top: 183px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .content-writing__reviews {
+        padding-top: 135px;
+        padding-bottom: 60px;
+        margin-top: -46.5px;
+        border-radius: var(--Middle);
+        background-image: url("./assets/images/content_writing/reviews-bg-mobile.png");
+    }
+}
 
 /*******hero Section*********/
 
@@ -129,11 +136,13 @@ main.is-ios {
         background: #0e3a6a !important;
     }
 }
+
 main {
     .hero__content {
         background-color: var(--Main-Blue-800);
     }
 }
+
 .hero {
     margin: 40px 0px 92px 0px;
     background: var(--Main-Blue-900);
@@ -160,6 +169,7 @@ main {
         justify-content: space-between;
         border-radius: 60px;
         background-color: var(--Main-Blue-800);
+
         @media (max-width: 1280.98px) {
             gap: 24px;
             flex-direction: column-reverse;
@@ -197,7 +207,7 @@ main {
         @media (min-width: 1280.98px) {
             padding-right: 0.363px;
         }
-        
+
     }
 }
 
@@ -274,7 +284,7 @@ main {
             height: auto;
             aspect-ratio: 764/570;
         }
-        
+
     }
 }
 
@@ -675,26 +685,6 @@ main {
     }
 }
 
-
-.content-writing__decor {
-    margin-top: 110px;
-    max-width: 100dvw;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-
-    img {
-        padding-left: 2px;
-    }
-
-    @media (max-width: 1280.98px) {
-        margin-top: 120px;
-    }
-
-    @media (max-width: 767.98px) {
-        margin-top: 80px;
-    }
-}
 
 /**************************/
 
@@ -1860,447 +1850,4 @@ main {
             margin-top: 4px;
         }
     }
-}
-
-.reviews-pagination,
-.our-work-pagination {
-    visibility: hidden;
-    height: 0;
-    overflow: hidden;
-
-    @media (max-width: 537.98px) {
-        visibility: visible;
-        position: relative !important;
-        height: 8px !important;
-        overflow: visible;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.reviews__swiper,
-.our-work-slider__swiper {
-    .swiper-pagination-bullet {
-        width: 12px;
-        height: 8px;
-        scale: 1;
-        opacity: 1 !important;
-        margin: 0px 2px !important;
-        border-radius: 50px;
-        background: var(--Main-Blue-800);
-
-        &-active {
-            background: var(--Main-Blue-600);
-        }
-    }
-}
-
-
-
-
-/**********reviews******************/
-
-
-.reviews {
-    border-radius: 0px 0px 60px 60px;
-    background-color: var(--Main-Blue-300);
-    padding-top: 439px;
-    padding-bottom: 120px;
-    margin-top: -321px;
-    position: relative;
-    // .reviews__container
-    background-image: url("./assets/images/content_writing/reviews-bg.png");
-    background-position: left top 60px;
-    background-repeat: no-repeat;
-
-    &::after {
-        content: "";
-        background-image: url("./assets/images/content_writing/reviews-decor-top.png");
-        width: 401.26px;
-        height: 436.856px;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute;
-        background-size: contain;
-        left: 65px;
-
-        @media (min-width: 1280.98px) {
-            top: 89px;
-        }
-
-        @media (max-width: 1280.98px) and (min-width:767.98px) {
-            left: 51px;
-            bottom: 19px;
-        }
-
-        @media (max-width: 767.98px) {
-            width: 191px;
-            height: 208px;
-            left: -6px;
-            top: 225px;
-        }
-    }
-
-    &::before {
-
-
-        @media (min-width: 1280.98px) {
-            top: 535px;
-             content: "";
-        background-image: url("./assets/images/content_writing/reviews-decor-bottom.png");
-        width: 229px;
-        z-index: 20;
-        height: 249px;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute;
-        background-size: contain;
-        right: 115px;
-        }
-
-        
-    }
-
-    @media (max-width: 1280.98px) {
-        background-image: url("./assets/images/content_writing/reviews-bg-tablet.png");
-        padding-bottom: 96px;
-        margin-top: -77.5px;
-        border-radius: 0 0 32px 32px;
-        padding-top: 183px;
-    }
-
-    @media (max-width: 767.98px) {
-        padding-top: 135px;
-        padding-bottom: 60px;
-        margin-top: -46.5px;
-        border-radius: var(--Middle);
-        background-image: url("./assets/images/content_writing/reviews-bg-mobile.png");
-    }
-
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    // .reviews__label
-
-    &__label {
-        position: relative;
-        z-index: 10;
-        margin-bottom: 14px;
-    }
-
-    // .reviews__title
-
-    &__title {
-        position: relative;
-        z-index: 10;
-        max-width: 1044px;
-        color: var(--Gray-900);
-        text-align: center;
-        font-size: 72px;
-        font-weight: 700;
-        line-height: 108%;
-        margin-bottom: 60px;
-
-        @media (max-width: 767.98px) {
-            color: var(--Gray-900, #181F35);
-            text-align: center;
-
-            /* Headings/H6 */
-            font-family: "League Spartan";
-            font-size: 34px;
-            font-style: normal;
-            margin-bottom: 30px;
-            font-weight: 700;
-            line-height: 118%;
-            /* 40.12px */
-        }
-    }
-}
-
-.reviews {
-
-    // .reviews__swiper
-
-    &__swiper {
-        @media(max-width: 537.98px) {
-            padding: 0px 16px !important;
-        }
-    }
-
-    // .reviews__sweiper-wrapper
-
-    &__swiper-wrapper {
-        display: flex;
-        align-items: stretch !important;
-
-        @media (max-width: 537.98px) {
-            padding-bottom: 32px !important;
-        }
-    }
-
-    // .reviews__slide
-
-    &__slide {
-        max-width: 531px;
-        display: flex;
-        width: 531px;
-        padding: 32px;
-        border-radius: 24px;
-        height: auto !important;
-        background: #FFF;
-        flex-direction: column;
-
-        @media(min-width: 537.98px) {
-            &:first-child {
-                margin-left: 16px !important;
-            }
-
-            &:last-child {
-                margin-right: 16px !important;
-            }
-        }
-
-        @media(min-width: 767.98px) {
-            &:first-child {
-                margin-left: 40px !important;
-            }
-
-            &:last-child {
-                margin-right: 40px !important;
-            }
-        }
-
-        @media (min-width: 1280.98px) {
-            &:first-child {
-                margin-left: 70px !important;
-            }
-
-            &:last-child {
-                margin-right: 70px !important;
-            }
-        }
-
-        @media (min-width: 1536.98px) {
-            &:first-child {
-                margin-left: 140px !important;
-            }
-
-            &:last-child {
-                margin-right: 140px !important;
-            }
-        }
-
-        @media (max-width: 767.98px) {
-            padding: 24px 16px;
-            border-radius: var(--Small);
-        }
-    }
-
-    &__buttons {
-        padding-top: 60px;
-        display: flex;
-        margin: 0px auto;
-        align-items: center;
-        gap: 27px;
-        max-width: fit-content;
-        justify-content: center;
-
-        @media(max-width: 537.98px) {
-            display: none;
-        }
-    }
-
-}
-
-.reviews-slide {
-
-    // .reviews-slide__user
-
-    &__user {
-        padding-bottom: 16px;
-        border-bottom: 1px solid var(--Main-Blue-200);
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        align-self: stretch;
-    }
-
-    // .reviews-slide__text
-
-    &__text {
-        color: var(--Gray-700, #4A5578);
-
-        /* Paragraph/Body/Regular */
-        font-family: "League Spartan";
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        margin-bottom: 14px;
-        margin-top: 16px;
-
-        /* 38.4px */
-        @media (max-width: 767.98px) {
-            color: var(--Gray-700, #4A5578);
-
-            /* Paragraph/Body/Regular */
-            font-family: "League Spartan";
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 140%;
-            /* 30.8px */
-        }
-    }
-
-    // .reviews-slide__rating
-
-    &__rating {}
-}
-
-.reviews-user {
-
-    // .reviews-user__image
-
-    &__image {
-        width: 62px;
-        height: 62px;
-        border-radius: 50%;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-
-    // .reviews-user__content
-
-    &__content {}
-
-    // .reviews-user__name
-
-    &__name {
-        color: var(--Gray-900, #181F35);
-
-        /* Headings/H9 */
-        font-family: "League Spartan";
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 700;
-        margin-bottom: 8px;
-        line-height: 140%;
-
-        /* 30.8px */
-        @media (max-width: 767.98px) {
-            color: var(--Gray-900, #181F35);
-
-            /* Headings/H9 */
-            font-family: "League Spartan";
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 140%;
-            /* 30.8px */
-        }
-    }
-
-    // .reviews-user__position
-
-    &__position {
-        color: var(--Gray-700, #4A5578);
-
-        /* Paragraph/Body/Regular */
-        font-family: "League Spartan";
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-
-        /* 30.8px */
-        @media (max-width: 767.98px) {
-            color: var(--Gray-700, #4A5578);
-
-            /* Label */
-            font-family: "League Spartan";
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 110%;
-            /* 19.8px */
-        }
-    }
-}
-
-.slider-button {
-    display: flex;
-    height: 52px;
-    padding: 10px;
-    width: 52px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    transition: all .3s ease-in;
-
-    svg {
-        path {
-            transition: all .3s ease-in;
-        }
-    }
-
-    @media(hover: hover) {
-        &:hover {
-            border-radius: var(--Extra-large, 200px);
-            border: 2px solid var(--White, #FFF);
-            background: var(--White, #FFF);
-
-            svg {
-                path {
-                    stroke: #077DFD;
-                }
-            }
-        }
-    }
-
-    &:disabled {
-        border-radius: var(--Extra-large, 200px);
-        border: 2px solid var(--Gray-300, #DCDFEA);
-        background: var(--Gray-300, #DCDFEA);
-        svg {
-            path {
-                stroke: var(--White);
-            }
-        }
-    }
-
-    outline: none !important;
-
-    &:focus {
-        border-radius: var(--Extra-large, 200px);
-        border: 2px solid var(--Main-Blue-600, #077DFD);
-        background: var(--White, #FFF);
-
-        svg {
-            path {
-                stroke: #077DFD;
-            }
-        }
-    }
-}
-
-.slider-button-left {
-    border-radius: var(--Extra-large, 200px);
-    border: 2px solid var(--Main-Blue-900, #031D3D);
-    background: var(--Main-Blue-900, #031D3D);
-}
-
-.slider-button-right {
-    border-radius: var(--Extra-large, 200px);
-    border: 2px solid var(--Main-Blue-600, #077DFD);
-    background: var(--Main-Blue-600, #077DFD);
 }

@@ -1,3 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+:root {
+    --White: #FFF;
+    --Gray-200: #EFF1F5;
+    --Gray-300: #DCDFEA;
+    --Gray-500: #7F88A2;
+    --Gray-400: #B9C0D4;
+    --Gray-700: #4A5578;
+    --Gray-900: #181F35;
+
+
+    --Main-Blue-100: #F6FAFF;
+    --Main-Blue-200: #E5F1FF;
+    --Main-Blue-300: #C6E1FF;
+    --Main-Blue-500: #63AEFF;
+    --Main-Blue-600: #077DFD;
+    --Main-Blue-700: #0E44B0;
+    --Main-Blue-800: #10335F;
+    --Main-Blue-900: #031D3D;
+
+    --Other-Green-2-700: #16B364;
+    --Other-Green-1-300: #ECFBC3;
+    --Secondary-Yellow-400: #FFF6B4;
+    --Secondary-Turquoise-300: #DCF6FF;
+    --Secondary-Turquoise-400: #AAE9FF;
+    --Other-Green-1-400: #CBE389;
+    --Secondary-Terracotta-500: #FB936F;
+    --Secondary-Turquoise-500: #74D8FA;
+    --Small: 12px;
+    --Large: 32px;
+    --Large-BG: 60px;
+    --Middle: 24px;
+    --Extra-large: 200px;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    font-family: 'League Spartan', sans-serif;
+    color: var(--White);
+    font-size: 16px;
+    line-height: normal;
+}
+
+button,
+input {
+    cursor: pointer;
+    font-weight: inherit;
+    color: inherit;
+    font-family: inherit;
+    transition: all .3s ease-in;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+
+/********************/
+
+
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -67,6 +167,7 @@ main {
     color: var(--White);
     background: var(--Main-Blue-900);
 }
+
 .label.gray-900 {
     color: var(--White);
     background: var(--Gray-900);
@@ -134,9 +235,9 @@ main {
     }
 
     .button:active {
-        padding: 4px 2px;
+        padding: 4px 2px !important;
         height: 36px;
-        width: calc(100% - 4px);
+        width: calc(100% - 4px) !important;
     }
 
     .button-active-fixed:active {
@@ -332,9 +433,11 @@ main {
 .link-button span {
     padding: 4px 10px 0px 10px;
 }
+
 .link-button:active {
     padding: 4px 8px !important;
 }
+
 .link-dark-button {
     color: var(--Main-Blue-900);
 }
@@ -349,4 +452,106 @@ main {
     min-height: 40px !important;
     height: 40px !important;
     width: fit-content !important;
+}
+
+
+
+/************************/
+
+.slider-button {
+    display: flex;
+    height: 52px;
+    padding: 10px;
+    width: 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease-in;
+    outline: none !important;
+}
+
+.slider-button svg path {
+    transition: all 0.3s ease-in;
+}
+
+@media (hover: hover) {
+    .slider-button:hover {
+        border-radius: var(--Extra-large, 200px);
+        border: 2px solid var(--White, #FFF);
+        background: var(--White, #FFF);
+    }
+
+    .slider-button:hover svg path {
+        stroke: #077DFD;
+    }
+}
+
+.slider-button:disabled {
+    border-radius: var(--Extra-large, 200px);
+    border: 2px solid var(--Gray-300, #DCDFEA);
+    background: var(--Gray-300, #DCDFEA);
+}
+
+.slider-button:disabled svg path {
+    stroke: var(--White);
+}
+
+.slider-button:focus {
+    border-radius: var(--Extra-large, 200px);
+    border: 2px solid var(--Main-Blue-600, #077DFD);
+    background: var(--White, #FFF);
+}
+
+.slider-button:focus svg path {
+    stroke: #077DFD;
+}
+
+.slider-button-left {
+    border-radius: var(--Extra-large, 200px);
+    border: 2px solid var(--Main-Blue-900, #031D3D);
+    background: var(--Main-Blue-900, #031D3D);
+}
+
+.slider-button-right {
+    border-radius: var(--Extra-large, 200px);
+    border: 2px solid var(--Main-Blue-600, #077DFD);
+    background: var(--Main-Blue-600, #077DFD);
+}
+
+
+
+.reviews-pagination,
+.our-work-pagination {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 537.98px) {
+    .reviews-pagination,
+    .our-work-pagination {
+        visibility: visible;
+        position: relative !important;
+        height: 8px !important;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.reviews__swiper .swiper-pagination-bullet,
+.our-work-slider__swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 8px;
+    scale: 1;
+    opacity: 1 !important;
+    margin: 0px 2px !important;
+    border-radius: 50px;
+    background: var(--Main-Blue-800);
+}
+
+.reviews__swiper .swiper-pagination-bullet-active,
+.our-work-slider__swiper .swiper-pagination-bullet-active {
+    background: var(--Main-Blue-600);
 }
