@@ -1915,6 +1915,9 @@ input {
   border: 2px solid var(--Gray-300, #DCDFEA);
   background: var(--Gray-300, #DCDFEA);
 }
+.slider-button:disabled svg path {
+  stroke: var(--White);
+}
 .slider-button:focus {
   border-radius: var(--Extra-large, 200px);
   border: 2px solid var(--Main-Blue-600, #077DFD);

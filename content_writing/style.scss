@@ -2260,6 +2260,11 @@ input {
         border-radius: var(--Extra-large, 200px);
         border: 2px solid var(--Gray-300, #DCDFEA);
         background: var(--Gray-300, #DCDFEA);
+        svg {
+            path {
+                stroke: var(--White);
+            }
+        }
     }
 
     outline: none !important;
