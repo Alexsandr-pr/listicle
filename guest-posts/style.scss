@@ -295,69 +295,9 @@
     color: var(--White);
 }
 
-@media (max-width: 1780.98px) and (min-width: 487.98px) {
-    .pricing__cards__wrapper:hover {
-        cursor: grabbing;
-    }
 
-    .pricing__cards__wrapper:active {
-        cursor: grabbing;
-    }
-}
 
-@media (min-width: 487.98px) {
-    .pricing__cards__wrapper {
-        overflow-x: auto;
-        width: 100%;
-        max-width: 1780px;
-        user-select: none;
-        margin: 0 auto;
-        padding: 0 70px;
-        scroll-snap-stop: always;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .pricing__cards__wrapper::-webkit-scrollbar {
-        display: none;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .pricing__cards__wrapper {
-        padding: 0 40px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .pricing__cards__wrapper {
-        padding: 0 16px;
-    }
-}
-
-.pricing__cards {
-    display: none;
-    gap: 24px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-@media (max-width: 487.98px) {
-    .pricing__cards {
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 487.98px) {
-    .pricing__cards {
-        min-width: calc(4 * 392px + 24px * 3);
-    }
-}
-
-.pricing__cards.active {
-    display: flex;
-}
+/*****************************/
 
 .pricing__card {
     border-radius: var(--Middle);
@@ -370,7 +310,6 @@
 
 @media (min-width: 487.98px) {
     .pricing__card {
-        flex: 0 1 392px;
         width: 392px;
         min-width: 392px;
     }
@@ -665,6 +604,153 @@
 .pricing-card-counter__value::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+
+.pricing__cards-container {
+    max-width: 1640px;
+    position: relative;
+    margin: 0 auto;
+    height: 612px;
+    overflow: hidden;
+}
+
+.pricing__cards-wrapper {
+    position: absolute;
+    display: flex;
+    transition: transform 0.2s ease-in;
+
+    @media (min-width: 1780.98px) {
+        width: calc(1640px * 2);
+    }
+
+    @media (max-width: 1780.98px) {
+        width: calc((100dvw - var(--scrollbar-width, 0px)) * 2);
+    }
+
+    &.left {
+        transform: translateX(0);
+    }
+
+    &.right {
+        @media (min-width: 1780.98px) {
+            transform: translateX(-1640px);
+        }
+
+        @media (max-width: 1780.98px) {
+            transform: translateX(calc(0px - (100dvw - var(--scrollbar-width, 0px))));
+        }
+    }
+}
+
+.pricing__cards {
+
+
+    @media (min-width: 487.98px) {
+        overflow-y: auto;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media (min-width: 1780.98px) {
+        max-width: 1640px;
+    }
+
+    @media (max-width: 1780.98px) {
+        max-width: calc(100dvw - var(--scrollbar-width, 0px));
+    }
+
+    @media (max-width: 487.98px) {
+        padding: 0 16px;
+        max-width: 100%;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.pricing__card {
+    @media (min-width: 487.98px) {
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin-right: 24px;
+        }
+    }
+
+    @media (max-width: 487.98px) {
+        max-width: calc((100dvw - var(--scrollbar-width, 0px)) - 32px) !important;
+    }
+}
+
+.pricing__cards-track {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    transition: all 0.3s ease;
+
+    @media (min-width: 487.98px) {
+        width: max-content;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media (max-width: 1780.98px) {
+        &::before {
+            display: block;
+            content: "";
+            flex: 0 0 70px;
+            width: 70px;
+            transition: width 0.2s ease;
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            flex: 0 0 70px;
+            width: 70px;
+            transition: width 0.2s ease;
+        }
+
+        .pricing__cards-wrapper.left &::before,
+        .pricing__cards-wrapper.right &::after {
+            width: 0;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+
+        &::before,
+        &::after {
+            flex: 0 0 40px;
+            width: 40px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+
+        &::before,
+        &::after {
+            flex: 0 0 16px;
+            width: 16px;
+        }
+    }
+
+    @media (max-width: 487.98px) {
+        flex-direction: column;
+        gap: 24px;
+        
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
 }
 
 
@@ -1057,7 +1143,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 400px;
-    margin-top: 70px;
+    margin-top: 60px;
     gap: 36px;
     background: var(--Main-Blue-600);
 }
@@ -1084,7 +1170,7 @@
 
 @media (max-width: 767.98px) {
     .how-it-works-bottom {
-        margin-top: 98px;
+        margin-top: 41px;
         flex-direction: column;
         border-radius: var(--Middle);
         padding: 24px 16px;
@@ -1381,13 +1467,15 @@
 
             @media (max-width: 1280.98px) {
                 right: 0;
+                width: 90px;
+                height: 91px;
                 bottom: -59px;
             }
 
             @media (max-width: 767.98px) {
                 bottom: -41px;
-                width: 100px;
-                height: 101px;
+                width: 82px;
+                height: 83px;
             }
         }
     }
@@ -1432,8 +1520,9 @@
             top: 51px;
             background-image: url("./assets/images/benefits-image-tablet.png");
         }
+
         @media (max-width: 767.98px) {
-          display: none;
+            display: none;
         }
     }
 

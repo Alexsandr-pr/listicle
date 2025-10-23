@@ -1,6 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
 
     function tabsInit() {
+        const pricingWrapper = document.querySelector(".pricing__cards-wrapper");
         const pricingButtons = document.querySelectorAll("[data-pricing-button]");
         const pricingCards = document.querySelectorAll("[data-tab]");
         const pricingButtonActiveBadge = document.querySelector(".pricing__button-active-badge");
@@ -14,10 +15,17 @@ window.addEventListener("DOMContentLoaded", () => {
             pricingButtons.forEach(button => {
                 button.classList.remove("active");
             });
+
+            if (pricingWrapper.classList.contains("left")) {
+                pricingWrapper.classList.remove("left")
+            } else {
+                pricingWrapper.classList.remove("right")
+            }
         };
 
         const addActiveClass = (index) => {
             pricingButtons[index].classList.add("active");
+            pricingWrapper.classList.add(indexClass[index]);
         };
 
         pricingButtons.forEach((button, index) => {
@@ -37,12 +45,12 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     tabsInit();
-    
+
     function counterInit() {
         const counters = document.querySelectorAll("[data-counter]");
 
         const values = {
-            monthly: 400,
+            monthly: 350,
             yearly: 300
         }
 
@@ -120,7 +128,57 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     dragInit({
-        selector: '.pricing__cards__wrapper',
+        selector: '.pricing__cards-wrapper',
         speed: 10
     });
+
+
+    function resize() {
+
+        function setScrollbarWidth() {
+            const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+            document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+        }
+
+        setScrollbarWidth();
+
+
+        function setPricingCardWrapperHeight() {
+            const cardsContent = document.querySelector(".pricing__cards-track");
+            const cardsWrapper = document.querySelectorAll(".pricing__cards-container");
+
+            cardsWrapper.forEach(content => {
+                console.log( `${cardsContent.clientHeight}px`)
+                content.style.height = `${cardsContent.clientHeight}px`;
+            })
+        }
+        setPricingCardWrapperHeight();
+    }
+
+    resize()
+    window.addEventListener('resize', resize);
+
+    function initButtonsWrapper(selector, parentSelector) {
+        const buttons = document.querySelectorAll(selector);
+
+        if (buttons.length > 0) {
+            function init() {
+
+                for (let index = 0; index < buttons.length; index++) {
+                    const button = buttons[index];
+
+                    const buttonWidth = button.offsetWidth;
+                    const parentWrapper = button.closest(parentSelector);
+
+                    parentWrapper.setAttribute("data-width", buttonWidth)
+                    parentWrapper.style.width = `${buttonWidth}px`;
+                }
+            }
+
+            init();
+            window.addEventListener("resize", init);
+        }
+    }
+
+    initButtonsWrapper("a", ".button-wrapper");
 });

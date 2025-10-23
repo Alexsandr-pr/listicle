@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
 
 :root {
+    --scrollbar-width: 15px;
+
     --White: #FFF;
     --Gray-200: #EFF1F5;
     --Gray-300: #DCDFEA;
@@ -99,6 +101,7 @@ dialog::backdrop {
 
 
 .wrapper {
+    overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
