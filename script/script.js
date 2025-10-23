@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
                     const buttonWidth = button.offsetWidth;
                     const parentWrapper = button.closest(parentSelector);
-
+                   
                     parentWrapper.setAttribute("data-width", buttonWidth)
                     parentWrapper.style.width = `${buttonWidth}px`;
                 }
@@ -68,18 +68,21 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        new Swiper('.reviews__swiper', {
-            ...swiperConfig,
-            pagination: {
-                el: '.reviews-pagination',
-                type: 'bullets',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".reviews__buttons-right",
-                prevEl: ".reviews__buttons-left"
-            }
-        })
+        const reviewsSwiper = document.querySelector(".reviews__swiper");
+        if(reviewsSwiper) {
+            new Swiper('.reviews__swiper', {
+                ...swiperConfig,
+                pagination: {
+                    el: '.reviews-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".reviews__buttons-right",
+                    prevEl: ".reviews__buttons-left"
+                }
+            })
+        }
     }
 
     initSliders();
