@@ -1,3 +1,16 @@
+
+main.is-ios {
+    .hero__content {
+        background: #0e3a6a !important;
+    }
+}
+
+main {
+    .hero__content {
+        background-color: var(--Main-Blue-800);
+    }
+}
+
 .hero {
 
     // .hero__container
@@ -81,7 +94,7 @@
         }
 
         @media (max-width: 1536.98px) {
-            flex: 0 1;
+            flex: 0 1 45%;
         }
     }
 }

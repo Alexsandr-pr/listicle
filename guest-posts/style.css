@@ -1,3 +1,11 @@
+main.is-ios .hero__content {
+  background: #0e3a6a !important;
+}
+
+main .hero__content {
+  background-color: var(--Main-Blue-800);
+}
+
 .hero {
   padding: 20px 0px 100px 0px;
 }
@@ -78,7 +86,7 @@
 }
 @media (max-width: 1536.98px) {
   .hero__right {
-    flex: 0 1;
+    flex: 0 1 45%;
   }
 }
 

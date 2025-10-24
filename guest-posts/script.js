@@ -1,4 +1,19 @@
 window.addEventListener("DOMContentLoaded", () => {
+    function isIOS() {
+        const IS_IOS =
+            /iP(hone|od|ad)/.test(navigator.userAgent) ||
+            (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+
+        const main = document.querySelector("main");
+
+        if (IS_IOS) {
+            main.classList.add("is-ios");
+        }
+    }
+
+    isIOS()
+
 
     function tabsInit() {
         const pricingWrapper = document.querySelector(".pricing__cards-wrapper");
@@ -148,7 +163,7 @@ window.addEventListener("DOMContentLoaded", () => {
             const cardsWrapper = document.querySelectorAll(".pricing__cards-container");
 
             cardsWrapper.forEach(content => {
-                console.log( `${cardsContent.clientHeight}px`)
+                console.log(`${cardsContent.clientHeight}px`)
                 content.style.height = `${cardsContent.clientHeight}px`;
             })
         }

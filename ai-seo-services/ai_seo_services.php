@@ -1,0 +1,362 @@
+<?php
+/**
+ * Template Name: AI Seo Services
+ */
+?>
+
+<?php get_header(); ?>
+
+<div class="wrapper">
+        <main class="ai-seo-services">
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <div class="hero__header">
+                            <h1 class="hero__title">
+                                AI SEO services
+                            </h1>
+                            <div class="hero__button-wrapper-ds button-wrapper">
+                                <a href="#" class="watch__button button main-blue-button">
+                                    <span class="button__text">Book a call</span>
+                                    <span class="button__arrow">
+                                        <img width="24" height="24" src="../assets/icons/arrow-right.svg"
+                                            alt="Arrow Right">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="hero__text">
+                            <span>Brands don’t just “rank” anymore - they get recommended.</span>
+                            <span> Let’s make your brand seen, trusted, and suggested by LLMs.</span>
+                        </p>
+                        <div class="hero__button-wrapper-mb">
+                            <div class="button-wrapper">
+                                <a href="#" class="bottom-cta__button button main-blue-button">
+                                    <span class="button__text">Book a call</span>
+                                    <span class="button__arrow">
+                                        <img width="24" height="24" src="../assets/icons/arrow-right.svg"
+                                            alt="Arrow Right">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__bottom hero-bottom">
+                        <div class="hero-bottom__cards">
+                            <div class="hero-bottom__card">
+                                <div class="hero-bottom__left">
+                                    <p class="hero-bottom__title">
+                                        Brand mentions
+                                    </p>
+                                    <div class="hero-bottom__button-wrapper button-wrapper">
+                                        <a href="#" class="bottom-cta__button button main-white-button">
+                                            <span class="button__text">Open</span>
+                                            <span class="button__arrow">
+                                                <img width="24" height="24" src="../assets/icons/arrow-right.svg"
+                                                    alt="Arrow Right">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hero-bottom__image">
+                                    <img src="./assets/services-images-mb.png" alt="Image">
+                                    <img src="./assets/services-images-ds.png" alt="Image">
+                                </div>
+                            </div>
+                            <div class="hero-bottom__card">
+                                <div class="hero-bottom__left">
+                                    <p class="hero-bottom__title">
+                                        Get a listicle
+                                    </p>
+                                    <div class="hero-bottom__button-wrapper button-wrapper">
+                                        <a href="#" class="bottom-cta__button button main-white-button">
+                                            <span class="button__text">Open</span>
+                                            <span class="button__arrow">
+                                                <img width="24" height="24" src="../assets/icons/arrow-right.svg"
+                                                    alt="Arrow Right">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hero-bottom__image">
+                                    <img src="./assets/services-images-mb-2.png" alt="Image">
+                                    <img src="./assets/services-images-ds-2.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ai-seo-why">
+                <div class="ai-seo-why__container">
+                    <div class="ai-seo-why__left ai-seo-why-left">
+                        <div class="ai-seo-why-left__image">
+                            <img src="./assets/table-lamp.png" alt="image">
+                        </div>
+                        <div class="ai-seo-why-left__content">
+                            <h2 class="ai-seo-why-left__title">
+                                AI SEO: Why you should care
+                            </h2>
+                            <p class="ai-seo-why-left__text">
+                                With AI-powered search and recommendation tools like ChatGPT, Gemini, and many more,
+                                your brand can be discovered in entirely new ways!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ai-seo-why__right ai-seo-why-right">
+                        <div class="ai-seo-why-right__card ai-seo-why-right-card">
+                            <p class="ai-seo-why-right-card__label label blue-800">
+                                How it works:
+                            </p>
+                            <p class="ai-seo-why-right-card__text">
+                                AI tools scan the web to recommend brands and services to users in real time. Appearing
+                                in these suggestions puts your business directly in front of people looking for
+                                solutions like yours.
+                            </p>
+                        </div>
+                        <div class="ai-seo-why-right__card ai-seo-why-right-card">
+                            <p class="ai-seo-why-right-card__label label blue-800">
+                                Why it matters:
+                            </p>
+                            <p class="ai-seo-why-right-card__text">
+                                This isn’t just traffic - it’s pre-qualified, engaged visitors who might convert.
+                                Boosting your AI visibility helps your brand stay noticed, trusted, and ahead of the
+                                competition.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews ai-seo-services__reviews">
+                <div class="reviews__container">
+                    <div class="reviews__label label gray-900">Reviews</div>
+                    <h2 class="reviews__title">Real feedback from clients who’ve seen results</h2>
+                </div>
+                <div class="reviews__swiper swiper">
+                    <div class="reviews__swiper-wrapper swiper-wrapper">
+                        <div class="reviews__slide reviews-slide swiper-slide">
+                            <div class="reviews-slide__user reviews-user">
+                                <div class="reviews-user__image">
+                                    <img src="../assets/images/reviews/user-1.png" alt="User Image">
+                                </div>
+                                <div class="reviews-user__content">
+                                    <h3 class="reviews-user__name">
+                                        Michal Juras
+                                    </h3>
+                                    <p class="reviews-user__position">
+                                        Customer Success Manager at Taikun
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="reviews-slide__text">Services from Saynine are stellar from the start, and a
+                                dedicated account manager is always on hand and ready to help solidify the experience. I
+                                definitely can recommend the services!</p>
+                            <div class="reviews-slide__rating">
+                                <img src="../assets/images/reviews/stars.svg" alt="stars">
+                            </div>
+                        </div>
+                        <div class="reviews__slide reviews-slide swiper-slide">
+                            <div class="reviews-slide__user reviews-user">
+                                <div class="reviews-user__image">
+                                    <img src="../assets/images/reviews/user-2.png" alt="User Image">
+                                </div>
+                                <div class="reviews-user__content">
+                                    <h3 class="reviews-user__name">
+                                        Kristina Frunze
+                                    </h3>
+                                    <p class="reviews-user__position">
+                                        Director of Operations at Trackunit
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="reviews-slide__text">We're really excited to have been working with SayNine
+                                because of the quality backlinks they provide consistently. Thanks to this, we've seen
+                                ranking growth for our target pages, so we definitely recommend working with them.</p>
+                            <div class="reviews-slide__rating">
+                                <img src="../assets/images/reviews/stars.svg" alt="stars">
+                            </div>
+                        </div>
+                        <div class="reviews__slide reviews-slide swiper-slide">
+                            <div class="reviews-slide__user reviews-user">
+                                <div class="reviews-user__image">
+                                    <img src="../assets/images/reviews/user-3.png" alt="User Image">
+                                </div>
+                                <div class="reviews-user__content">
+                                    <h3 class="reviews-user__name">
+                                        Gino Ferrand
+                                    </h3>
+                                    <p class="reviews-user__position">
+                                        Founder of Tecla
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="reviews-slide__text">SayNine has been a wonderful SEO partner. Helping us with
+                                link-building strategy. The team always delivers backlinks with quality and on time.</p>
+                            <div class="reviews-slide__rating">
+                                <img src="../assets/images/reviews/stars.svg" alt="stars">
+                            </div>
+                        </div>
+                        <div class="reviews__slide reviews-slide swiper-slide">
+                            <div class="reviews-slide__user reviews-user">
+                                <div class="reviews-user__image">
+                                    <img src="../assets/images/reviews/user-4.png" alt="User Image">
+                                </div>
+                                <div class="reviews-user__content">
+                                    <h3 class="reviews-user__name">
+                                        Sunce Selin D
+                                    </h3>
+                                    <p class="reviews-user__position">
+                                        Head of Marketing at Qooper
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="reviews-slide__text">After the test run, we signed up for a yearly plan, and they
+                                matched our expectations.The delivery speed for SaaS backlinks and the clear
+                                communication with the team say it all. Thanks, SayNine, for the best results!</p>
+                            <div class="reviews-slide__rating">
+                                <img src="../assets/images/reviews/stars.svg" alt="stars">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__buttons">
+                        <button class="reviews__button slider-button slider-button-left reviews__buttons-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="reviews__button slider-button slider-button-right reviews__buttons-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+            </section>
+
+            <div class="ai-seo-services__decor">
+                <img width="1916" height="39" src="../assets/images/decor-all/ai-seo-services-decor.png"
+                    alt="ai-seo-services-decor">
+            </div>
+
+            <div class="ai-seo-services__faq seo-services-faq">
+                <div class="seo-services-faq__container">
+                    <div class="seo-services-faq__wrapper">
+                        <div class="seo-services-faq__left">
+                            <div class="seo-services-faq__item">
+                                <div class="seo-services-faq__decor">
+                                    <img src="./assets/question-10.png" alt="question">
+                                </div>
+                                <div class="seo-services-faq__content">
+                                    <p class="seo-services-faq__title">How do these help with AI search visibility?</p>
+                                    <p class="seo-services-faq__text">The more your brand is mentioned and linked on
+                                        trusted sources, the more likely you are to appear in AI-generated answers.</p>
+                                </div>
+                            </div>
+                            <div class="seo-services-faq__item">
+                                <div class="seo-services-faq__decor">
+                                    <img src="./assets/question-10.png" alt="question">
+                                </div>
+                                <div class="seo-services-faq__content">
+                                    <p class="seo-services-faq__title">Is this the same as link building?</p>
+                                    <p class="seo-services-faq__text">Almost! You still get links, but they’re tied
+                                        directly to your brand name, helping both your SEO results and increasing
+                                        visibility in LLMs.</p>
+                                </div>
+                            </div>
+                            <div class="seo-services-faq__item">
+                                <div class="seo-services-faq__decor">
+                                    <img src="./assets/question-10.png" alt="question">
+                                </div>
+                                <div class="seo-services-faq__content">
+                                    <p class="seo-services-faq__title">Is this safe for my site’s SEO?</p>
+                                    <p class="seo-services-faq__text">Completely. Our approach is white-hat and fully
+                                        compliant with Google’s guidelines. No manipulative tactics. No spam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seo-services-faq__right">
+                            <picture class="bottom-cta__right-img">
+                                <source media="(max-width: 1280.98px)" srcset="./assets/working-tablet.png"
+                                    type="image/png">
+                                <img width="669" height="513" src="./assets/working.png" alt="Wert">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="watch">
+                <div class="watch__container">
+                    <div class="watch__content">
+                        <h1 class="watch__title">
+                            Let’s watch how we help your brand become visible by AI
+                        </h1>
+                        <div class="watch__button-wrapper-ds button-wrapper">
+                            <button id="watch-video" class="watch__button button main-gray-button">
+                                <span class="button__text">Watch video</span>
+                                <span class="button__arrow">
+                                    <img width="24" height="24" src="../assets/icons/arrow-right-dark.svg"
+                                        alt="Arrow Right">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <dialog id="watch-modal" class="watch-modal">
+                <button class="watch-modal__close" id="close-btn-watch-video">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M21 7L7 21M7 7L21 21" stroke="#4A5578" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div data-type="iframe" data-url="https://www.youtube.com/embed/bfw101W5Xf4?si=LWt8ZzFstnVa5UkT"
+                    data-url-preview="./assets/video-preview.png" class="watch-modal__content">
+                    <img src="./assets/video-preview.png" alt="Preview" class="watch-modal__preview">
+                </div>
+            </dialog>
+
+
+            <section class="bottom-cta">
+                <div class="bottom-cta__container">
+                    <div class="bottom-cta__content">
+                        <div class="bottom-cta__left">
+                            <h2 class="bottom-cta__title">
+                                Want AI to talk about you?
+                            </h2>
+                            <div class="bottom-cta__left-buttons">
+                                <div class="button-wrapper">
+                                    <a href="#" class="bottom-cta__button button main-gray-button button-active-fixed">
+                                        <span class="button__text">Book a call</span>
+                                        <span class="button__arrow">
+                                            <img width="24" height="24" src="../assets/icons/arrow-right-dark.svg"
+                                                alt="Arrow Right">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bottom-cta__right">
+                            <picture class="bottom-cta__right-img">
+                                <source media="(max-width: 487.98px)"
+                                    srcset="../assets/images/bottom_cta/wert-mobile.png" type="image/png">
+                                <img width="632" height="581" src="../assets/images/bottom_cta/wert.png" alt="Wert">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+<?php get_footer(); ?>
