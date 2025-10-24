@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
         const main = document.querySelector("main");
-
+            
         if (IS_IOS) {
             main.classList.add("is-ios");
         }
