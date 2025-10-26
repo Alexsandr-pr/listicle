@@ -1,0 +1,1360 @@
+.hero {
+
+    // .hero__container
+    position: relative;
+    padding: 140px 0px 169px 0px;
+    background-image: url("./assets/hero-decor.png");
+    background-repeat: no-repeat;
+
+    @media (min-width: 1280.98px) {
+        background-position: right top 50%;
+    }
+
+    @media (max-width: 1280.98px) {
+        background-position: right 0 top 40px;
+        padding-top: 86px;
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 991.98px) {
+
+        background-position: right 50% top 40px;
+    }
+
+    @media (max-width: 767.98px) {
+        background-size: contain;
+        background-position: right 0 top 30px;
+        padding-bottom: 100px;
+        padding-top: 37px;
+    }
+
+    &__container {}
+
+    // .hero__content
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 140px;
+
+        @media (max-width: 1280.98px) {
+            gap: 125px;
+            flex-direction: column-reverse;
+        }
+
+        @media (max-width: 767.98px) {
+
+            gap: 57px;
+        }
+    }
+
+    // .hero__left
+
+    &__left {
+        flex: 0 1 44.878049%;
+        /* 736/1640 */
+    }
+
+    // .hero__right
+
+    &__right {
+        flex: 0 1 46.52439%;
+
+        /* 763/1640 */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 1280.98px) {
+            max-width: 671px;
+        }
+
+        @media (max-width: 767.98px) {
+            padding-left: 28px;
+            padding-right: 62px;
+        }
+    }
+}
+
+.hero-left {
+
+    // .hero-left__title
+
+    &__title {
+        color: var(--White, #FFF);
+
+        /* Headings/H2 */
+        font-family: "League Spartan";
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 108%;
+        /* 88.56px */
+        margin-bottom: 24px;
+
+        @media (max-width: 1280.98px) {
+            color: var(--White, #FFF);
+            /* Headings/H4 */
+            font-family: "League Spartan";
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 116%;
+            /* 69.6px */
+        }
+
+        @media (max-width: 767.98px) {
+            color: var(--White, #FFF);
+
+            /* Headings/H7 */
+            font-family: "League Spartan";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 128%;
+            /* 38.4px */
+        }
+    }
+
+    // .hero-left__text
+
+    &__text {
+        color: var(--Gray-200, #EFF1F5);
+
+        /* Paragraph/Body/Regular */
+        font-family: "League Spartan";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 30.8px */
+        margin-bottom: 80px;
+
+        @media (min-width: 1280.98px) {
+            max-width: 521px;
+        }
+
+        @media (max-width: 767.98px) {
+            color: var(--Gray-200, #EFF1F5);
+
+            /* Paragraph/Body/Regular */
+            font-family: "League Spartan";
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            /* 26.6px */
+            margin-bottom: 40px;
+        }
+    }
+
+    // .hero-left__buttons
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        @media (max-width: 487.98px) {
+            flex-direction: column;
+        }
+    }
+
+    // .hero-left__button-wrapper
+
+    &__button-wrapper {}
+
+    // .hero-left__button
+
+    &__button {}
+}
+
+
+/*********************/
+
+.how-it-works {
+    padding-top: 229px;
+    border-radius: var(--Large-BG, 60px);
+    background-color: var(--Main-Blue-800, #10335F);
+    padding-bottom: 90px;
+
+    @media (min-width: 1280.98px) {
+        background-image: url("./assets/how-it-bg.png");
+        background-repeat: no-repeat;
+        background-position: right top 95px;
+    }
+
+    @media (max-width: 1280.98px) {
+        padding-top: 101px;
+        border-radius: var(--Large, 32px);
+        padding-bottom: 127px;
+    }
+
+    @media (max-width: 767.98px) {
+        padding-bottom: 70px;
+        padding-top: 72px;
+        border-radius: var(--Middle, 24px);
+    }
+
+    // .how-it-works__container
+
+    &__container {}
+
+    // .how-it-works__header
+
+    &__header {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            left: 532px;
+            top: -142px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            background-image: url("./assets/how-it-work-decor-left.png");
+
+            @media (max-width: 1280.98px) {
+                left: inherit;
+                right: 98px;
+                top: inherit;
+                bottom: -12px;
+            }
+
+            @media (max-width: 767.98px) {
+                right: 7px;
+                width: 85px;
+                height: 87px;
+                left: inherit;
+                bottom: inherit;
+                top: -9px;
+            }
+        }
+    }
+
+    // .how-it-works__label
+
+    &__label {
+        margin-bottom: 14px;
+    }
+
+    // .how-it-works__title
+
+    &__title {
+        position: relative;
+        color: var(--White, #FFF);
+
+        /* Headings/H2 */
+        font-family: "League Spartan";
+        margin-bottom: 48px;
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 108%;
+
+        /* 88.56px */
+        @media (max-width: 1280.98px) {
+            color: var(--White, #FFF);
+
+            /* Headings/H4 */
+            font-family: "League Spartan";
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 116%;
+            /* 69.6px */
+        }
+
+        @media (max-width: 767.98px) {
+            color: var(--White, #FFF);
+            margin-bottom: 36px;
+            /* Headings/H6 */
+            font-family: "League Spartan";
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 118%;
+            /* 40.12px */
+        }
+
+    }
+
+    // .how-it-works__cards
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        @media (max-width: 1280.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.how-it-work-card {
+    align-self: stretch;
+    display: flex;
+
+    &__content {
+        display: flex;
+        padding: 32px 24px;
+        border-radius: var(--Middle, 24px);
+        background: var(--Main-Blue-900, #031D3D);
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+
+        @media (max-width: 1280.98px) {
+            z-index: 10;
+            position: relative;
+        }
+    }
+
+    // .how-it-work-card__number
+    &:nth-child(1) {
+        .how-it-work-card__number {
+            background: var(--Secondary-Yellow-300, #FFFAD4);
+        }
+    }
+
+    &:nth-child(2) {
+        .how-it-work-card__number {
+            background: var(--Secondary-Yellow-400, #FFF6B4);
+        }
+    }
+
+    &:nth-child(3) {
+        .how-it-work-card__number {
+            background: var(--Secondary-Yellow-500, #FFF185);
+        }
+
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 115px;
+            height: 116px;
+            right: -76px;
+            bottom: -14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            background-image: url("./assets/how-it-work-decor-right.png");
+
+            @media (max-width: 1280.98px) {
+                position: absolute;
+                width: 115.705px;
+                z-index: 4;
+                height: 116.885px;
+                aspect-ratio: 115.70/116.89;
+                right: 24.296px;
+                bottom: -69.885px;
+            }
+
+            @media (max-width: 767.98px) {
+                bottom: -49px;
+                right: 3px;
+            }
+        }
+    }
+
+    &__number {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        aspect-ratio: 1/1;
+        margin-bottom: 20px;
+        margin-top: 6px;
+        color: var(--Main-Blue-900, #031D3D);
+        border-radius: var(--Extra-large, 200px);
+        /* Paragraph/Body/Bold */
+        font-family: "League Spartan";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+        /* 38.4px */
+    }
+
+    // .how-it-work-card__title
+
+    &__title {
+        color: var(--White, #FFF);
+
+        /* Headings/H7 */
+        font-family: "League Spartan";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 128%;
+        /* 38.4px */
+        margin-bottom: 14px;
+    }
+
+    // .how-it-work-card__text
+
+    &__text {
+        color: var(--Gray-400, #B9C0D4);
+
+        /* Paragraph/Body/Regular */
+        font-family: "League Spartan";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 30.8px */
+    }
+}
+
+/************************/
+
+
+.pricing {
+    margin-bottom: 160px;
+    padding: 110px 0px;
+    position: relative;
+    z-index: 10;
+    border-radius: 60px;
+    background-image: url("./assets/pricing-bg.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--White);
+}
+
+@media (max-width: 1280.98px) {
+    .pricing {
+        margin-bottom: 120px;
+        border-radius: var(--Large);
+        padding: 120px 0px 104px 0px;
+        background-image: url("./assets/pricing-bg-tablet.png");
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pricing {
+        margin-bottom: 60px;
+        padding: 60px 0px;
+        border-radius: var(--Middle);
+        background-image: url("./assets/pricing-bg-mobile.png");
+    }
+}
+
+.pricing__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__title {
+    color: var(--Gray-900);
+    text-align: center;
+    font-size: 82px;
+    margin-top: 14px;
+    margin-bottom: 70px;
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+@media (max-width: 1280.98px) {
+    .pricing__title {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pricing__title {
+        font-size: 34px;
+        line-height: 1.18;
+    }
+}
+
+.pricing__buttons {
+    border-radius: 34px;
+    background: var(--Main-Blue-200);
+    display: flex;
+    width: 279px;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+@media (max-width: 487.98px) {
+    .pricing__buttons {
+        margin-bottom: 40px;
+    }
+}
+
+.pricing__button {
+    color: var(--Gray-900);
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    width: 132px;
+    height: 38px;
+    padding: 6px 16px 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.pricing__button-active-badge {
+    width: 132px;
+    height: 38px;
+    position: absolute;
+
+    border-radius: 20px;
+    transition: left .3s ease 0s;
+    background: var(--Main-Blue-700);
+}
+
+.pricing__button-active-badge.left {
+    left: 4px;
+}
+
+.pricing__button-active-badge.right {
+    left: 143px;
+}
+
+.pricing__button.active {
+    color: var(--White);
+}
+
+
+
+/*****************************/
+
+.pricing__card {
+    border-radius: var(--Middle);
+    overflow: hidden;
+}
+
+.pricing__card .button-wrapper {
+    width: 100%;
+}
+
+@media (min-width: 487.98px) {
+    .pricing__card {
+        width: 392px;
+        min-width: 392px;
+    }
+}
+
+@media (max-width: 487.98px) {
+    .pricing__card {
+        width: 100%;
+    }
+}
+
+.pricing__card.active .pricing-card__top {
+    background: var(--Main-Blue-800);
+}
+
+.pricing__card.active .pricing-card__bottom {
+    background: var(--Main-Blue-600);
+}
+
+.pricing__card.active .pricing-card-price__period {
+    color: var(--Main-Blue-300);
+}
+
+.pricing__card.active .pricing-card-price__text {
+    color: var(--Main-Blue-300);
+}
+
+.pricing__card.active .pricing-card-bottom__li {
+    color: var(--Main-Blue-200) !important;
+}
+
+.pricing__card.custom-plan .pricing-card-bottom__price {
+    margin-bottom: 0 !important;
+}
+
+.pricing-card__top {
+    display: flex;
+    padding: 18px 32px 40px 32px;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: var(--Middle) var(--Middle) 0 0;
+    background: var(--Main-Blue-600);
+}
+
+.pricing-card__title {
+    color: var(--White);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card__title {
+        font-size: 22px;
+    }
+}
+
+.pricing-card__bottom {
+    display: flex;
+    min-height: 544px;
+    margin-top: -26px;
+    position: relative;
+    padding: 48px 32px 40px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: var(--Middle);
+    background: var(--Main-Blue-800);
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card__bottom {
+        display: flex;
+        padding: 28px 16px 20px 16px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-shrink: 0;
+        min-height: 410px;
+        height: 410px;
+    }
+}
+
+.pricing-card-bottom__best-value {
+    position: absolute;
+    right: 32px;
+    top: 18px;
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card-bottom__best-value {
+        right: 14px;
+    }
+}
+
+.pricing-card__button {
+    width: 100%;
+}
+
+.pricing-card-bottom__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    gap: 12px;
+    align-self: stretch;
+    flex: 1 1 100%;
+}
+
+.pricing-card-bottom__li {
+    display: flex;
+    gap: 14px;
+    color: var(--Gray-400) !important;
+    max-height: fit-content;
+
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card-bottom__li {
+        font-size: 22px !important;
+        gap: 8px;
+    }
+}
+
+.pricing-card-bottom__li-img {
+    max-height: 30px;
+    padding: 6px 0px 0px 0px;
+}
+
+.pricing-card-bottom__li-img img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card-bottom__li-img {
+        max-height: 20px;
+        padding: 4.5px 0px 0px 0px;
+    }
+
+    .pricing-card-bottom__li-img img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.pricing-card-bottom__price {
+    margin-bottom: 32px;
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card-bottom__price {
+        margin-bottom: 24px;
+    }
+}
+
+.pricing-card-price__text {
+    color: var(--White);
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.pricing-card-price__content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pricing-card-price__value {
+    color: var(--White);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card-price__value {
+        font-size: 48px;
+        line-height: 1.18;
+    }
+}
+
+.pricing-card-price__period {
+    color: var(--White);
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.pricing-card-bottom__text {
+    color: var(--White);
+    font-size: 22px;
+    margin: 24px 0px;
+    line-height: 1.4;
+}
+
+@media (max-width: 767.98px) {
+    .pricing-card-bottom__text {
+        margin: 20px 0px 24px 0px;
+    }
+}
+
+.pricing-card-bottom__text-bottom {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--Gray-400);
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.pricing-card-bottom__text-bottom-img {
+    margin-top: 4px;
+    height: 24px;
+    width: 20px;
+}
+
+.pricing-card-counter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.pricing-card-counter__button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    aspect-ratio: 1/1;
+    border-radius: var(--Extra-large);
+    background: var(--White);
+}
+
+.pricing-card-counter__button svg path {
+    transition: all .3s ease 0s;
+}
+
+@media (hover: hover) {
+    .pricing-card-counter__button:hover {
+        border-radius: var(--Extra-large);
+        background: var(--Main-Blue-900);
+    }
+
+    .pricing-card-counter__button:hover svg path {
+        stroke: var(--White);
+    }
+}
+
+.pricing-card-counter__button:disabled {
+    opacity: 0.5;
+}
+
+.pricing-card-counter__value {
+    display: flex;
+    height: 40px;
+    padding: 6px 14px 4px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: var(--Large-BG);
+    background: var(--White);
+    color: var(--Gray-700);
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: center;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    outline: none;
+    border: 2px solid var(--White);
+}
+
+.pricing-card-counter__value:focus {
+    border: 2px solid var(--Secondary-Terracotta-500);
+}
+
+.pricing-card-counter__value::-webkit-outer-spin-button,
+.pricing-card-counter__value::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.pricing__cards-container {
+    max-width: 1640px;
+    position: relative;
+    margin: 0 auto;
+    height: 612px;
+    overflow: hidden;
+}
+
+.pricing__cards-wrapper {
+    position: absolute;
+    display: flex;
+    transition: transform 0.2s ease-in;
+
+    @media (min-width: 1780.98px) {
+        width: calc(1640px * 2);
+    }
+
+    @media (max-width: 1780.98px) {
+        width: calc((100dvw - var(--scrollbar-width, 0px)) * 2);
+    }
+
+    &.left {
+        transform: translateX(0);
+    }
+
+    &.right {
+        @media (min-width: 1780.98px) {
+            transform: translateX(-1640px);
+        }
+
+        @media (max-width: 1780.98px) {
+            transform: translateX(calc(0px - (100dvw - var(--scrollbar-width, 0px))));
+        }
+    }
+}
+
+.pricing__cards {
+
+
+    @media (min-width: 487.98px) {
+        overflow-y: auto;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media (min-width: 1780.98px) {
+        max-width: 1640px;
+    }
+
+    @media (max-width: 1780.98px) {
+        max-width: calc(100dvw - var(--scrollbar-width, 0px));
+    }
+
+    @media (max-width: 487.98px) {
+        padding: 0 16px;
+        max-width: 100%;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.pricing__card {
+    @media (min-width: 487.98px) {
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin-right: 24px;
+        }
+    }
+
+    @media (max-width: 487.98px) {
+        max-width: calc((100dvw - var(--scrollbar-width, 0px)) - 32px) !important;
+    }
+}
+
+.pricing__cards-track {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    transition: all 0.3s ease;
+
+    @media (min-width: 487.98px) {
+        width: max-content;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media (max-width: 1780.98px) {
+        &::before {
+            display: block;
+            content: "";
+            flex: 0 0 70px;
+            width: 70px;
+            transition: width 0.2s ease;
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            flex: 0 0 70px;
+            width: 70px;
+            transition: width 0.2s ease;
+        }
+
+        .pricing__cards-wrapper.left &::before,
+        .pricing__cards-wrapper.right &::after {
+            width: 0;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+
+        &::before,
+        &::after {
+            flex: 0 0 40px;
+            width: 40px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+
+        &::before,
+        &::after {
+            flex: 0 0 16px;
+            width: 16px;
+        }
+    }
+
+    @media (max-width: 487.98px) {
+        flex-direction: column;
+        gap: 24px;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+
+/***********************/
+
+.benefits {
+    padding-bottom: 209px;
+    padding-top: 140px;
+
+    // .benefits__container
+    @media (max-width: 1280.98px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    @media (max-width: 767.98px) {
+        padding-bottom: 130px;
+        padding-top: 80px;
+    }
+
+    &__container {}
+
+    // .benefits__content
+
+
+    &__content {
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 1536.98px) {
+            flex-direction: column;
+            gap: 70px;
+        }
+
+        @media (max-width: 767.98px) {
+            gap: 60px;
+        }
+    }
+
+    // .benefits__label
+    &__left {
+        flex: 0 1 33.841463%;
+        /* 555/1640 */
+        max-width: 555px;
+    }
+
+    &__label {
+        margin-bottom: 14px;
+    }
+
+    // .benefits__title
+
+    &__title {
+        color: var(--White, #FFF);
+
+        max-width: 555px;
+        /* Headings/H3 */
+        font-family: "League Spartan";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 108%;
+
+        /* 77.76px */
+        @media (max-width: 767.98px) {
+            color: var(--White, #FFF);
+
+            /* Headings/H6 */
+            font-family: "League Spartan";
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 118%;
+            /* 40.12px */
+        }
+    }
+
+    // .benefits__items
+
+    &__items {
+        @media (min-width: 991.98px) {
+            min-height: 714px !important;
+            min-width: 949px !important;
+            flex: 0 1 57.865854%;
+            /* 949/1640px */
+            position: relative;
+        }
+
+        @media (max-width: 991.98px) {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
+
+.benefit-item {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    // .benefit-item__image
+
+    &__image {
+        display: flex;
+        padding: 14px;
+        align-items: center;
+        gap: 10px;
+        border-radius: var(--Extra-large, 200px);
+        background: var(--White, #FFF);
+        margin-bottom: 24px;
+    }
+
+    // .benefit-item__title
+
+    &__title {
+        color: var(--Gray-900, #181F35);
+
+        /* Headings/H6 */
+        font-family: "League Spartan";
+        margin-bottom: 14px;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 118%;
+        /* 40.12px */
+    }
+
+    // .benefit-item__text
+
+    &__text {
+        color: var(--Gray-700, #4A5578);
+
+        /* Paragraph/Body/Regular */
+        font-family: "League Spartan";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 38.4px */
+    }
+
+    @media (min-width: 991.98px) {
+        position: absolute;
+    }
+}
+
+.benefit-item-1 {
+    border-radius: var(--Middle, 24px);
+    background: var(--Secondary-Turquoise-300, #DCF6FF);
+
+    @media (min-width: 991.98px) {
+        width: 393px;
+        height: 402px;
+        left: 0;
+        top: 160px;
+    }
+
+    @media (max-width: 991.98px) {
+        order: 1;
+    }
+}
+
+.benefit-item-2 {
+    @media (min-width: 991.98px) {
+        width: 530px;
+        top: 0;
+        right: 0;
+        height: 326px;
+    }
+
+    border-radius: var(--Middle, 24px);
+    background: var(--Other-Green-1-300, #ECFBC3);
+
+    @media (max-width: 991.98px) {
+        order: 3;
+    }
+}
+
+.benefit-item-3 {
+
+    border-radius: var(--Middle, 24px);
+    background: var(--Secondary-Terracotta-300, #FFD4C5);
+
+    @media (min-width: 991.98px) {
+        right: 140px;
+        bottom: 0;
+        width: 390px;
+        height: 364px;
+    }
+
+    @media (max-width: 991.98px) {
+        order: 2;
+    }
+}
+
+
+.who-you-need {
+    margin-top: 155px;
+
+    // .who-you-need__container
+    @media (max-width: 1280.98px) {
+        margin-top: 80px;
+
+    }
+
+    @media (max-width: 767.98px) {
+        margin-top: 40px;
+
+    }
+
+    &__container {
+        @media (max-width: 1280.98px) {
+            padding: 0 !important;
+        }
+    }
+
+    &__content {
+        background-image: url("./assets/who-you-need-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 85px 56px;
+        display: flex;
+        align-items: center;
+        gap: 47px;
+        border-radius: var(--Large, 32px);
+        background-color: var(--Main-Blue-300, #C6E1FF);
+
+        @media (max-width: 1280.98px) {
+            flex-direction: column;
+            gap: 79px;
+            background-image: url("./assets/who-you-need-bg-tablet.png");
+            padding: 85px 70px;
+             background-position: top right;
+        }
+
+        @media (max-width: 767.98px) {
+            padding: 44px 20px 45px 20px;
+            gap: 33px;
+            background-image: url("./assets/who-you-need-bg-mobile.png");
+            border-radius: var(--Middle, 24px);
+        }
+    }
+
+    // .who-you-need__left
+
+    &__left {
+        flex: 0 1 27.560976%;
+        /* 452/1640 */
+    }
+
+    // .who-you-need__img
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+
+        @media (max-width: 767.98px) {
+            width: 252px;
+            height: 359px;
+            flex-shrink: 0;
+        }
+    }
+
+    // .who-you-need__right
+
+    &__right {
+        flex: 0 1 57.682927%;
+        /* 946/1640 */
+    }
+
+    // .who-you-need__title
+
+    &__title {
+        color: var(--Gray-900, #181F35);
+        margin-bottom: 36px;
+        /* Headings/H4 */
+        font-family: "League Spartan";
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 116%;
+
+        @media (max-width: 1280.98px) {
+            max-width: 677px;
+        }
+
+        /* 69.6px */
+        @media (max-width: 767.98px) {
+            color: var(--Gray-900, #181F35);
+
+            /* Headings/H7 */
+            font-family: "League Spartan";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 128%;
+            /* 38.4px */
+        }
+    }
+
+    // .who-you-need__items
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+    }
+
+    // .who-you-need__card
+
+    &__card {
+        display: flex;
+        padding: 32px 24px;
+        border-radius: var(--Middle, 24px);
+        background: var(--Main-Blue-100, #F6FAFF);
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+        @media (max-width: 767.98px) {
+            align-items: start;
+          flex-direction: column;
+        }
+    }
+
+    // .who-you-need__decor
+
+    &__decor {
+        display: flex;
+        width: 54px;
+        border-radius: var(--Extra-large, 200px);
+        background: var(--Other-Green-1-400, #CBE389);
+        height: 54px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        aspect-ratio: 1/1;
+    }
+
+    // .who-you-need__text
+
+    &__text {
+        color: var(--Gray-900, #181F35);
+
+        /* Headings/H9 */
+        font-family: "League Spartan";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        /* 30.8px */
+    }
+}
