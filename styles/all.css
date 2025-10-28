@@ -348,8 +348,11 @@ main {
 
 .button.main-gray-button .button__arrow {
     background: var(--White);
+    transition: all 0.3s ease-in;
 }
-
+.button.main-gray-button .button__arrow svg path {
+    transition: all 0.3s ease-in;
+}
 @media (hover: hover) {
     .button.main-gray-button:hover {
         border-color: var(--Main-Blue-800);
@@ -382,6 +385,14 @@ main {
     .button.main-gray-button.secondary:hover .button__text {
         color: var(--White);
     }
+
+    .button.main-gray-button.secondary:hover .button__arrow {
+        background-color: var(--White);
+    }
+    .button.main-gray-button.secondary:hover .button__arrow  svg path {
+        stroke: var(--Main-Blue-900);
+    }
+    
 }
 
 .button.main-gray-button.secondary-reverse {
@@ -531,6 +542,7 @@ main {
 }
 
 @media (max-width: 537.98px) {
+
     .reviews-pagination,
     .our-work-pagination {
         visibility: visible;
