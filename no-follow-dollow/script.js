@@ -187,21 +187,22 @@ window.addEventListener("DOMContentLoaded", () => {
 
 					await animateMove(cursor, cfg.steps[0].from, cfg.steps[0].to, cfg.steps[0].duration);
 					svgPath.style.transition = "fill 300ms ease-in-out";
+					await delay(300);
 					svgPath.setAttribute("fill", "var(--Main-Blue-500)");
 					await delay(300);
 					svgPath.setAttribute("fill", "var(--Main-Blue-600)");
-					await delay(150);
+					await delay(300);
 					if (!isRunning) break;
 
 					await delay(300);
 					await animateMove(cursor, cfg.steps[1].from, cfg.steps[1].to, cfg.steps[1].duration);
 					if (!isRunning) break;
 
-					svgPath.style.transition = "fill 300ms ease-in-out";
+					await delay(300);
 					svgPath.setAttribute("fill", "var(--Main-Blue-500)");
 					await delay(300);
 					svgPath.setAttribute("fill", "var(--Main-Blue-600)");
-					await delay(150);
+					await delay(300);
 
 					await animateMove(cursor, cfg.steps[2].from, cfg.steps[2].to, cfg.steps[2].duration, [textarea, imgBlock]);
 					if (!isRunning) break;
@@ -228,37 +229,46 @@ window.addEventListener("DOMContentLoaded", () => {
 					);
 					if (!isRunning) break;
 
-					await delay(150);
+					await delay(300);
 					svgPath.setAttribute("fill", "var(--Main-Blue-500)");
 					await delay(300);
 					svgPath.setAttribute("fill", "var(--Main-Blue-600)");
-					await delay(2000);
+					await delay(800);
+					
+					
+					const fadeDuration = 800;
+					const moveCfg = cfg.steps[4].options[opt];
 
-					result.style.display = "none";
+					result.style.transition = `opacity 0ms ease`;
+					textarea.style.transition = `opacity ${fadeDuration}ms ease`;
+					imgBlock.style.transition = `opacity ${fadeDuration}ms ease`;
+
 					result.style.opacity = "0";
 					textarea.style.display = "";
-					textarea.style.opacity = "1";
 					imgBlock.style.display = "";
+					textarea.style.opacity = "1";
 					imgBlock.style.opacity = "1";
+
+					
+					// 🔹 Параллельно курсор движется на стартовую позицию
+					await Promise.all([
+						animateMove(cursor, moveCfg.from, moveCfg.to, 800),
+						new Promise((resolve) =>
+							setTimeout(resolve, fadeDuration)
+						),
+					]);
+
+					// 🔹 После завершения — сбрасываем состояния
+					result.style.display = "none";
 					cursorSpan.style.background = "";
 					loadingPath.style.strokeDashoffset = "";
 
-					await delay(500);
-
-					await animateMove(
-						cursor,
-						cfg.steps[4].options[opt].from,
-						cfg.steps[4].options[opt].to,
-						cfg.steps[4].options[opt].duration
-					);
-					if (!isRunning) break;
-
-					await delay(1500);
+					// 🔹 Задержка перед новым циклом
+					await delay(3000);
 				}
 			}
 
 			runSequence();
-
 
 			let resizeTimeout;
 
