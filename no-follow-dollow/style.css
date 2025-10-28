@@ -1,11 +1,3 @@
-main.is-ios .wrapper {
-  background-color: #0e3a6a !important;
-}
-
-main .wrapper {
-  background-color: var(--Main-Blue-800);
-}
-
 @media (min-width: 1280.98px) {
   .hero {
     padding-top: 63px;
@@ -462,6 +454,14 @@ main .wrapper {
     /* 56.64px */
   }
 }
+.tools__swiper {
+  padding: 0px 40px;
+}
+@media (max-width: 767.98px) {
+  .tools__swiper {
+    padding: 0px 16px;
+  }
+}
 @media (max-width: 1280.98px) {
   .tools__swiper-wrapper {
     display: flex;
@@ -592,6 +592,22 @@ main .wrapper {
   stroke: var(--Main-Blue-600, #077DFD);
 }
 
+@media (min-width: 1780.98px) {
+  .tools-slide:first-child {
+    margin-left: calc((100vw - 1655px) / 2);
+  }
+  .tools-slide:nth-child(3) {
+    margin-right: calc((100vw - 1655px) / 2);
+  }
+}
+@media (min-width: 1280.98px) and (max-width: 1780.98px) {
+  .tools-slide:first-child {
+    margin-left: 70px;
+  }
+  .tools-slide:nth-child(3) {
+    margin-right: 70px;
+  }
+}
 .tools-slide__content {
   height: 309px;
   min-height: 309px;

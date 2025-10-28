@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 
-	// Первичная инициализация
+
 	handleResize();
 
 	window.addEventListener("resize", () => {
