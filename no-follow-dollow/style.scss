@@ -1,3 +1,16 @@
+main.is-ios {
+    .wrapper {
+        background-color: #0e3a6a !important;
+    }
+}
+
+main {
+    .wrapper {
+        background-color: var(--Main-Blue-800);
+    }
+}
+
+
 .hero {
     @media (min-width: 1280.98px) {
         padding-top: 63px;
@@ -413,6 +426,18 @@
     font-size: 34px;
     font-weight: 700;
     line-height: 1.18;
+
+    @media(max-width:1280.98px) {
+        color: #FFF;
+
+        /* Headings/H8 */
+        font-family: "League Spartan";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        /* 36.4px */
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -457,12 +482,35 @@
 
     // .tools__container
 
-    &__container {}
+    &__container {
+        @media (max-width: 1280.98px) {
+            max-width: 948px !important;
+        }
+
+    }
 
     // .tools__label
 
     &__label {
         margin-bottom: 14px;
+
+        span:nth-child(1) {
+            display: block;
+        }
+
+        span:nth-child(2) {
+            display: none;
+        }
+
+        @media (max-width: 1280.98px) {
+            span:nth-child(1) {
+                display: none;
+            }
+
+            span:nth-child(2) {
+                display: block;
+            }
+        }
     }
 
     // .tools__title
@@ -477,7 +525,38 @@
         font-style: normal;
         font-weight: 700;
         line-height: 108%;
+
         /* 88.56px */
+        span:nth-child(1) {
+            display: block;
+        }
+
+        span:nth-child(2) {
+            display: none;
+        }
+
+        @media (max-width: 1280.98px) {
+            span:nth-child(1) {
+                display: none;
+            }
+
+            span:nth-child(2) {
+                display: block;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            margin-bottom: 36px;
+            color: #FFF;
+
+            /* Headings/H5 */
+            font-family: "League Spartan";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 118%;
+            /* 56.64px */
+        }
     }
 
     // .tools__swiper
@@ -486,21 +565,58 @@
 
     // .tools__swiper-wrapper
 
-    &__swiper-wrapper {}
+    &__swiper-wrapper {
+        @media (max-width: 1280.98px) {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+        }
+    }
 
     // .tools__slide
 
     &__slide {
         display: flex;
         max-width: 808px;
-        min-height: 650px;
         height: auto;
         flex-direction: column;
         border-radius: var(--Middle, 24px);
         background: var(--White, #FFF);
-        padding: 20px 40px 35px 40px;
-        margin-bottom: 36px;
+        padding: 26px 40px 35px 40px;
+        &:nth-child(4) {
+            display: none;
+        }
+        @media (max-width: 1280.98px) {
+            &:nth-child(1) {
+                order: 3;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+            &:nth-child(3) {
+                order: 2;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            max-width: 100%;
+        }
+
+        @media (min-width: 767.98px) {
+            min-height: 650px;
+        }
+
+        @media (max-width: 767.98px) {
+            min-height: 580px;
+            padding: 20px 16px 23px 16px;
+            &:nth-child(4) {
+                display: flex;
+                order: 4;
+            }
+        }
     }
+
 
     // .tools__swiper-buttons
 
@@ -509,6 +625,10 @@
         gap: 24px;
         display: flex;
         justify-content: center;
+
+        @media (max-width: 1280.98px) {
+            display: none;
+        }
     }
 
     // .tools__swiper-button
@@ -533,6 +653,7 @@
                 transform: rotate(180deg);
             }
         }
+
     }
 
     // .tools__swiper-button-prev
@@ -606,9 +727,8 @@
 .tools-slide {
 
     // .tools-slide__content
-
+   
     &__content {
-        width: 728px;
         height: 309px;
         min-height: 309px;
         flex: 0 1 309px;
@@ -616,7 +736,15 @@
         border-radius: var(--Middle, 24px);
         background: var(--Main-Blue-300, #C6E1FF);
     }
-
+    &__content-video {
+        
+        video {
+            border-radius: var(--Middle, 24px);
+            width: 100% ;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     // .tools-slide__title
 
     &__title {
@@ -629,35 +757,85 @@
         margin-bottom: 14px;
         font-weight: 700;
         line-height: 118%;
+
         /* 40.12px */
+        @media (max-width: 767.98px) {
+            color: var(--Gray-900, #181F35);
+
+            /* Headings/H9 */
+            font-family: "League Spartan";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+            /* 30.8px */
+        }
     }
 
     // .tools-slide__text
 
     &__text {
         color: var(--Gray-700, #4A5578);
-        flex: 0 1 100%;
+
         /* Paragraph/Body/Regular */
         font-family: "League Spartan";
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: 160%;
+        margin-bottom: 36px;
+
         /* 38.4px */
+        @media (max-width: 767.98px) {
+            color: var(--Gray-700, #4A5578);
+            margin-bottom: 25px;
+            /* Paragraph/Body/Regular */
+            font-family: "League Spartan";
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            /* 26.6px */
+        }
     }
 
     // .tools-slide__buttons
 
     &__buttons {
+        margin-top: auto;
         display: flex;
         justify-content: end;
     }
 
     // .tools-slide__button-wrapper
 
-    &__button-wrapper {}
+    &__button-wrapper {
+        height: 52px !important;
+        min-height: 52px !important;
+        width: 157px !important;
+        max-width: 157px !important;
+    }
 
     // .tools-slide__button
 
-    &__button {}
+    &__button {
+        padding: 10px 8px !important;
+        height: 52px !important;
+        max-width: fit-content !important;
+        width: 157px !important;
+        color: var(--Main-Blue-900, #031D3D);
+
+        .button__text {
+            font-size: 22px !important;
+        }
+
+        /* 22px */
+        .button__arrow {
+            display: flex !important;
+        }
+        &:active {
+            padding: 8px 6px !important;
+            height: 48px !important;
+        }
+    }
 }

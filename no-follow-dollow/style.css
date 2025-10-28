@@ -1,3 +1,11 @@
+main.is-ios .wrapper {
+  background-color: #0e3a6a !important;
+}
+
+main .wrapper {
+  background-color: var(--Main-Blue-800);
+}
+
 @media (min-width: 1280.98px) {
   .hero {
     padding-top: 63px;
@@ -346,6 +354,18 @@
   font-weight: 700;
   line-height: 1.18;
 }
+@media (max-width: 1280.98px) {
+  .how-it-works-bottom__left p {
+    color: #FFF;
+    /* Headings/H8 */
+    font-family: "League Spartan";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 36.4px */
+  }
+}
 
 @media (max-width: 767.98px) {
   .how-it-works-bottom__left p {
@@ -382,8 +402,27 @@
     margin-bottom: 80px;
   }
 }
+@media (max-width: 1280.98px) {
+  .tools__container {
+    max-width: 948px !important;
+  }
+}
 .tools__label {
   margin-bottom: 14px;
+}
+.tools__label span:nth-child(1) {
+  display: block;
+}
+.tools__label span:nth-child(2) {
+  display: none;
+}
+@media (max-width: 1280.98px) {
+  .tools__label span:nth-child(1) {
+    display: none;
+  }
+  .tools__label span:nth-child(2) {
+    display: block;
+  }
 }
 .tools__title {
   margin-bottom: 56px;
@@ -396,22 +435,94 @@
   line-height: 108%;
   /* 88.56px */
 }
+.tools__title span:nth-child(1) {
+  display: block;
+}
+.tools__title span:nth-child(2) {
+  display: none;
+}
+@media (max-width: 1280.98px) {
+  .tools__title span:nth-child(1) {
+    display: none;
+  }
+  .tools__title span:nth-child(2) {
+    display: block;
+  }
+}
+@media (max-width: 767.98px) {
+  .tools__title {
+    margin-bottom: 36px;
+    color: #FFF;
+    /* Headings/H5 */
+    font-family: "League Spartan";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    /* 56.64px */
+  }
+}
+@media (max-width: 1280.98px) {
+  .tools__swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+}
 .tools__slide {
   display: flex;
   max-width: 808px;
-  min-height: 650px;
   height: auto;
   flex-direction: column;
   border-radius: var(--Middle, 24px);
   background: var(--White, #FFF);
-  padding: 20px 40px 35px 40px;
-  margin-bottom: 36px;
+  padding: 26px 40px 35px 40px;
+}
+.tools__slide:nth-child(4) {
+  display: none;
+}
+@media (max-width: 1280.98px) {
+  .tools__slide:nth-child(1) {
+    order: 3;
+  }
+  .tools__slide:nth-child(2) {
+    order: 1;
+  }
+  .tools__slide:nth-child(3) {
+    order: 2;
+  }
+}
+@media (max-width: 991.98px) {
+  .tools__slide {
+    max-width: 100%;
+  }
+}
+@media (min-width: 767.98px) {
+  .tools__slide {
+    min-height: 650px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tools__slide {
+    min-height: 580px;
+    padding: 20px 16px 23px 16px;
+  }
+  .tools__slide:nth-child(4) {
+    display: flex;
+    order: 4;
+  }
 }
 .tools__swiper-buttons {
   margin-top: 70px;
   gap: 24px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1280.98px) {
+  .tools__swiper-buttons {
+    display: none;
+  }
 }
 .tools__swiper-button {
   display: flex;
@@ -482,13 +593,19 @@
 }
 
 .tools-slide__content {
-  width: 728px;
   height: 309px;
   min-height: 309px;
   flex: 0 1 309px;
   margin-bottom: 24px;
   border-radius: var(--Middle, 24px);
   background: var(--Main-Blue-300, #C6E1FF);
+}
+.tools-slide__content-video video {
+  border-radius: var(--Middle, 24px);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .tools-slide__title {
   color: var(--Gray-900, #181F35);
@@ -501,18 +618,69 @@
   line-height: 118%;
   /* 40.12px */
 }
+@media (max-width: 767.98px) {
+  .tools-slide__title {
+    color: var(--Gray-900, #181F35);
+    /* Headings/H9 */
+    font-family: "League Spartan";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 30.8px */
+  }
+}
 .tools-slide__text {
   color: var(--Gray-700, #4A5578);
-  flex: 0 1 100%;
   /* Paragraph/Body/Regular */
   font-family: "League Spartan";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  margin-bottom: 36px;
   /* 38.4px */
 }
+@media (max-width: 767.98px) {
+  .tools-slide__text {
+    color: var(--Gray-700, #4A5578);
+    margin-bottom: 25px;
+    /* Paragraph/Body/Regular */
+    font-family: "League Spartan";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 26.6px */
+  }
+}
 .tools-slide__buttons {
+  margin-top: auto;
   display: flex;
   justify-content: end;
+}
+.tools-slide__button-wrapper {
+  height: 52px !important;
+  min-height: 52px !important;
+  width: 157px !important;
+  max-width: 157px !important;
+}
+.tools-slide__button {
+  padding: 10px 8px !important;
+  height: 52px !important;
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+  width: 157px !important;
+  color: var(--Main-Blue-900, #031D3D);
+  /* 22px */
+}
+.tools-slide__button .button__text {
+  font-size: 22px !important;
+}
+.tools-slide__button .button__arrow {
+  display: flex !important;
+}
+.tools-slide__button:active {
+  padding: 8px 6px !important;
+  height: 48px !important;
 }/*# sourceMappingURL=style.css.map */
