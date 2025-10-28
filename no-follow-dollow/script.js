@@ -250,7 +250,6 @@ window.addEventListener("DOMContentLoaded", () => {
 					imgBlock.style.opacity = "1";
 
 					
-					// 🔹 Параллельно курсор движется на стартовую позицию
 					await Promise.all([
 						animateMove(cursor, moveCfg.from, moveCfg.to, 800),
 						new Promise((resolve) =>
@@ -258,12 +257,10 @@ window.addEventListener("DOMContentLoaded", () => {
 						),
 					]);
 
-					// 🔹 После завершения — сбрасываем состояния
 					result.style.display = "none";
 					cursorSpan.style.background = "";
 					loadingPath.style.strokeDashoffset = "";
 
-					// 🔹 Задержка перед новым циклом
 					await delay(3000);
 				}
 			}
