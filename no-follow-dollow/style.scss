@@ -339,22 +339,20 @@
         font-style: normal;
         font-weight: 500;
         line-height: 110%;
+        flex-wrap: wrap;
 
-        @media (min-width: 991.98px) {
-            flex-wrap: wrap;
+        p {
+            display: flex;
+            align-items: center;
+            gap: 3px;
         }
 
         @media (max-width: 767.98px) {
             gap: 8px;
-            padding-right: 5px;
+            padding-right: 3px;
         }
 
-        @media (max-width: 393.98px) {
-            span {
-                display: inline-block;
-                transform: translateX(-4px);
-            }
-        }
+
     }
 }
 
@@ -778,17 +776,6 @@
         }
     }
 
-    &__content-video {
-        padding: 0px;
-
-        video {
-            border-radius: var(--Middle, 24px);
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
     // .tools-slide__title
 
     &__title {
@@ -940,7 +927,7 @@
     &__cursor {
         display: flex;
         position: absolute;
-        
+
         svg {
             display: flex;
             width: 37px;
