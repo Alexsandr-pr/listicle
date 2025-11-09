@@ -858,16 +858,42 @@
   border-radius: 60px;
   padding: 146px 0px 133px 0px;
   background-color: #FFF;
+  background-image: url("./assets/images/what-we-do-left-bg.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media (min-width: 767.98px) {
+  .audit-steps::after {
+    position: absolute;
+    content: "";
+    width: 960px;
+    right: 0;
+    top: 0;
+    height: 297px;
+    background-image: url("./assets/images/what-we-do-right-bg.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 1280.98px) {
+  .audit-steps::after {
+    width: 64px;
+    background-image: url("./assets/images/what-we-do-right-bg-tablet.png");
+  }
 }
 @media (max-width: 1280.98px) {
   .audit-steps {
     padding: 146px 0px 90px 0px;
+    background-image: url("./assets/images/what-we-do-left-bg-tablet.png");
   }
 }
 @media (max-width: 767.98px) {
   .audit-steps {
     border-radius: var(--Middle, 24px);
     padding: 80px 0px 40px 0px;
+    background-image: url("./assets/images/what-we-do-left-bg-mobile.png");
   }
 }
 .audit-steps__container {
