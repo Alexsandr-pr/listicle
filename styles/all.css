@@ -175,7 +175,10 @@ main {
     color: var(--White);
     background: var(--Gray-900);
 }
-
+.label.white {
+    color: var(--Gray-900, #181F35);
+    background: var(--White, #FFF);
+}
 .button-wrapper {
     height: 52px;
     display: flex;
