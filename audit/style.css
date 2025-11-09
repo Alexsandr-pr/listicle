@@ -1,0 +1,742 @@
+@media (min-width: 1280.98px) {
+  .audit .bottom-cta__title {
+    margin-bottom: 14px !important;
+  }
+  .audit .bottom-cta__text {
+    color: var(--Gray-300, #DCDFEA);
+    font-family: "League Spartan";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 60px;
+    line-height: 160%;
+  }
+}
+@media (max-width: 1280.98px) {
+  .audit .bottom-cta__text {
+    display: none;
+  }
+}
+.audit .faq {
+  margin: 180px 0px 140px 0px;
+}
+@media (max-width: 1280.98px) {
+  .audit .faq {
+    margin: 160px 0px 140px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .audit .faq {
+    margin: 80px 0px;
+  }
+}
+.audit .reviews {
+  padding: 439px 0px 120px 0px;
+  margin-top: -322px;
+}
+@media (max-width: 1280.98px) {
+  .audit .reviews {
+    margin-top: -94px;
+    padding: 183px 0px 96px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .audit .reviews {
+    margin-top: -62px;
+    padding: 135px 0px 60px 0px;
+  }
+}
+.audit .content-writing__reviews {
+  background-image: url("./assets/images/reviews-bg.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1280.98px) {
+  .audit .content-writing__reviews {
+    background-image: url("./assets/images/reviews-bg-tablet.png");
+  }
+}
+@media (max-width: 767.98px) {
+  .audit .content-writing__reviews {
+    background-image: url("./assets/images/reviews-bg-mobile.png");
+  }
+}
+.audit .content-writing__reviews::after {
+  content: "";
+  background-image: url("../assets/images/reviews/reviews-decor-top.png");
+  width: 401.26px;
+  height: 436.856px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+}
+@media (min-width: 1280.98px) {
+  .audit .content-writing__reviews::after {
+    left: 65px;
+    top: 103px;
+  }
+}
+@media (max-width: 1280.98px) and (min-width: 767.98px) {
+  .audit .content-writing__reviews::after {
+    bottom: 19px;
+    left: 51px;
+  }
+}
+@media (max-width: 767.98px) {
+  .audit .content-writing__reviews::after {
+    width: 191px;
+    height: 208px;
+    top: 225px;
+    left: -6px;
+  }
+}
+@media (min-width: 1280.98px) {
+  .audit .content-writing__reviews::before {
+    top: 535px;
+    content: "";
+    background-image: url("../assets/images/reviews/reviews-decor-bottom.png");
+    width: 229px;
+    z-index: 20;
+    height: 249px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    right: 115px;
+  }
+}
+
+.hero {
+  margin-top: 40px;
+  margin-bottom: 92px;
+}
+@media (max-width: 1280.98px) {
+  .hero {
+    margin-top: 24px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero {
+    margin-top: 29px;
+    margin-bottom: 30px;
+  }
+}
+.hero__content {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border-radius: 60px;
+  background: var(--Main-Blue-100, #F6FAFF);
+}
+@media (min-width: 1280.98px) {
+  .hero__content {
+    max-height: 664px;
+  }
+}
+@media (max-width: 1280.98px) {
+  .hero__content {
+    flex-direction: column-reverse;
+    padding: 0px 46px 84px 42px;
+    gap: 19px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero__content {
+    padding: 0;
+    gap: 14px;
+    border-radius: var(--Middle, 24px);
+  }
+}
+@media (min-width: 1536.98px) {
+  .hero__left {
+    padding: 90px 0px 0px 110px;
+  }
+}
+@media (min-width: 1280.98px) and (max-width: 1536.98px) {
+  .hero__left {
+    padding: 60px 0px 40px 70px;
+  }
+}
+@media (max-width: 1280.98px) {
+  .hero__left {
+    padding-left: 13px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero__left {
+    padding: 0px 16px 20px 15px;
+  }
+}
+.hero__title {
+  color: var(--Gray-900, #181F35);
+  /* Headings/H2 */
+  font-family: "League Spartan";
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108%;
+  /* 88.56px */
+  margin-bottom: 20px;
+}
+@media (min-width: 1280.98px) {
+  .hero__title {
+    max-width: 485px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero__title {
+    color: var(--Gray-900, #181F35);
+    text-align: center;
+    /* Headings/H6 */
+    font-family: "League Spartan";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    /* 40.12px */
+  }
+}
+.hero__text {
+  color: var(--Gray-600, #646E8C);
+  /* Paragraph/Body/Regular */
+  font-family: "League Spartan";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 30.8px */
+  margin-bottom: 80px;
+}
+@media (min-width: 1280.98px) {
+  .hero__text {
+    max-width: 425px;
+  }
+}
+@media (max-width: 1280.98px) {
+  .hero__text {
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero__text {
+    color: var(--Gray-600, #646E8C);
+    text-align: center;
+    /* Paragraph/Body/Regular */
+    font-family: "League Spartan";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 30.8px */
+  }
+}
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+@media (max-width: 487.98px) {
+  .hero__buttons {
+    flex-direction: column;
+  }
+}
+.hero__right {
+  align-items: stretch;
+}
+@media (min-width: 1280.98px) {
+  .hero__right {
+    flex: 0 1 49.146341%;
+    /* 806/1640 */
+    aspect-ratio: 806/664;
+  }
+}
+@media (max-width: 1280.98px) {
+  .hero__right {
+    margin: 0px auto;
+    width: 100%;
+    aspect-ratio: 780/643;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .hero__right {
+    margin: 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero__right {
+    padding-right: 0;
+  }
+}
+
+.hero-right__video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 806/664;
+  border-radius: 0px 60px 60px 0px;
+}
+@media (max-width: 1280.98px) {
+  .hero-right__video {
+    aspect-ratio: 780/643;
+  }
+}
+
+.audit-pricing {
+  position: relative;
+  z-index: 1;
+  border-radius: 60px;
+  background-color: var(--White, #FFF);
+  padding: 124px 0px 141px 0px;
+  background-image: url("./assets/images/pricing.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1280.98px) {
+  .audit-pricing {
+    background-image: url("./assets/images/pricing-bg-tablet.png");
+    padding: 120px 0px 89px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .audit-pricing {
+    padding: 80px 0px;
+    background-image: url("./assets/images/pricing-bg-mobile.png");
+  }
+}
+.audit-pricing__content {
+  display: flex;
+  flex-direction: column;
+}
+.audit-pricing__label {
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.audit-pricing__title {
+  text-align: center;
+  color: var(--Gray-900, #181F35);
+  /* Headings/H2 */
+  font-family: "League Spartan";
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108%;
+  /* 88.56px */
+  margin-bottom: 53px;
+}
+@media (max-width: 1280.98px) {
+  .audit-pricing__title {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .audit-pricing__title {
+    margin-bottom: 40px;
+    color: var(--Gray-900, #181F35);
+    text-align: center;
+    /* Headings/H6 */
+    font-family: "League Spartan";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    /* 40.12px */
+  }
+}
+.audit-pricing__card-content {
+  max-width: 1029px;
+  width: 1029px;
+  margin: 0px auto;
+  border-radius: var(--Large, 32px);
+  background-color: var(--Main-Blue-100, #F6FAFF);
+}
+@media (min-width: 991.98px) {
+  .audit-pricing__card-content {
+    padding: 17px 23px;
+    background-image: url("./assets/images/pricing-image.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1280.98px) {
+  .audit-pricing__card-content {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .audit-pricing {
+    border-radius: var(--Middle, 24px);
+  }
+}
+
+.audit-pricing-card__card {
+  display: flex;
+  width: 448px;
+  border-radius: var(--Middle, 24px);
+  background: var(--Main-Blue-600, #077DFD);
+  padding: 40px 10px 20px 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .audit-pricing-card__card {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .audit-pricing-card__card {
+    padding: 29px 16px 16px 16px;
+  }
+}
+.audit-pricing-card__title {
+  color: var(--White, #FFF);
+  margin-bottom: 40px;
+  /* Headings/H4 */
+  font-family: "League Spartan";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 116%;
+  /* 69.6px */
+}
+@media (max-width: 767.98px) {
+  .audit-pricing-card__title {
+    margin-bottom: 15px;
+  }
+}
+.audit-pricing-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  margin-bottom: 28px;
+}
+@media (max-width: 767.98px) {
+  .audit-pricing-card__list {
+    gap: 15px;
+    margin-bottom: 31px;
+  }
+}
+.audit-pricing-card__li {
+  color: var(--Main-Blue-200, #E5F1FF);
+  /* Paragraph/Body/Regular */
+  font-family: "League Spartan";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 38.4px */
+  display: flex;
+  align-items: start;
+  gap: 14px;
+}
+.audit-pricing-card__li-img {
+  height: 30px;
+  padding-top: 6px;
+}
+.audit-pricing-card .button-wrapper {
+  width: 100% !important;
+  max-width: 100%;
+}
+.audit-pricing-card .button-wrapper .button {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.audit-pricing-card .button-wrapper .button:active {
+  height: auto !important;
+  width: calc(100% - 4px) !important;
+}
+
+/******************/
+.our-work {
+  padding: 160px 0px;
+}
+@media (max-width: 1280.98px) {
+  .our-work {
+    padding: 208px 0px 140px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .our-work {
+    padding: 80px 0px;
+  }
+}
+.our-work__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+@media (min-width: 1536.98px) {
+  .our-work__wrapper {
+    padding-left: 140px;
+  }
+}
+@media (max-width: 1536.98px) {
+  .our-work__wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media (max-width: 767.98px) {
+  .our-work__wrapper {
+    gap: 40px;
+  }
+}
+@media (max-width: 537.98px) {
+  .our-work__wrapper {
+    padding: 0px 16px !important;
+  }
+}
+.our-work__left {
+  /* 392/1780 */
+}
+@media (min-width: 537.98px) {
+  .our-work__left {
+    flex: 0 1 22.022472%;
+  }
+}
+@media (min-width: 537.98px) and (max-width: 1536.98px) {
+  .our-work__left {
+    padding: 0px 70px;
+  }
+}
+@media (min-width: 537.98px) and (max-width: 991.98px) {
+  .our-work__left {
+    padding: 0px 40px;
+  }
+}
+@media (min-width: 537.98px) and (max-width: 767.98px) {
+  .our-work__left {
+    padding: 0px 16px;
+  }
+}
+.our-work__label {
+  margin-bottom: 14px;
+}
+.our-work__title {
+  color: var(--White);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 108%;
+  /* 77.76px */
+  margin-bottom: 14px;
+}
+@media (max-width: 767.98px) {
+  .our-work__title {
+    margin-bottom: 4px;
+    font-size: 34px;
+    line-height: 118%;
+  }
+}
+.our-work__text {
+  color: var(--Gray-400);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 140%;
+  /* 30.8px */
+  margin-bottom: 60px;
+}
+@media (max-width: 1280.98px) {
+  .our-work__text {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .our-work__text {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .our-work__buttons {
+    display: none;
+  }
+}
+.our-work__right {
+  min-width: 0;
+  /* 1226/1780 */
+}
+@media (min-width: 1536.98px) {
+  .our-work__right {
+    max-width: 1226px;
+    flex: 0 1 68.876404%;
+  }
+}
+@media (max-width: 1536.98px) {
+  .our-work__right {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 537.98px) {
+  .our-work-slider__swiper-wrapper {
+    padding-bottom: 32px;
+    margin-bottom: 2px;
+  }
+}
+.our-work-slider__slide {
+  display: flex;
+  padding: 18px 24px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 32px;
+  background: var(--Secondary-Turquoise-400);
+  max-width: 100%;
+}
+@media (min-width: 537.98px) {
+  .our-work-slider__slide {
+    width: 531px;
+    max-width: 531px;
+  }
+}
+@media (max-width: 767.98px) {
+  .our-work-slider__slide {
+    padding: 18px 14px;
+    border-radius: var(--Small) !important;
+  }
+}
+.our-work-slider__slide:nth-child(2) {
+  background: var(--Other-Green-1-400, #CBE389) !important;
+}
+.our-work-slider__slide:nth-child(3) {
+  background: var(--Gray-200, #EFF1F5);
+}
+.our-work-slider__slide:nth-child(4) {
+  background: var(--Secondary-Terracotta-300, #FFD4C5);
+}
+@media (min-width: 537.98px) and (min-width: 1536.98px) {
+  .our-work-slider__slide:last-child {
+    margin-right: 140px !important;
+  }
+}
+@media (min-width: 537.98px) and (max-width: 1536.98px) {
+  .our-work-slider__slide:last-child {
+    margin-right: 70px !important;
+  }
+  .our-work-slider__slide:first-child {
+    margin-left: 70px !important;
+  }
+}
+@media (min-width: 537.98px) and (max-width: 991.98px) {
+  .our-work-slider__slide:last-child {
+    margin-right: 40px !important;
+  }
+  .our-work-slider__slide:first-child {
+    margin-left: 40px !important;
+  }
+}
+@media (min-width: 537.98px) and (max-width: 767.98px) {
+  .our-work-slider__slide:last-child {
+    margin-right: 16px !important;
+  }
+  .our-work-slider__slide:first-child {
+    margin-left: 16px !important;
+  }
+}
+
+.our-work-slider-slide__header {
+  padding: 0px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+@media (max-width: 487.98px) {
+  .our-work-slider-slide__header {
+    flex-direction: column;
+    align-items: start;
+    padding: 0px;
+  }
+}
+.our-work-slider-slide__content {
+  margin-bottom: 20px;
+}
+.our-work-slider-slide__content img {
+  max-width: 100%;
+  height: auto;
+  min-height: 289px;
+}
+.our-work-slider-slide__title {
+  color: var(--Gray-900);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 128%;
+  /* 38.4px */
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+@media (max-width: 767.98px) {
+  .our-work-slider-slide__title {
+    color: var(--Gray-900);
+    font-family: "League Spartan";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 28px */
+  }
+}
+.our-work-slider-slide__buttons {
+  display: flex;
+  justify-content: end;
+}
+.work-slide-result__left {
+  padding: 2px 0px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.work-slide-result__params {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--Gray-900);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 160%;
+  /* 38.4px */
+}
+.work-slide-result__left-result {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Gray-900);
+  font-family: "League Spartan";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  /* 38.4px */
+}
+.work-slide-result__right {
+  display: flex;
+  padding: 2px 0px;
+  align-items: center;
+  gap: 14px;
+}
+.work-slide-result__right-label {
+  color: var(--Other-Green-2-700);
+  font-size: 16px;
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: var(--White, #FFF);
+  font-weight: 600;
+  line-height: 120%;
+}
+.work-slide-result__right-label span {
+  margin-top: 4px;
+}/*# sourceMappingURL=style.css.map */
