@@ -1,3 +1,41 @@
+main .hero__content {
+  background: var(--Main-Blue-100, #F6FAFF);
+}
+main .audit-step:nth-child(1) {
+  background: var(--Secondary-Orange-400, #FFDBB0);
+}
+main .audit-step:nth-child(2) {
+  background: var(--Other-Green-1-300, #ECFBC3);
+}
+main .audit-step:nth-child(3) {
+  background: var(--Secondary-Yellow-300, #FFFAD4);
+}
+main .audit-step:nth-child(4) {
+  background: var(--Secondary-Turquoise-300, #DCF6FF);
+}
+main .audit-step:nth-child(5) {
+  background: var(--Main-Blue-300, #C6E1FF);
+}
+
+main.is-ois .hero__content {
+  background: #c5e5fd;
+}
+main.is-ois .audit-step:nth-child(1) {
+  background: #ffdfb7;
+}
+main.is-ois .audit-step:nth-child(2) {
+  background: #eefbca;
+}
+main.is-ois .audit-step:nth-child(3) {
+  background: #fffbda;
+}
+main.is-ois .audit-step:nth-child(4) {
+  background: #dff7ff;
+}
+main.is-ois .audit-step:nth-child(5) {
+  background: #cde5ff;
+}
+
 @media (min-width: 1280.98px) {
   .audit .bottom-cta__title {
     margin-bottom: 14px !important;
@@ -130,7 +168,6 @@
   align-items: start;
   justify-content: space-between;
   border-radius: 60px;
-  background: var(--Main-Blue-100, #F6FAFF);
 }
 @media (min-width: 1280.98px) {
   .hero__content {
@@ -1119,5 +1156,6 @@
 
 .audit-step-right__video {
   width: 100%;
+  mix-blend-mode: normal;
   height: auto;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,57 @@
+main {
+    .hero__content {
+        background: var(--Main-Blue-100, #F6FAFF);
+    }
+    .audit-step {
+        &:nth-child(1) {
+            background: var(--Secondary-Orange-400, #FFDBB0);
+        }
+    
+        &:nth-child(2) {
+            background: var(--Other-Green-1-300, #ECFBC3);
+        }
+    
+        &:nth-child(3) {
+            background: var(--Secondary-Yellow-300, #FFFAD4);
+        }
+    
+        &:nth-child(4) {
+            background: var(--Secondary-Turquoise-300, #DCF6FF);
+        }
+    
+        &:nth-child(5) {
+            background: var(--Main-Blue-300, #C6E1FF);
+        }
+    }
+}
+
+main.is-ois {
+    .hero__content {
+        background: #c5e5fd;
+    }
+    .audit-step {
+        &:nth-child(1) {
+            background: #ffdfb7;
+        }
+    
+        &:nth-child(2) {
+            background: #eefbca;
+        }
+    
+        &:nth-child(3) {
+            background: #fffbda;
+        }
+    
+        &:nth-child(4) {
+            background: #dff7ff;
+        }
+    
+        &:nth-child(5) {
+            background: #cde5ff;
+        }
+    }
+}
+
 .audit {
     @media (min-width: 1280.98px) {
         .bottom-cta__title {
@@ -141,7 +195,6 @@
 
         justify-content: space-between;
         border-radius: 60px;
-        background: var(--Main-Blue-100, #F6FAFF);
 
         @media (max-width: 1280.98px) {
             flex-direction: column-reverse;
@@ -489,25 +542,29 @@
         overflow: hidden;
         border-radius: var(--Large, 32px);
         background-color: var(--Main-Blue-100, #F6FAFF);
+
         @media (max-width: 1280.98px) {
             max-width: 100%;
             width: 100%;
         }
+
         @media (min-width: 991.98px) {
             padding: 17px 23px;
         }
     }
+
     .audit-pricing-card__video {
         @media (min-width: 991.98px) {
             position: absolute;
             top: 0;
             right: -153px;
         }
+
         @media (max-width: 991.98px) {
             display: none;
         }
     }
-   
+
 
     @media (max-width: 767.98px) {
         border-radius: var(--Middle, 24px);
@@ -1267,6 +1324,7 @@
 
     &__video {
         width: 100%;
+        mix-blend-mode: normal;
         height: auto;
     }
 }
