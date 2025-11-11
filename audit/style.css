@@ -462,22 +462,33 @@
 .audit-pricing__card-content {
   max-width: 1029px;
   width: 1029px;
+  position: relative;
   margin: 0px auto;
+  overflow: hidden;
   border-radius: var(--Large, 32px);
   background-color: var(--Main-Blue-100, #F6FAFF);
-}
-@media (min-width: 991.98px) {
-  .audit-pricing__card-content {
-    padding: 17px 23px;
-    background-image: url("./assets/images/pricing-image.png");
-    background-position: right center;
-    background-repeat: no-repeat;
-  }
 }
 @media (max-width: 1280.98px) {
   .audit-pricing__card-content {
     max-width: 100%;
     width: 100%;
+  }
+}
+@media (min-width: 991.98px) {
+  .audit-pricing__card-content {
+    padding: 17px 23px;
+  }
+}
+@media (min-width: 991.98px) {
+  .audit-pricing .audit-pricing-card__video {
+    position: absolute;
+    top: 0;
+    right: -153px;
+  }
+}
+@media (max-width: 991.98px) {
+  .audit-pricing .audit-pricing-card__video {
+    display: none;
   }
 }
 @media (max-width: 767.98px) {
@@ -487,6 +498,8 @@
 }
 
 .audit-pricing-card__card {
+  z-index: 10;
+  position: relative;
   display: flex;
   width: 448px;
   border-radius: var(--Middle, 24px);

@@ -484,22 +484,30 @@
     &__card-content {
         max-width: 1029px;
         width: 1029px;
+        position: relative;
         margin: 0px auto;
+        overflow: hidden;
         border-radius: var(--Large, 32px);
         background-color: var(--Main-Blue-100, #F6FAFF);
-
-        @media (min-width: 991.98px) {
-            padding: 17px 23px;
-            background-image: url("./assets/images/pricing-image.png");
-            background-position: right center;
-            background-repeat: no-repeat;
-        }
-
         @media (max-width: 1280.98px) {
             max-width: 100%;
             width: 100%;
         }
+        @media (min-width: 991.98px) {
+            padding: 17px 23px;
+        }
     }
+    .audit-pricing-card__video {
+        @media (min-width: 991.98px) {
+            position: absolute;
+            top: 0;
+            right: -153px;
+        }
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    }
+   
 
     @media (max-width: 767.98px) {
         border-radius: var(--Middle, 24px);
@@ -508,6 +516,8 @@
 
 .audit-pricing-card {
     &__card {
+        z-index: 10;
+        position: relative;
         display: flex;
         width: 448px;
         border-radius: var(--Middle, 24px);

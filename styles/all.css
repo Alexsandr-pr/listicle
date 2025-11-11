@@ -401,6 +401,7 @@ main {
 
 }
 
+
 .button.main-blue-button.secondary-reverse {
     border-radius: var(--Extra-large, 200px);
     border: 2px solid var(--Main-Blue-600, #077DFD);
@@ -408,6 +409,18 @@ main {
 }
 .button.main-blue-button.secondary-reverse .button__text {
     color: var(--Main-Blue-600);
+}
+
+
+@media (hover: hover) {
+    .button.main-blue-button.secondary-reverse:hover {
+        border-radius: var(--Extra-large, 200px);
+        border: 2px solid var(--Main-Blue-600, #077DFD);
+        background: var(--Main-Blue-600, #077DFD);
+    }
+    .button.main-blue-button.secondary-reverse:hover .button__text {
+        color: var(--White);
+    }
 }
 
 .button.main-gray-button.secondary-reverse {
